@@ -1,0 +1,408 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.account">余额和优惠券 | 账户系统 | Ping++</title>
+    <link rel="stylesheet" href="assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="让每个用户拥有余额和优惠券账户，能够方便地充值、消费和提现。你可以创建并定向发放优惠券，在管理后台统一查看用户的余额和优惠券使用状况。"  content-t="descriptions.account"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="">
+        
+        <div class="top-bar-wrapper">
+          <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="route.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="/products" data-t="top-nav.features">产品</a></li>
+              <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+              <li><a href="/pricing" data-t="top-nav.pricing">定价</a></li>
+              <!-- <li class="is-dropdown-submenu-parent">
+                <a href="#" data-t="top-nav.more">更多</a>
+                <ul class="menu vertical">
+                  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+                  <li><a href="/platform" data-t="top-nav.platform">多级商户</a></li>
+                  <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+                  <li><a href="/financing" data-t="top-nav.financing">分期支付</a></li>
+                  <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+                  <li><a href="/inapp" data-t="top-nav.paybycard">卡支付</a></li>
+                  <li><a href="/apple-pay">Apple Pay</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="https://help.pingxx.com" target="_blank"  data-t="top-nav.help">帮助中心</a></li>
+              <li class="is-dropdown-submenu-parent">
+                <a href="/docs/index" data-t="top-nav.devcenter">开发者中心</a>
+                <ul class="menu vertical">
+                  <li><a href="/docs/overview/" data-t="top-nav.docs">开发指南</a></li>
+                  <li><a href="/api" data-t="top-nav.apireference">API 文档</a></li>
+                  <li><a href="/docs/downloads" data-t="top-nav.download">SDK 下载</a></li>
+                  <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                </ul>
+              </li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li><a href="/products" data-t="top-nav.features">产品</a></li>
+            <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+            <li class="divider"><a href="/pricing"data-t="top-nav.pricing">定价</a></li>
+           <!--  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+            <li><a href="/platform" data-t="top-nav.account">多级商户</a></li>
+            <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+            <li><a href="/financing"data-t="top-nav.financing">分期支付</a></li>
+            <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+            <li class="divider"><a href="/apple-pay">Apple Pay</a></li> -->
+        
+            <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li>
+            <li class="divider"><a href="/docs/" data-t="top-nav.documentation">开发者中心</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li class="divider"><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        
+        <section class="hero text-left no-padding-with-bottom hero-balance" id="hero">
+          <div class="row align-center">
+            <div class="small-11 medium-10 columns">
+              <div class="hero-section-head">
+                <div class="row">
+                  <div class="small-12 medium-6 large-5 columns">
+                    <div class="hero-copy">
+                      <h5 data-t="career.hero.heading">余额和优惠券</h5>
+                      <h2 class="text-left" data-t="career.hero.subheading">让你的 App 迅速拥有余额<span class="punctuation">，</span>优惠券功能<span class="punctuation">。</span></h2>
+                    </div>
+                  </div>
+                  <div class="expand columns"></div>
+                  <div class="small-12 medium-5 large-6 columns">
+                    <p>让每个用户拥有余额和优惠券账户，能够方便地充值、消费和提现。你可以创建并定向发放优惠券，在管理后台统一查看用户的余额和优惠券使用状况。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products-account-preview">
+                <div class="content">
+                  <div class="row">
+                    <div class="column align-self-center">
+                      <img src="assets/img/products-account-topup.png" data-interchange="[assets/img/products-account-topup@2x.png, retina]" alt="" width="241" height="469">
+                    </div>
+                    <div class="column align-self-center">
+                      <img src="assets/img/products-account-withdrawal.png" data-interchange="[assets/img/products-account-withdrawal@2x.png, retina]" alt="" width="241" height="469">
+                    </div>
+                    <div class="column align-self-center">
+                      <img src="assets/img/products-account-coupon.png" data-interchange="[assets/img/products-account-coupon@2x.png, retina]" alt="" width="241" height="469">
+                    </div>
+                  </div>
+                  <!-- <div class="shadow-mask"></div> -->
+                </div>
+                    <!-- <div class="description">
+                      <div class="row small-1-up medium-3-up">
+                        <div class="column align-self-center">
+                          <h6>余额充值</h6>
+                          <p>用户通过支付渠道将现金充值至用户账户。</p>
+                        </div>
+                        <div class="column align-self-center">
+                          <h6>余额提现</h6>
+                          <p>用户将账户余额提现至支付宝、微信或银行卡。</p>
+                        </div>
+                        <div class="column align-self-center">
+                          <h6>优惠券消费</h6>
+                          <p>用户付款时选择使用优惠券，自动抵扣相应金额。</p>
+                        </div>
+                      </div>
+                    </div> -->
+                </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="ld-content balance-features-overview">
+          <div class="row align-center">
+            <div class="small-10 medium-9 large-8 columns">
+              <div class="row">
+                <div class="small-12 medium-6 columns">
+                  <div class="list-item">
+                    <h2 class="title">余额</h2>
+                    <dl class="section-business">
+                      <dt>你可以</dt>
+                      <dd>查询及分析用户的余额充值、提现与消费情况。</dd>
+                    </dl>
+                    <dl class="section-customers">
+                      <dt>用户可以</dt>
+                      <dd>进行余额充值，使用第三方支付方式将现金充值至账户。</dd>
+                      <dd>使用余额消费，下单时选择账户余额支付，完成付款。</dd>
+                      <dd>进行余额提现，将账户余额提现至银行卡。</dd>
+                      <dd>在 App 中为内容付费，打赏金额进入对方的余额账户。</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="expand columns"></div>
+                <div class="small-12 medium-5 columns">
+                  <div class="list-item">
+                    <h2 class="title">优惠券</h2>
+                    <dl class="section-business">
+                      <dt>你可以</dt>
+                      <dd>创建现金券或折扣券，灵活定义优惠券使用规则并发放给用户。</dd>
+                      <dd>查询用户余额和优惠券的使用明细，分析优惠券效果等。</dd>
+                    </dl>
+                    <dl class="section-customers">
+                      <dt>用户可以</dt>
+                      <dd>在 App 中购买商品或服务时，使用优惠券进行抵扣。</dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <p class="more">更多功能陆续推出中……</p>
+            </div>
+          </div>
+        </section>
+        
+        
+        <section class="balance-features-scene">
+          <div class="row align-center">
+            <div class=" ld-content--center small-11 medium-8 columns">
+              <h2 class="main-title">
+                多种场景<span class="punctuation">，</span>满足<br class="hide-for-small-only">多种支付与营销需求<span class="punctuation">。</span>
+              </h2>
+              <p class="desc-text">
+                无论你是面向企业，或是面向消费者，都可以尝试探寻满足<br class="hide-for-small-only">余额打赏和优惠券的场景化运营。
+              </p>
+            </div>
+          </div>
+        
+          <div class="balance-scene-canvas">
+            <div class="product-bg transfer-in "></div>
+            <div class="product-bg transfer-out active"></div>
+            <div class="product-bg coupons"></div>
+          </div>
+        
+          <div class="row align-center">
+            <div class="columns small-12 medium-7">
+              <div class="balance-scene-container">
+                <div class="balance-scene-wallpaper">
+                  <div class="swiper-container product-scene-switch">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide product-transfer-in"></div>
+                      <div class="swiper-slide product-transfer-out"></div>
+                      <div class="swiper-slide product-coupons"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-wrapper hide-for-small-only">
+                <div class="content transfer-in active">
+                  <h5 class="title">支付功能</h5>
+                  <section class="first">
+                    <h6>余额充值</h6>
+                    <p>用户使用第三方支付方式将现金充值至账户</p>
+                  </section>
+                  <section class="second">
+                    <h6>余额消费</h6>
+                    <p>用户使用账户余额在 App 中消费付款</p>
+                  </section>
+                </div>
+                <div class="content transfer-out">
+                  <h5 class="title">支付功能</h5>
+                  <section class="first">
+                    <h6>余额提现</h6>
+                    <p>用户将账户余额提现至银行卡</p>
+                  </section>
+                </div>
+                <div class="content coupons">
+                  <h5 class="title">营销功能</h5>
+                  <section class="first">
+                    <h6>优惠券</h6>
+                    <p>你可以创建现金券或折扣券，灵活定义优惠券使用规则并发放给用户，用户在你的 App 中购买商品或服务时可以使用优惠券进行抵扣。</p>
+                  </section>
+                  <section class="second">
+                    <h6>打赏</h6>
+                    <p>用户在你的 App 中为内容付费，打赏金额进入对方的余额账户。</p>
+                  </section>
+                  <section class="third">
+                    <h6>更多功能陆续推出中...</h6>
+                  </section>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        
+          <ul class="balance-scene-menu" id="balance-scene-menu">
+            <li><a href="" class="active" data-target="0">余额充值及消费</a></li>
+            <li class=""><a href="" data-target="1">余额提现</a></li>
+            <li class=""><a href="" data-target="2">优惠券消费</a></li>
+          </ul>
+        </section>
+        <div class="ld-content balance-main-features">
+          <div class="row align-center">
+            <div class="small-11 medium-10 large-8 columns">
+              <div class="row">
+                <div class="small-12 medium-5 large-5 columns small-order-2 medium-order-1">
+                  <div class="main-feature-icon"></div>
+                </div>
+                <div class="expand columns"></div>
+                <div class="small-12 medium-5 large-5 columns small-order-1 medium-order-2 main-feature-content">
+                  <h3>阳光支付服务</h3>
+                  <p>符合监管机构规定，不碰资金，不做二清，安全稳定的资金结算。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="bottom-cta bottom-cta--gray">
+          <div class="row align-center">
+            <div class="small-11 medium-8 large-7 columns">
+              <h3>成为 Ping++ 企业定制客户即可申请使用</h3>
+              <p><a class="button cta" href="/contact#sales">联系销售</a></p>
+            </div>
+          </div>
+        </section>
+        
+        <footer>
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+            </div>
+          </div>
+        </footer>
+        
+        <div class="pro-consult">
+          <a id="consult" href="javascript:void(0);" class="button cta">产品咨询</a>
+        </div>
+        <div id="consultSlide" class="pro-slide">
+          <div id="proCon" class="pro-con">
+            <h3>产品咨询</h3>
+            <form data-abide novalidate id="contact" class="pro-form">
+              <input type="hidden" id="source" name="source" value="widget">
+              <div class="">
+                <label>姓名</label>
+                <input type="text" id="name" name="name" required/>
+              </div>
+              <div class="">
+                <label>手机</label>
+                <input type="text" id="phone" name="phone" pattern="phone" required/>
+              </div>
+              <div class="">
+                <label>邮箱</label>
+                <input type="text" id="from" name="customer_email" pattern="email" required/>
+              </div>
+              <div class="">
+                <label>公司名称或网址</label>
+                <input type="text" id="companyname" name="name_or_site" required/>
+              </div>
+              <div class="">
+                <label>公司规模</label>
+                <select class="sel" id="company" name="company" required>
+                  <option value="" selected="selected" disabled="disabled">选择</option>
+                  <option value="50 人以下">50 人以下</option>
+                  <option value="50-100 人">50-100 人</option>
+                  <option value="100-200 人">100-200 人</option>
+                  <option value="200-500 人">200-500 人</option>
+                  <option value="500 人以上">500 人以上</option>
+                </select>
+              </div>
+              <div class="">
+                <label>需求</label>
+                <select class="sel" id="to" name="to_email" required>
+                  <option value="" selected="selected" disabled="disabled">选择</option>
+                  <option value="sales@pingxx.com">产品售前咨询</option>
+                  <option value="sales@pingxx.com">企业定制服务</option>
+                </select>
+              </div>
+              <div class="">
+                <label>描述</label>
+                <textarea rows="3" placeholder="告诉我们如何为你提供帮助" id="description" name="description" required></textarea>
+              </div>
+              <div class="text-right">
+                <button class="medium button alt" id="submit">发送</button>
+                <a id="submiting" class="medium button alt disabled" style="display: none">正在提交...</a>
+              </div>
+            </form>
+          </div>
+          <div id="proSuccess" class="pro-con text-center" style="display: none;">
+            <div class="pos-middle">
+              <div class="pro-ico">
+                <span class="pro-icon-success pro-draw"></span>
+              </div>
+              <p class="pro-txt">请耐心等候<br>我们很快会回复您</p>
+            </div>
+          </div>
+          <div class="pro-close-outer">
+            <p class="pro-tip">关注 <strong>微信公众号</strong><img src="assets/img/qr-ping.png" alt=""> 获取即时资讯</p>
+            <a class="pro-close"></a>
+          </div>
+        </div>
+        
+    <script src="assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>

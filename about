@@ -1,0 +1,1010 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.about">关于我们 | Ping++</title>
+    <link rel="stylesheet" href="assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="Ping++，一个不忘初心的产品，一个注定为开发者而生的产品。"  content-t="descriptions.about"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="">
+        
+        <div class="top-bar-wrapper">
+          <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="route.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="/products" data-t="top-nav.features">产品</a></li>
+              <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+              <li><a href="/pricing" data-t="top-nav.pricing">定价</a></li>
+              <!-- <li class="is-dropdown-submenu-parent">
+                <a href="#" data-t="top-nav.more">更多</a>
+                <ul class="menu vertical">
+                  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+                  <li><a href="/platform" data-t="top-nav.platform">多级商户</a></li>
+                  <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+                  <li><a href="/financing" data-t="top-nav.financing">分期支付</a></li>
+                  <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+                  <li><a href="/inapp" data-t="top-nav.paybycard">卡支付</a></li>
+                  <li><a href="/apple-pay">Apple Pay</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="https://help.pingxx.com" target="_blank"  data-t="top-nav.help">帮助中心</a></li>
+              <li class="is-dropdown-submenu-parent">
+                <a href="/docs/index" data-t="top-nav.devcenter">开发者中心</a>
+                <ul class="menu vertical">
+                  <li><a href="/docs/overview/" data-t="top-nav.docs">开发指南</a></li>
+                  <li><a href="/api" data-t="top-nav.apireference">API 文档</a></li>
+                  <li><a href="/docs/downloads" data-t="top-nav.download">SDK 下载</a></li>
+                  <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                </ul>
+              </li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li><a href="/products" data-t="top-nav.features">产品</a></li>
+            <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+            <li class="divider"><a href="/pricing"data-t="top-nav.pricing">定价</a></li>
+           <!--  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+            <li><a href="/platform" data-t="top-nav.account">多级商户</a></li>
+            <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+            <li><a href="/financing"data-t="top-nav.financing">分期支付</a></li>
+            <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+            <li class="divider"><a href="/apple-pay">Apple Pay</a></li> -->
+        
+            <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li>
+            <li class="divider"><a href="/docs/" data-t="top-nav.documentation">开发者中心</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li class="divider"><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        <section class="hero hero-about" id="hero">
+          <div class="row align-center">
+            <div class="small-10 medium-10 large-9 columns">
+                <div class="hero-copy">
+                  <h1>我们让支付变得<br class="hide-for-small-only">简单<span class="punctuation">，</span>方便<span class="punctuation">，</span>和温暖<span class="punctuation">。</span></h1>
+                </div>
+            </div>
+          </div>
+          <div class="hero-bg aboutus">
+            <div class="row align-right">
+              <div class="medium-5 columns fullheight-column-align">
+                <div class="illustration-pinger-wrap"> </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="row align-center ld-content--about">
+          <div class="small-11 medium-10 large-9 columns">
+            <section class="" id="about">
+              <div class="row">
+                <div class="column">
+                  <h5 class="overview">我们在做什么</h5>
+                  <!-- <p class="overview"><span class="">&mdash;&nbsp;</span>我们在做什么</p> -->
+                </div>
+              </div>
+              <div class="row align-center">
+                <div class="columns medium-6 small-12">
+                  <div class="title">
+                    <h2>Ping++ 为这个世界提供了一种全新的支付服务</h2>
+                    <h5>任何你可以想象或者不能想象的场景下，我们都让支付变得更加简单，方便，和温暖。</h5>
+                    <p class="show-for-small-only"><img src="assets/img/building.jpg" alt=""></p>
+                  </div>
+                </div>
+                <div class="columns medium-6 small-12">
+                  <div class="content">
+                    <p>Ping++ 始于 2014 年，伴随着中国移动支付大爆炸而生，是上海简米网络科技有限公司旗下的聚合支付品牌。</p>
+                    <p>最初，我们从一间 10 平米的会议室起步，希望用支付连接价值，致力于彻底改变移动支付的接入方式，让每一个 App 都能轻松接入支付。</p>
+                    <p>现如今，从安全可靠的聚合支付平台到简单无忧的聚合支付云服务，Ping++ 帮助 12000 多家企业客户解决支付问题，典型客户包括小牛电动、丁香诊所、方太厨具、小红书、映客等，涉及电商、O2O、教育、旅游、直播、医疗等众多领域，全面覆盖红包转账、报名收费、扫码签到、打赏抽奖、卡券营销、多级分成等多样化的支付场景。</p>
+                    <p>Ping++ 正在为这个世界提供一种全新的支付服务，不仅极大地简化了企业与移动支付渠道和消费分期渠道的对接过程，还将日常交易管理，查账对账，数据分析功能集成到统一的管理平台。从支付接入、交易处理到业务运营，我们以定制化全流程的解决方案来帮助企业应对在商业变现环节可能面临的一切问题。</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+        
+            <!-- <section id="team">
+              <div class="row align-center">
+                <div class="columns small-11 medium-12">
+                  <h5 class="overview">我们是这样一群人</h5>
+                  <h2 id="team-copy"> 未来的样子<span class="punctuation">，</span><br>就是此刻创造未来的<span class="punctuation">，</span><br>你的样子<span class="punctuation">。</span></h2>
+                </div>
+              </div>
+              <div id="team-members" class="row align-center">
+                <div class="small-11 medium-3 columns hide-for-small-only">
+                  <ul class="team-nav">
+                    <li><a class="active " href="#product">产品/设计</a></li>
+                    <li><a class="" href="#engineer">工程/研发</a></li>
+                    <li><a class="" href="#misc">综合职能</a></li>
+                    <li><a class="" href="#operations">运营/支持</a></li>
+                    <li><a class="" href="#marketing">市场/销售</a></li>
+                  </ul>
+                </div>
+                <div class="small-12 medium-9 columns members-container" id="membersContainer">
+                  <div id="product" class="team-group product">
+                    <div class="row align-center show-for-small-only">
+                      <div class="column small-10">
+                        <h6 class="text-center"><small>产品/设计</small></h6>
+                        <hr>
+                      </div>
+                    </div>
+                    <div class="row small-up-2 medium-up-4 ld-content--center">
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/6pZHxl.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Freez</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Freez</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/ej4IiW.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Robert</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Robert</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/zAGrjV.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Lane</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Lane</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Aa42Il.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Jingyi</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Jingyi</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/fG5FKo.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Leona</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Leona</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/tse2Mb.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Linci</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Linci</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/ushWLq.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Yin</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Yin</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/sYXhZW.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Karen</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Karen</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/gNtOIk.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Zhuzi</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Zhuzi</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="engineer" class="team-group engineer">
+                    <div class="row align-center show-for-small-only">
+                      <div class="column small-10">
+                        <h6 class="text-center"><small>工程/研发</small></h6>
+                        <hr>
+                      </div>
+                    </div>
+                    <div class="row small-up-2 medium-up-4 ld-content--center">
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/O7eA9d.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Guang</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Guang</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/KB5Acu.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Pangzi</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Pangzi</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/rjdDC4.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Bingbing</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Bingbing</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/vxEGfI.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Afon</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Afon</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/gdJSkj.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Aaron</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Aaron</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/dBrSNh.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Yangyu</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Yangyu</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/QhmFY7.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Apple</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Apple</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/ILgbf4.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Xingxing</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Xingxing</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Y6CPEW.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Lurrpis</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Lurrpis</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/hXtNlL.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Phx</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Phx</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/BO9VKk.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Ghost</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Ghost</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/RZhN6S.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Xiangzi</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Xiangzi</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/IYh0fu.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Junfeng</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Junfeng</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/erSFHO.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Keliang</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Keliang</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/uXDvAl.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Litao</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Litao</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/sdzv7V.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Tianwei</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Tianwei</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/RZSpmu.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Dabao</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Dabao</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/p4OmkF.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Cuncun</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Cuncun</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/XT5tDA.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Dong</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Dong</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/P7USIA.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Kai</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Kai</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/nkxXqm.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Sumin</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Sumin</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/wiXSky.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Guanghe</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Guanghe</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/gBZiaT.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Judy</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Judy</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/4kdlVh.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Hailin</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Hailin</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/EjVTls.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Kyo</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Kyo</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/3OBKNH.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Fang</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Fang</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/D5jx7n.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Feng</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Feng</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/wrSXy0.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Fei</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Fei</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/2HDJbl.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Shun</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Shun</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/CQOm08.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Xinyi</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Xinyi</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/M8xvef.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Chenglei</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Chenglei</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/JblGMm.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Kevin.L</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Kevin.L</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/hWsBY6.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Miaomiao</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Miaomiao</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/xyGsl5.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Ning</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Ning</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/B6XmdY.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Zhitao</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Zhitao</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Ds5p6W.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Shui</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Shui</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/EWjMDK.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Kejin</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Kejin</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/3V9sUC.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Hexuan</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Hexuan</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/kWJoTK.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Ming</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Ming</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/7tTk1V.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Jiera</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Jiera</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/M8t52x.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Jason</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Jason</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/fHz4iP.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Huan</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Huan</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/UHABML.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Yu</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Yu</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="misc" class="team-group misc">
+                    <div class="row align-center show-for-small-only">
+                      <div class="column small-10">
+                        <h6 class="text-center"><small>综合职能</small></h6>
+                        <hr>
+                      </div>
+                    </div>
+                    <div class="row small-up-2 medium-up-4 ld-content--center">
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/I5v8mb.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Fitz</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Fitz</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/HMZBwT.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Jeff</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Jeff</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/OMNCFt.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Elinor</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Elinor</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/f1hgo2.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Duguang</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Duguang</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Mzu0Ze.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Hazel</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Hazel</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/ysU38q.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Vivian</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Vivian</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Vaqr8u.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Ling</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Ling</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/ITw1Wq.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Daisy</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Daisy</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/9ro2kq.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Qian</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Qian</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/zW54uC.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Luozi</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Luozi</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Oun8vz.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Hannah</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Hannah</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="operations" class="team-group operations">
+                    <div class="row align-center show-for-small-only">
+                      <div class="column small-10">
+                        <h6 class="text-center"><small>运营/支持</small></h6>
+                        <hr>
+                      </div>
+                    </div>
+                    <div class="row small-up-2 medium-up-4 ld-content--center">
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/jLWJI9.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Ita</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Ita</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/FTuYob.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Juntin</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Juntin</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/vGm2Wp.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Guanshuang</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Guanshuang</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Lt6s9A.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Songsong</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Songsong</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/gkw2Sp.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Jiali</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Jiali</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/kURiHv.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Miao</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Miao</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/c4w7fq.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Zenan</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Zenan</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/G6LUN7.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Worby</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Worby</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/BhImFq.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Anne</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Anne</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/OIaT7V.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Linke</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Linke</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/NPBerC.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Anson</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Anson</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="marketing" class="team-group marketing">
+                    <div class="row align-center show-for-small-only">
+                      <div class="column small-10">
+                        <h6 class="text-center"><small>市场/销售</small></h6>
+                        <hr>
+                      </div>
+                    </div>
+                    <div class="row small-up-2 medium-up-4 ld-content--center">
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/eAMP8X.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Sissi</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Sissi</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/c8ILsE.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Fei</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Fei</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/xwF0TH.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Sky</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Sky</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/4uqE60.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Hukai</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Hukai</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/bJs9jk.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Rui</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Rui</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/JvuncK.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Murph</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Murph</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/wq5PnQ.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Bing</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Bing</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/HgctWG.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Steve</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Steve</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/MLahCs.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Hui</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Hui</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Jox5z8.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Kevin.Y</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Kevin.Y</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/coFj6h.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Lei</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Lei</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Eg5DjS.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Xiaoling</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Xiaoling</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/T13Ugd.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Linda</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Linda</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/48Z3Pm.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Frank</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Frank</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/wJoklh.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Yx</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Yx</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/tdkLSx.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Toccata</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Toccata</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/bPQvwN.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Avan</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Avan</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/PLCkdv.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Selina</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Selina</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/W84EVo.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Haidong</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Haidong</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/3U8VPz.jpg" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Cook</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Cook</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/oDGSYj.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Agnes</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Agnes</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/ARTbC5.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Bob</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Bob</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/3VjnGz.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Echo</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Echo</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/LZjIR2.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Butch</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Butch</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/OTMsP5.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Luna</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Luna</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/mKB1va.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Flamka</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Flamka</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/N5jDMP.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Yuan</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Yuan</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/vEIcS6.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Rebecca</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Rebecca</p>
+                      </div>
+                      <div class="ld-feature-grid__colum column">
+                        <div class="ld-feature-grid__icon">
+                          <img src="https://www.pingxx.com/resources/images/about/Fm4NMY.png" width="80" class="about-members__avatar member--avatar">
+                          <div class="name hide-for-small-only">Fred</div>
+                        </div>
+                        <p class="member--name show-for-small-only">Fred</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section> -->
+          </div>
+        </div>
+        
+        <div class="nav block-grid">
+          <div class="row">
+            <div class="medium-12 columns">
+              <ul class="nav block-grid" data-equalizer data-equalize-on="medium">
+                <li>
+                  <a class="block-grid-link" href="career" data-equalizer-watch>
+                    <h5 data-t="about.bottom.join.title">加入我们</h5>
+                    <span class="description" data-t="about.bottom.join.description">我们正在寻找更多才华横溢、怀揣梦想的伙伴，和我们一起做充满挑战的事情。</span>
+                    <span class="anchor" data-t="about.bottom.join.link">查看招聘的职位</span>
+                  </a>
+                </li>
+                <li><a class="block-grid-link" href="/media" data-equalizer-watch><h5 data-t="career.bottom.media.title">媒体报道</h5>
+                  <span class="description" data-t="career.bottom.media.description">我们获得了很多外界认可，对我们而言，<br>这亦是更多的责任。</span>
+                  <span class="anchor" data-t="career.bottom.media.link">查看媒体报道</span>
+                </a></li>
+                <li><a class="block-grid-link" href="/contact" data-equalizer-watch><h5 data-t="career.bottom.contact.title">联系我们</h5>
+                  <span class="description" data-t="career.bottom.contact.description">你的反馈对我们来说很重要，我们非常希望听到你的建议或想法。</span>
+                  <span class="anchor" data-t="career.bottom.contact.link">前往联系我们</span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <footer>
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+            </div>
+          </div>
+        </footer>
+        
+        
+    <script src="assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>

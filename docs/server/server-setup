@@ -1,0 +1,273 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.server-setup">服务端环境部署 | Ping++ 开发者中心</title>
+    <link rel="stylesheet" href="../../assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="../../assets/css/app-44e2580710.css">
+    <meta name="description" content="Ping++ 的聚合支付 SDK 让你在 app 和网站中轻松加入支付功能。一次申请开通多个支付渠道，一次接入所有平台和支付方式，一站管理所有交易。"  content-t="descriptions.server-setup"/>
+    <meta name="keywords" content="Ping++,支付接口,移动支付,应用内支付,微信支付,银联接口,支付宝接口"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-invert">
+    <div class="top-bar-wrapper">
+      <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="routeEn.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="big">
+                <a href="/docs/"  data-attr-t href-t="routeEn.docsroot" data-t="top-nav.devcenter">开发者中心</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="/docs/overview/" data-t="top-nav.docs" data-attr-t href-t="routeEn.guides">开发指南</a>
+              </li>
+              <li><a href="/api" data-t="top-nav.apireference" target="_blank">API 文档</a></li>
+              <li><a href="/docs/downloads" data-t="top-nav.download" data-attr-t href-t="routeEn.downloads">SDK 下载</a></li>
+              <li><a href="https://pub.pingxx.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+      <ul>
+        <li class="divider"><a href="/docs/"  data-attr-t href-t="routeEn.docsroot" data-t="top-nav.devcenter">开发者中心</a></li>
+        <li><a href="/docs/overview/" data-t="top-nav.docs" data-attr-t href-t="routeEn.guides">开发指南</a></li>
+        <li><a href="/api" data-t="top-nav.apireference" target="_blank">API 文档</a></li>
+        <li><a href="/docs/downloads" data-t="top-nav.download" data-attr-t href-t="routeEn.downloads">SDK 下载</a></li>
+        <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+        <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+        <li><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+      </ul>
+    </div>
+    <div class="ui-mask"></div>
+    
+
+    <section class="hero hero--no-content">
+    </section>
+
+    <nav class="docs-nav">
+      <div class="row">
+        <div class="medium-3 small-12 columns"><a  href="/docs/overview/">概述和基础</a></div>
+        <div class="medium-3 small-12 columns"><a class="active"  href="/docs/server/">Server 端接入</a></div>
+        <div class="medium-3 small-12 columns"><a   href="/docs/client/">Client 端接入</a></div>
+        <div class="medium-3 small-12 columns"><a   href="/docs/webhooks/">Webhooks、测试和联调</a></div>
+      </div>
+    </nav>
+
+    <div id="content" class="docs-content-container">
+      <div class="row">
+        <div class="small-12 medium-3 columns side-bar">
+          <a href="#" class="docs-article-select-toggle show-for-small-only">查看文章列表</a>
+          <ul class="menu vertical docs-article-select">
+                <li><a href="/docs/server/index"  class="    is-index" data-category="server">服务端接入简介</a></li>
+                <li><a href="/docs/server/server-setup"  class="active    " data-category="server">服务端环境部署</a></li>
+                <li><a href="/docs/server/charge"  class="    " data-category="server">支付</a></li>
+                <li><a href="/docs/server/qr"  class="    " data-category="server">扫码支付</a></li>
+                <li><a href="/docs/server/red-envelope"  class="    " data-category="server">红包</a></li>
+                <li><a href="/docs/server/transfer"  class="    " data-category="server">企业付款</a></li>
+                <li><a href="/docs/server/refund"  class="    " data-category="server">退款</a></li>
+                <li><a href="/docs/server/refund-alipay"  class="    " data-category="server">支付宝退款</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-9 columns docs-content">
+          <div id="docs-inner-content">
+          <div class="row docs-head">
+            <div class="columns shrink"><h2>服务端环境部署</h2></div>
+            <div class="columns" data-sticky-container>
+              <div class="doc-filters" data-sticky data-anchor="docs-inner-content">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li class="language-select-item is-dropdown-submenu-parent">
+                    语言
+                    <a></a>
+                    <ul class="menu" id="language-select"></ul>
+                  </li>
+                  <li class="channel-select-item is-dropdown-submenu-parent">
+                    渠道
+                    <a></a>
+                    <ul class="menu" id="channel-select"></ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3>PHP 部署</h3>
+          <p>PHP 版本要求 5.3 及以上，你可以使用 <code>Composer</code> 或直接手动引入，以下分别提供了两种引入方法：</p>
+          <h4>使用 Composer</h4>
+          <p>在你自己的 <code>composer.json</code> 中添加以下代码</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">{</div><div class="line">  &quot;require&quot;: {</div><div class="line">    &quot;pingplusplus/pingpp-php&quot;: &quot;dev-master&quot;</div><div class="line">  }</div><div class="line">}</div><div class="line"> </div></pre></div></code></pre>
+          <p>然后执行<code>composer install</code></p>
+          <p>使用 Composer 的 autoload 引入</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">require_once('vendor/autoload.php');</div></pre></div></code></pre>
+          <h4>手动引入</h4>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">require_once('/path/to/pingpp-php/init.php');</div></pre></div></code></pre>
+          <h3>JAVA 部署</h3>
+          <p>要求 JDK 版本 1.6 及以上，你可以手动安装、<code>maven</code> 或 <code>gradle</code>，以下分别提供了三种引入方法：</p>
+          <h4>手动安装</h4>
+          <p>在 <a href="https://github.com/PingPlusPlus/pingpp-java">Github</a> 下载 SDK,将 libs/ 下面的 jar 包导入工程</p>
+          <h4>maven 安装</h4>
+          <p>maven 远程仓库</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">    &lt;repository&gt;</div><div class="line">        &lt;snapshots&gt;</div><div class="line">            &lt;enabled&gt;false&lt;/enabled&gt;</div><div class="line">        &lt;/snapshots&gt;</div><div class="line">        &lt;id&gt;central&lt;/id&gt;</div><div class="line">        &lt;name&gt;bintray&lt;/name&gt;</div><div class="line">        &lt;url&gt;http://jcenter.bintray.com&lt;/url&gt;</div><div class="line">    &lt;/repository&gt;</div></pre></div></code></pre>
+          <p>安装 Ping++ SDK</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">    &lt;dependency&gt;</div><div class="line">        &lt;groupId&gt;Pingplusplus&lt;/groupId&gt;</div><div class="line">        &lt;artifactId&gt;pingpp-java&lt;/artifactId&gt;</div><div class="line">        &lt;version&gt;2.1.2&lt;/version&gt;</div><div class="line">        &lt;type&gt;jar&lt;/type&gt;</div><div class="line">    &lt;/dependency&gt;</div></pre></div></code></pre>
+          <h4>gradle 安装</h4>
+          <p>gradle 远程仓库</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">    repositories {</div><div class="line">        maven {</div><div class="line">            url  &quot;http://jcenter.bintray.com&quot; </div><div class="line">        }</div><div class="line">    }</div></pre></div></code></pre>
+          <p>安装 Ping++ SDK</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">compile 'Pingplusplus:pingpp-java:2.1.2'</div></pre></div></code></pre>
+          <h3>Node.js 部署</h3>
+          <p>nodejs 版本 v0.8.0 及以上，可以直接使用 <code>npm</code> 部署：</p>
+          <p>npm 安装</p>
+          <p>直接运行：<code>npm install pingpp</code></p>
+          <p>或者下载源码后，在目录下运行:<code>npm install</code></p>
+          <h3>Python 部署</h3>
+          <p>Python SDK 中的 demo 示例基于 Python2.x 版本，你可以使用 <code>pip</code> 引入或者直接手动引入，以下分别提供了两种方式：</p>
+          <h4>使用 pip 引入</h4>
+          <p><code>pip install pingpp</code></p>
+          <h4>使用 setup.py 手动安装</h4>
+          <p><code>python setup.py install</code></p>
+          <h3>Ruby 部署</h3>
+          <p>Ruby 版本 1.8.7 及以上，支持直接使用 <code>gem</code> 引入或者使用源码构建，以下提供两方法：</p>
+          <h4>通过 gem 引入</h4>
+          <p><code>gem install pingpp</code></p>
+          <h4>使用源码构建</h4>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">gem build pingpp.gemspec</div><div class="line">gem install pingpp-&lt;VERSION&gt;.gem</div></pre></div></code></pre>
+          <h3>Go 部署</h3>
+          <p>建议 Go 语言版本 1.4 以上，以下是引入步骤：</p>
+          <p>导入 pingpp 模块：</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">go get github.com/pingplusplus/pingpp-go/pingpp</div></pre></div></code></pre>
+          <p>导入后，在调用的时候需要 <code>import</code> :</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">import (pingpp &quot;github.com/pingplusplus/pingpp-go/pingpp&quot;)</div></pre></div></code></pre>
+          <p>具体使用相应模块的话还需要：</p>
+          <pre><code><div class="code"><pre class="hljs"><div class="line">import (pingpp &quot;github.com/pingplusplus/pingpp-go/pingpp/xxx&quot;)</div></pre></div></code></pre>
+          <h3>C# 部署</h3>
+          <p>支持 .NET 3.5 以上版本，建议使用 .NET 4.0 以上版本。因为 SDK 使用到了第三方包 <code>Newtonsoft.Json</code> ，如果你的工程没有安装该包，需要先安装该包，建议使用 SDK 中的 <code>Newtonsoft.Json</code> 。我们也将其放入 <code>libs</code> 文件夹里。你也可以通过 <code>Nuget</code> 安装该包或者手动添加依赖，以下是两种方法：</p>
+          <h4>Nuget 安装</h4>
+          <p>首先：<code>Install-Package Newtonsoft.Json</code></p>
+          <p>然后在项目中导入 SDK ：<code>using pingpp;</code></p>
+          <p>最后在调用相应接口时还需要引入相应的模块，例如调用 charge 接口时，还需要导入：<code>using pingpp.Models;</code></p>
+          <h4>手动安装</h4>
+          <p>在 <a href="https://github.com/PingPlusPlus/pingpp-csharp">Github</a> 下载 SDK，<code>libs</code> 文件夹中的 <code>pingpp.dll</code> 和 <code>Newtonsoft.Json.dll</code> 。全部导入到工程中，添加 <code>reference</code> 即可。</p>
+          <div class="docs-upnext">
+          <p>下一步<a href="/docs/server/charge" class="anchor">支付</a></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav block-grid">
+      <div class="row">
+        <div class="medium-12 columns">
+          <ul class="nav block-grid">
+            <li>
+              <a class="block-grid-link" href="/api" target="_blank">
+                <div class="nav-block-grid__icon">
+                  <img src="../../assets/img/docs-cloud.svg" alt="" />
+                </div>
+                <h5 data-t="docs.bottom.api.title">API 文档</h5>
+                <span class="description" data-t="docs.bottom.api.description">了解所有参数和请求，你可以查阅完整的 Ping++ API 文档。</span>
+                <span class="anchor" data-t="docs.bottom.api.link">查阅 API 文档</span>
+              </a>
+            </li>
+            <li>
+              <a class="block-grid-link" href="/docs/downloads">
+              <div class="nav-block-grid__icon">
+                <img src="../../assets/img/docs-downloads.svg" alt="" />
+              </div>
+              <h5 data-t="docs.bottom.download.title">资源下载</h5>
+              <span class="description" data-t="docs.bottom.download.description">下载 SDK、样例代码和项目。</span>
+              <span class="anchor" data-t="docs.bottom.download.link">下载 SDK</span>
+            </a></li>
+            <li>
+              <a class="block-grid-link" href="https://help.pingxx.com" target="_blank">
+                <div class="nav-block-grid__icon">
+                  <img src="../../assets/img/docs-help.svg" alt="" />
+                </div>
+                <h5 data-t="docs.bottom.help.title">帮助中心</h5>
+                <span class="description" data-t="docs.bottom.help.description">开发中遇到障碍？你可以在帮助中心搜索答案。</span>
+                <span class="anchor" data-t="docs.bottom.help.link">去帮助中心</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row collapse">
+        <div class="small-12 medium-expand columns">
+          <ul class="menu">
+            <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+            <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+            <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+            <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+            <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+            <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+            <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+            <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+            <li><a href="/terms" data-t="footer.legal">条款</a></li>
+          </ul>
+          <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="../../assets/js/app-465e894a6c.js"></script>
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,443 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.cmbwallet">招行一网通 | Ping++</title>
+    <link rel="stylesheet" href="assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="Ping++ 现已支持 Apple Pay 接入和申请。获取更多优质客户，让他们享受最快、最佳的支付体验。"  content-t="descriptions.cmbwallet"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-cmbwallet">
+        
+        <div class="top-bar-wrapper">
+          <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="route.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="/products" data-t="top-nav.features">产品</a></li>
+              <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+              <li><a href="/pricing" data-t="top-nav.pricing">定价</a></li>
+              <!-- <li class="is-dropdown-submenu-parent">
+                <a href="#" data-t="top-nav.more">更多</a>
+                <ul class="menu vertical">
+                  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+                  <li><a href="/platform" data-t="top-nav.platform">多级商户</a></li>
+                  <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+                  <li><a href="/financing" data-t="top-nav.financing">分期支付</a></li>
+                  <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+                  <li><a href="/inapp" data-t="top-nav.paybycard">卡支付</a></li>
+                  <li><a href="/apple-pay">Apple Pay</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="https://help.pingxx.com" target="_blank"  data-t="top-nav.help">帮助中心</a></li>
+              <li class="is-dropdown-submenu-parent">
+                <a href="/docs/index" data-t="top-nav.devcenter">开发者中心</a>
+                <ul class="menu vertical">
+                  <li><a href="/docs/overview/" data-t="top-nav.docs">开发指南</a></li>
+                  <li><a href="/api" data-t="top-nav.apireference">API 文档</a></li>
+                  <li><a href="/docs/downloads" data-t="top-nav.download">SDK 下载</a></li>
+                  <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                </ul>
+              </li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li><a href="/products" data-t="top-nav.features">产品</a></li>
+            <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+            <li class="divider"><a href="/pricing"data-t="top-nav.pricing">定价</a></li>
+           <!--  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+            <li><a href="/platform" data-t="top-nav.account">多级商户</a></li>
+            <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+            <li><a href="/financing"data-t="top-nav.financing">分期支付</a></li>
+            <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+            <li class="divider"><a href="/apple-pay">Apple Pay</a></li> -->
+        
+            <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li>
+            <li class="divider"><a href="/docs/" data-t="top-nav.documentation">开发者中心</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li class="divider"><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        
+        <section class="hero hero--text-align-left hero--large-padding hero-cmbwallet">
+          <div class="row align-center">
+            <div class="small-11 medium-8 large-7 columns">
+              <div class="row align-center">
+                <div class="small-12 medium-6 columns">
+                  <div class="cmb-logo"> </div>
+                </div>
+                <div class="small-10 medium-6 columns hero-copy">
+                  <h1>招行一网通</h1>
+                  <h4>开放、快捷、安全<br>不止于此的体验</h4>
+                  <p><a href="https://dashboard.pingxx.com/?channelApply" class="button cta white">立即申请</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-bg">
+            <svg id="front-rainbow" viewBox="0 0 1024 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs></defs>
+                <path d="M1024.00001,461.953047 C939.938623,456.017891 855.071747,453 769.500005,453 C511.4964,453 259.900427,480.434332 17.4701275,532.544953 C11.6414407,533.797834 5.81805205,535.06498 -4.35207426e-14,536.346352 L5.20724268e-06,571.999995 L1024.00001,571.999995 L1024.00001,461.953047 Z" id="Combined-Shape" stroke="none" fill="#ffffff" fill-rule="evenodd"></path>
+            </svg>
+          </div>
+        </section>
+        
+        <div class="cmb-feature-container">
+          <section class="ld-feature-grid">
+            <div class="row align-center">
+              <div class="small-11 medium-10 columns">
+                <div class="row align-center medium-up-3 small-up-1 ">
+                  <div class="ld-feature-grid__column column">
+                    <div class="ld-feature-grid__icon">
+                      <img src="/assets/img/cmb-card-pay.svg" height="88">
+                    </div>
+                    <h5 class="name">移动端跨行支付</h5>
+                    <p class="small">支持跨行绑定借记卡、信用卡，主流银行统统搞定。</p>
+                  </div>
+                  <div class="ld-feature-grid__column column">
+                    <div class="ld-feature-grid__icon">
+                      <img src="/assets/img/cmb-new-experience.svg">
+                    </div>
+                    <h5 class="name">全新支付体验</h5>
+                    <p class="small">绑卡后再次支付，只需输入密码和验证码。</p>
+                  </div>
+                  <div class="ld-feature-grid__column column">
+                    <div class="ld-feature-grid__icon">
+                      <img src="/assets/img/cmb-user-group.svg">
+                    </div>
+                    <h5 class="name">提供优质客源</h5>
+                    <p class="small">稳定活跃的用户群，数据安全、无需担心交易风险。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="cmb-feature" id="second">
+            <div class="row align-center">
+              <div class="cmb-feature__o2o small-10 medium-11 columns">
+                <hr>
+                <div class="row align-center">
+                  <div class="medium-8 hide-for-small-only">
+                    <div class="cmb-feature__bg">
+                      <div class="cmb-feature__bg--building"></div>
+                    </div>
+                  </div>
+                  <div class="medium-4 columns align-self-middle">
+                    <div class="row align-center cmb-feature__o2o--text">
+                      <div class="column medium-10">
+                        <div class="content">
+                        <h5>整合线上线下营销</h5>
+                        <ul class="cmb-feature__items">
+                          <li>线上一网通支付</li>
+                          <li>线下二维码扫码</li>
+                        </ul>
+                      </div>
+                      <div class="devider hide-for-small-only">
+                        <hr>
+                      </div>
+                      <div class="content">
+                        <h5>全面开放形式</h5>
+                        <ul class="cmb-feature__items">
+                          <li>联通多家银行</li>
+                          <li>支持跨行支付</li>
+                        </ul>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="bottom-divider hide-for-small-only"><hr></div>
+              </div>
+            </div>
+          </section>
+        
+          <section class="ld-content ld-content--no-padding" id="advantage">
+            <div class="row align-center">
+              <div class="small-10 medium-10 columns">
+                <div class="row align-center align-middle">
+                  <div class="medium-6 columns">
+                    <div class="ld-content__body--text row align-center">
+                      <div class="column medium-8">
+                        <div class="content">
+                          <h5>快捷安全的支付</h5>
+                          <ul class="cmb-feature__items">
+                            <li>无需跳转 体验优质</li>
+                            <li>银行产品认知度高</li>
+                            <li>不受制于第三方</li>
+                          </ul>
+                        </div>
+                        <div class="devider hide-for-small-only">
+                          <hr>
+                        </div>
+                        <div class="content">
+                          <h5>简单无忧的体验</h5>
+                          <ul class="cmb-feature__items">
+                            <li>统一支付卡管理</li>
+                            <li>统一支付限额</li>
+                            <li>统一支付密码</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-12 medium-6 columns">
+                    <div class="row align-center">
+                      <div class="cmb-wallet-pay medium-8 column ">
+                        <div class="cmb-wallet-pay__device" id="device">
+                          <div class="device-iphone6">
+                            <div class="topbar">
+                              <span class="camera"></span>
+                              <span class="speaker-before"></span>
+                              <span class="speaker"></span>
+                            </div>
+                            <span class="home"></span>
+                            <div class="screen">
+                              <div class="cmb-wallet-pay__screen"></div>
+                              <div id="step1" class="cmb-wallet-pay__selection"></div>
+                              <div id="overlay" class="cmb-wallet-pay__overlay"></div>
+                              <div id="step2"class="cmb-wallet-pay__charge">
+                                <p>请输入支付密码</p>
+                                <h3 class="price">&yen;599.00</h3>
+                                <hr>
+                                <p id="bank">建设银行信用卡(3487)</p>
+                                <div class="input-pwd">
+                                  <span class="input-pwd__cell"></span>
+                                  <span class="input-pwd__cell"></span>
+                                  <span class="input-pwd__cell"></span>
+                                  <span class="input-pwd__cell"></span>
+                                  <span class="input-pwd__cell"></span>
+                                  <span class="input-pwd__cell"></span>
+                                </div>
+                                <button class="button red" id="pay">确认支付</button>
+                              </div>
+                              <div id="step3" class="cmb-wallet-pay__finish">
+                                <div class="cmb-wallet-pay__finish--icon"> </div>
+                                <p class="cmb-wallet-pay__finish--text">支付成功</p>
+                                <h3>&yen;599.00</h3>
+                                <button class="button" id="cmbWalletPayReset">返回商户</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section class="cmb-intro ld-content ld-content--center">
+            <div class="row align-center">
+              <div class="columns small-11 medium-7 large-6">
+                <h2>移动跨行支付<br>全场景的支付体验</h2>
+                <p>借力于招商银行雄厚的移动支付优势，商户可以迅速切入千万级网络化、年轻化、高消费的优质客户群体。招行还将联合入网商户，通过全方位宣传推广、开展系列营销活动等方式，为商户定向导入客流。</p>
+              </div>
+            </div>
+          </section>
+        
+        
+          <section class="cmb-activity ld-content ld-content--center">
+            <div class="row align-center">
+              <div class="columns small-11 medium-7 large-6">
+                <h2 class="main-title">招行一网通随机立减活动</h2>
+                <p>2016 年 12 月 31 日前，凡通过 Ping++ 接入招行一网通的商户，都可以参与随机立减活动，最高每单免减 99 元。</p>
+                <p><a href="https://help.pingxx.com/article/185553" class="anchor">活动细则</a></p>
+                <p><a href="https://dashboard.pingxx.com/?channelApply" class="button cta red">立即申请</a></p>
+              </div>
+            </div>
+          </section>
+        
+          <section class="ld-faq">
+            <div class="row align-center">
+              <div class="small-12 medium-10 large-9 columns">
+                <h4 data-t="financing.faq.title">常见问题</h4>
+                <ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title" data-t="financing.faq.requirements">申请招行一网通支付需要哪些资料？</a>
+                    <div class="accordion-content" data-tab-content>
+                      <ul>
+                        <li>公司五证：营业执照/组织机构代码证/税务登记证/法人身份证明文件/开户许可证</li>
+                        <li>产品介绍：应用场景说明、应用基础信息、应用内截图</li>
+                        <li>公司信息：官网（需有备案信息，可无所销售的产品）</li>
+                        <li>支付负责人信息：姓名、座机、手机号码、邮箱</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title" data-t="financing.faq.steps">商户申请一网通支付的流程是怎样的？</a>
+                    <div class="accordion-content" data-tab-content>
+                      <ol>
+                        <li>注册 Ping++ 账号并激活 Live key</li>
+                        <li>在管理平台进入需要申请分期渠道的应用，并点击 “支付渠道” 中的 “申请渠道参数” 选择所需渠道申请</li>
+                        <li>按照要求，填写参数，并提交</li>
+                        <li>申请周期为 15 个工作日左右</li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title" data-t="financing.faq.industries">C 端用户使用一网通支付的流程是怎样的？</a>
+                    <div class="accordion-content" data-tab-content>
+                      <ol>
+                        <li>选择招行一网通支付方式</li>
+                        <li>首次注册填写四项基本信息（姓名、身份证、银行卡、预留手机号）并输入动态验证码</li>
+                        <li>设置支付密码并完成支付</li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title" data-t="financing.faq.refund">怎么申请参与招行一网通随机立减活动？</a>
+                    <div class="accordion-content" data-tab-content>
+                    <p>8 月 1 日至 12 月 31 日期间，凡通过 Ping++ 接入招行一网通的商户都可以申请参与招行一网通随机立减活动，具体活动参与方式见：<a href="https://help.pingxx.com/article/185553" target="_blank">活动细则</a></p>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title" data-t="financing.faq.fees">参与随机立减活动的商户有哪些要求？</a>
+                    <div class="accordion-content" data-tab-content>
+                    <p>
+                      Ping++ 一网通支付产品接口中将包含交易立减功能，新商户接入即可直接支持。以下两点需注意：
+                      <ul>
+                        <li>招行一网通支付首期支持移动端 App 商户</li>
+                        <li>商户须正式上线一网通支付并发生客户交易</li>
+                      </ul>
+                    </p>
+                    </div>
+                  </li>
+                  <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title" data-t="financing.faq.fees">随机立减的优惠金额是否由招行一网通承担？</a>
+                    <div class="accordion-content" data-tab-content>
+                    <p>
+                    招行总行针对所有参与交易立减活动的商户均给予费用补贴，商户立减成本均由总行费用补贴支出，由系统根据各商户实际立减交易自动扣减。</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <section class="ld-logo-wall">
+          <div class="row align-center">
+            <div class="small-12 medium-10 large-9 columns">
+              <div class="row align-center typical-case-logo-wall">
+                <div class="small-11 medium-5 columns">
+                  <div class="row">
+                    <div class="small-12 medium-10 columns">
+                      <div class="thumbnail-bg shiji">
+                        <div class="small-logo shiji"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="small-11 medium-7 columns">
+                  <h4 class="text-gray">柿集</h4>
+                  <p>申请招行一网通渠道，让主流银行的跨行支付不再成为用户支付的壁垒。</p>
+                  <p><a href="customers/shiji" class="anchor">阅读案例</a></p>
+                  <hr>
+                  <p class="small text-gray">他们在用</p>
+                  <div class="row">
+                    <div class="columns shrink">
+                      <img src="/assets/img/logo-aihetao.svg" alt="爱和淘">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bottom-cta bottom-cta--gray">
+          <div class="row align-center">
+            <div class="small-11 medium-8 large-7 columns">
+              <h3>开放、快捷、安全不止于此的体验<span class="punctuation">。</span></h3>
+              <p><a href="https://dashboard.pingxx.com/register" class="button cta ">免费注册账号</a></p>
+              <p class="small"><a class="anchor" href="/contact#sales">联系销售</a></p>
+            </div>
+          </div>
+        </section>
+        
+        <footer>
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+            </div>
+          </div>
+        </footer>
+        
+        
+    <script src="assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>

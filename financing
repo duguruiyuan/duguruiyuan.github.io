@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.financing">分期支付 | Ping++</title>
+    <link rel="stylesheet" href="assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="Ping++ 现已支持分期支付。在你的 app 内集成分期功能，让更多人买得起你的产品。"  content-t="descriptions.financing"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-light-gray">
+        
+        <div class="top-bar-wrapper">
+          <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="route.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="/products" data-t="top-nav.features">产品</a></li>
+              <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+              <li><a href="/pricing" data-t="top-nav.pricing">定价</a></li>
+              <!-- <li class="is-dropdown-submenu-parent">
+                <a href="#" data-t="top-nav.more">更多</a>
+                <ul class="menu vertical">
+                  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+                  <li><a href="/platform" data-t="top-nav.platform">多级商户</a></li>
+                  <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+                  <li><a href="/financing" data-t="top-nav.financing">分期支付</a></li>
+                  <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+                  <li><a href="/inapp" data-t="top-nav.paybycard">卡支付</a></li>
+                  <li><a href="/apple-pay">Apple Pay</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="https://help.pingxx.com" target="_blank"  data-t="top-nav.help">帮助中心</a></li>
+              <li class="is-dropdown-submenu-parent">
+                <a href="/docs/index" data-t="top-nav.devcenter">开发者中心</a>
+                <ul class="menu vertical">
+                  <li><a href="/docs/overview/" data-t="top-nav.docs">开发指南</a></li>
+                  <li><a href="/api" data-t="top-nav.apireference">API 文档</a></li>
+                  <li><a href="/docs/downloads" data-t="top-nav.download">SDK 下载</a></li>
+                  <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                </ul>
+              </li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li><a href="/products" data-t="top-nav.features">产品</a></li>
+            <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+            <li class="divider"><a href="/pricing"data-t="top-nav.pricing">定价</a></li>
+           <!--  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+            <li><a href="/platform" data-t="top-nav.account">多级商户</a></li>
+            <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+            <li><a href="/financing"data-t="top-nav.financing">分期支付</a></li>
+            <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+            <li class="divider"><a href="/apple-pay">Apple Pay</a></li> -->
+        
+            <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li>
+            <li class="divider"><a href="/docs/" data-t="top-nav.documentation">开发者中心</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li class="divider"><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        <section class="hero" id="hero">
+          <div class="row">
+            <div class="small-12 columns">
+                <div class="hero-copy">
+                  <h1 data-t="financing.hero.heading">分期，让更多人<wbr>买得起你的产品</h1>
+                  <h4 data-t="financing.hero.subheading">选择适合你的分期渠道<span class="punctuation">，</span><br>开启未来的消费力量<span class="punctuation">。</span></h4>
+                  <p>
+                    <a href="https://dashboard.pingxx.com/?channelApply&channel=installments" class="button cta" data-t="financing.hero.cta">立即申请</a>
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="hero-bg hero-bg--coin">
+          </div>
+        </section>
+        
+        <div class="row align-center">
+          <div class="medium-10 large-9 columns">
+            <section class="ld-floating-logo-wall">
+              <div class="row small-up-1 medium-up-3 align-middle">
+                <div class="column"><img src="/assets/img/fq-logo-meme.png" width="122" height="43"/></div>
+                <div class="column"><img src="/assets/img/fq-logo-fql.png" width="94" height="31"/></div>
+                <div class="column"><img src="/assets/img/fq-logo-qg.png" width="208" height="32"/></div>
+              </div>
+            </section>
+          </div>
+        </div>
+        
+        <div id="content" class="ld-content-container">
+        
+        <section class="ld-feature-grid">
+          <div class="row align-center">
+            <div class="small-11 medium-10 large-9 columns">
+              <div class="row small-up-1 medium-up-3 align-top">
+                <div class="ld-feature-grid__column column">
+                  <div class="ld-feature-grid__icon"><img src="/assets/img/fq-happy.svg"></div>
+                  <h5 data-t="financing.features.payfirst.title">降低消费门槛</h5>
+                  <p class="small" data-t="financing.features.payfirst.description">“先消费，后买单” 的形式大幅降低了高价商品的消费门槛，帮助你拓展到全新的客户群体。</p>
+                </div>
+                <div class="ld-feature-grid__column column">
+                  <div class="ld-feature-grid__icon"><img src="/assets/img/fq-pig.svg"></div>
+                  <h5 data-t="financing.features.lowcost.title">低成本、低投入</h5>
+                  <p class="small" data-t="financing.features.lowcost.description">快速回笼资金，一次性全额清算到你的对公账户，你的客户仅需按还款期限向分期渠道还款。</p>
+                </div>
+                <div class="ld-feature-grid__column column">
+                  <div class="ld-feature-grid__icon"><img src="/assets/img/fq-money.svg"></div>
+                  <h5 data-t="financing.features.secure.title">安全极速审核</h5>
+                  <p class="small" data-t="financing.features.secure.description">大数据风控系统，对客户信用数据进行深度分析。分期申请时间少于一小时，更快享受分期服务。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="ld-content ld-content--center" id="overview">
+          <div class="row align-center">
+            <div class="small-11 medium-10 large-9 columns">
+              <h3 data-t="financing.steps.title">便捷的分期消费，<br>让产品更快变现。</h3>
+              <div class="row small-up-1 medium-up-3 align-top ld-feature-grid ld-feature-grid--no-padding">
+                <div class="ld-feature-grid__column column">
+                  <div class="ld-feature-grid__digit">
+                      <h1>1</h1>
+                  </div>
+                  <h6 data-t="financing.steps.apply.title">分期申请</h6>
+                  <p class="small" data-t="financing.steps.apply.description">顾客登录或注册相应分期渠道帐号，向分期渠道发出分期申请。</p>
+                </div>
+                <div class="ld-feature-grid__column column">
+                  <div class="ld-feature-grid__digit">
+                      <h1>2</h1>
+                  </div>
+                  <h6 data-t="financing.steps.pay.title">渠道垫付款项</h6>
+                  <p class="small" data-t="financing.steps.pay.description">分期渠道向你支付顾客的全额货款，完成商品交易。</p>
+                </div>
+                <div class="ld-feature-grid__column column">
+                  <div class="ld-feature-grid__digit">
+                      <h1>3</h1>
+                  </div>
+                  <h6 data-t="financing.steps.installment.title">分期还款</h6>
+                  <p class="small" data-t="financing.steps.installment.description">顾客继续和分期渠道进行分期付款，商户无需承担任何额外费用。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="ld-content ld-content--right ld-content--no-padding ld-content--bluegreen" id="accounts">
+        
+          <div class="row align-middle">
+            <div class="medium-6 small-12 medium-order-2 column ld-content__body">
+              <h3 data-t="financing.newcustomers.title">触及新一代消费者<br>的全新方式</h3>
+              <p data-t="financing.newcustomers.description">让你的 app 支持分期支付，即可完全消除年轻人的消费门槛，与未来的消费力量建立联系。授信由分期渠道的征信系统把关，在给消费者更多购买力的同时，有效保证了客户质量。订单审批后全款即可到账，无需耗时费力，即可获取更多客户。</p>
+            </div>
+            <div class="medium-6 small-12 medium-order-1 column">
+              <div class="ld-fq-feature-account">
+                <div class="ld-fq-buy-card ld-fq-feature-item">
+                  <img src="assets/img/fq-game.svg" alt="" />
+                  <h3>&#165;200<span class="small" data-t="financing.newcustomers.mockup.price">/每月</span></h3>
+                  <div class="buy"><a class="button small secondary" data-t="financing.newcustomers.mockup.button">12 期分期购买</a></div>
+                </div>
+                <div class="ld-fq-feature-item ld-fq-approval device-android-shell">
+                  <div class="device-screen"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+        <section class="ld-faq">
+          <div class="row align-center">
+            <div class="small-12 medium-10 large-9 columns">
+              <h4 data-t="financing.faq.title">常见问题</h4>
+              <ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.requirements">申请这些分期渠道需要哪些资料？</a>
+                  <div class="accordion-content" data-tab-content>
+                    <ul>
+                      <li>公司五证：营业执照/组织机构代码证/税务登记证/法人身份证明文件/开户许可证</li>
+                      <li>产品介绍：应用场景说明、应用基础信息、应用内截图</li>
+                      <li>公司信息：官网（需有备案信息，可无所销售的产品）</li>
+                      <li>支付负责人信息：姓名、座机、手机号码、邮箱</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.steps">申请分期渠道的流程是怎样的？</a>
+                  <div class="accordion-content" data-tab-content>
+                    <ol>
+                      <li>注册 Ping++ 账号并激活 Live key</li>
+                      <li>在管理平台进入需要申请分期渠道的应用，并点击 “支付渠道” 中的 “申请渠道参数” 选择所需渠道申请</li>
+                      <li>按照要求，填写参数，并提交</li>
+                      <li>申请周期为 15 个工作日左右</li>
+                    </ol>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.industries">分期渠道适用于哪些行业？哪些行业不能申请？</a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>由于分期渠道对商户所售卖的产品有最低金额限制，因此适用于商家的类型有：电商、医美、教育、租房等。<br> 不支持的行业有：游戏、互联网金融等。
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.installments">分期的期限有哪些？</a>
+                  <div class="accordion-content" data-tab-content>
+                  分期期限为：3 期、6 期、9 期、12 期等。
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.refund">申请了分期渠道之后是否支持退款？如何申请退款？</a>
+                  <div class="accordion-content" data-tab-content>
+                  支持，在未启动还款前，分期渠道支持客户向商家提出取消分期订单的需求，具体操作请联系 Ping++ 运营人员。
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.fees">申请分期渠道涉及哪些费用？费用分别是多少？</a>
+                  <div class="accordion-content" data-tab-content>
+                  <p>
+                  费用方面，由于不同行业所销售产品的价格不同，具体的分期利息，届时请详细查看合同中的分期利息条款。</p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.clearance">分期渠道的清算周期是怎样的？</a>
+                  <div class="accordion-content" data-tab-content>
+                  分期渠道将以 T+3 或 T+5 的时间周期，将款项一次性全额的清算给商家。用户只需按照约定中的还款周期，定期还款给分期渠道即可。
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="ld-logo-wall">
+          <div class="row align-center">
+            <div class="small-12 medium-10 large-9 columns">
+              <div class="row align-center typical-case-logo-wall">
+                <div class="small-11 medium-5 columns">
+                  <div class="row">
+                    <div class="small-12 medium-10 columns">
+                      <div class="thumbnail-bg mmcar">
+                        <div class="small-logo mmcar"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="small-11 medium-7 columns">
+                  <h4 class="text-gray">哈哈学车</h4>
+                  <p>通过 Ping++ 接入分期乐分期，分期支付上线后整体订单转化率提升相当明显。</p>
+                  <p><a href="customers/mmcar" class="anchor">阅读案例</a></p>
+                  <hr>
+                  <p class="text-gray">他们在用</p>
+                  <div class="row">
+                    <div class="columns shrink">
+                        <img src="/assets/img/logo-shiji.png" alt="柿集">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        </div>
+        
+        <section class="bottom-cta bottom-cta--gray">
+          <div class="row align-center">
+            <div class="small-12 medium-8 large-7 columns">
+              <h3>让更多人买得起你的产品<span class="punctuation">。</span></h3>
+              <p><a href="https://dashboard.pingxx.com/register" class="button cta ">免费注册账号</a></p>
+              <p class="small"><a class="anchor" href="/contact#sales">联系销售</a></p>
+            </div>
+          </div>
+        </section>
+        
+        <footer>
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+            </div>
+          </div>
+        </footer>
+        
+        
+    <script src="assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,496 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.pricing">定价方案 | Ping++</title>
+    <link rel="stylesheet" href="assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="Ping++ 根据你的交易体量和人工服务需求，提供四个等级的服务。注册账号并开始接入支付完全免费。另提供支付渠道代申请服务。"  content-t="descriptions.pricing"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-medium-gray">
+        <div class="top-bar-wrapper">
+          <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="route.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="/products" data-t="top-nav.features">产品</a></li>
+              <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+              <li><a href="/pricing" data-t="top-nav.pricing">定价</a></li>
+              <!-- <li class="is-dropdown-submenu-parent">
+                <a href="#" data-t="top-nav.more">更多</a>
+                <ul class="menu vertical">
+                  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+                  <li><a href="/platform" data-t="top-nav.platform">多级商户</a></li>
+                  <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+                  <li><a href="/financing" data-t="top-nav.financing">分期支付</a></li>
+                  <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+                  <li><a href="/inapp" data-t="top-nav.paybycard">卡支付</a></li>
+                  <li><a href="/apple-pay">Apple Pay</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="https://help.pingxx.com" target="_blank"  data-t="top-nav.help">帮助中心</a></li>
+              <li class="is-dropdown-submenu-parent">
+                <a href="/docs/index" data-t="top-nav.devcenter">开发者中心</a>
+                <ul class="menu vertical">
+                  <li><a href="/docs/overview/" data-t="top-nav.docs">开发指南</a></li>
+                  <li><a href="/api" data-t="top-nav.apireference">API 文档</a></li>
+                  <li><a href="/docs/downloads" data-t="top-nav.download">SDK 下载</a></li>
+                  <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                </ul>
+              </li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li><a href="/products" data-t="top-nav.features">产品</a></li>
+            <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+            <li class="divider"><a href="/pricing"data-t="top-nav.pricing">定价</a></li>
+           <!--  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+            <li><a href="/platform" data-t="top-nav.account">多级商户</a></li>
+            <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+            <li><a href="/financing"data-t="top-nav.financing">分期支付</a></li>
+            <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+            <li class="divider"><a href="/apple-pay">Apple Pay</a></li> -->
+        
+            <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li>
+            <li class="divider"><a href="/docs/" data-t="top-nav.documentation">开发者中心</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li class="divider"><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        <section class="hero">
+          <div class="row">
+            <div class="small-12 columns">
+              <div class="hero-copy price">
+                <h1 data-t="pricing.hero.heading">定价</h1>
+                <p>选择一款适合自己企业的方案</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="pricing-table">
+          <div class="row align-center">
+            <div class="medium-11 columns pricing-table-bg">
+              <div class="row collapse pricing-head-container medium-up-4 small-up-1">
+                <div class="column">
+                  <div class="pricing-head">
+                    <div class="pricing-head__copy">
+                      <h5>免费</h5>
+                      <p>可测试并验证<br>你的支付场景</p>
+                    </div>
+                    <div class="price-wrap">
+                      <h3 class="price"><span class="number"><span class="symbol">¥</span>0</sapn><span class="unit"></span></h3>
+                      <p class="desc">免费</p>
+                    </div>
+                    <a class="button hollow cta" href="https://dashboard.pingxx.com/register">开始使用</a>
+                  </div>
+                  <ul class="pricing-body">
+                    <li>
+                      <p class="pricing-compare api-count"><span class="text" data-title="接口调用次数" data-description="接口调用次数指的是套餐内每月可免费调用的 Ping++ API 请求次数。若商户某个月的调用次数超出当前套餐用量，可以继续正常交易，但商户必须在次月缴付超量账单，否则无法继续超量使用。超出套餐范围的接口调用价格为 10 元／千次。"><span class="icon-check"></span>接口调用 <span class="number">1,000 次</span>／月</span></p>
+                      <p class="pricing-compare firing-rate"><span class="text" data-title="接口并发" data-description="并发上限指的是一秒内商户可以调用 Ping++ API 的次数上限。"><span class="icon-check"></span>接口并发 <span class="number">5 次</span>／秒</span></p>
+                    </li>
+                    <li>
+                      <p class="pricing-compare ticket"><span class="text" data-title="工单响应" data-description="非企业定制版客户工单回复时间为周一至周五 9:00-19:00 。定制版客户工单回复时间为周一至周日 9:00-19:00。国家法定节假日除外。"><span class="icon-check"></span>工单响应 <span class="number">24 小时</span> 内</span></p>
+                      <p class="user-authentic"><span class="text" data-title="身份认证" data-description="独立的第三方接口，指根据用户的姓名、身份证号、银行卡号、手机号，鉴别其身份真伪。此接口按照使用次数单独累加计费，费用 2 元/次。"><span class="icon-check"></span>身份及银行卡认证（付费）</span></p>
+                      <p class="pricing-compare app-count"><span class="text" data-title="多 app 管理" data-description=""><span class="strikethrough">多 app 管理</span></span></p>
+                      <p class="permissions"><span class="text" data-title="权限管理" data-description=""><span class="strikethrough">多用户权限管理</span></span></p>
+                      <p class="pricing-compare channel"><span class="text" data-title="渠道代理" data-description=""><span class="strikethrough">渠道代理申请</span></span></p>
+                      <p class="pricing-compare tech-support"><span class="text"  data-title="技术支持" data-description=""><span class="strikethrough">一对一技术支持</span></span></p>
+                      <p class="pricing-compare customer-support"><span class="text" data-title="客户服务" data-description=""><span class="strikethrough">一对一客户服务</span></span></p>
+                      <p class="upgrade-support"><span class="text" data-title="技术指导" data-description=""><span class="strikethrough">支付系统技术指导</span></span></p>
+                      <p class="account"><span class="text" data-title="账户系统" data-description=""><span class="strikethrough">用户账户系统</span></span></p>
+                      <p class="platform"><span class="text" data-title="商户系统" data-description=""><span class="strikethrough">多级商户系统</span></span></p>
+                      <p class="business"><span class="text" data-title="营销系统" data-description=""><span class="strikethrough">BI 营销系统</span></span></p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <div class="pricing-head">
+                    <div class="pricing-head__copy">
+                      <h5>基础</h5>
+                      <p>可自主一次性<br>接入支付并开始收款</p>
+                    </div>
+                    <div class="price-wrap">
+                      <h3 class="price"><span class="number"><span class="symbol">¥</span>999</sapn><span class="unit">／年</span></h3>
+                      <p class="desc">相当于 ¥2.74 /天</p>
+                    </div>
+                    <a class="button hollow cta" href="https://dashboard.pingxx.com/register">开始使用</a>
+                  </div>
+                  <ul class="pricing-body">
+                    <li>
+                      <p class="pricing-compare api-count"><span class="text" data-title="接口调用次数" data-description="接口调用次数指的是套餐内每月可免费调用的 Ping++ API 请求次数。若商户某个月的调用次数超出当前套餐用量，可以继续正常交易，但商户必须在次月缴付超量账单，否则无法继续超量使用。超出套餐范围的接口调用价格为 10 元／千次。"><span class="icon-check"></span>接口调用 <span class="number">5,000 次</span>／月</span></p>
+                      <p class="pricing-compare firing-rate"><span class="text" data-title="接口并发" data-description="并发上限指的是一秒内商户可以调用 Ping++ API 的次数上限。"><span class="icon-check"></span>接口并发 <span class="number">15 次</span>／秒</span></p>
+                    </li>
+                    <li>
+                      <p class="pricing-compare ticket"><span class="text" data-title="工单响应" data-description="非企业定制版客户工单回复时间为周一至周五 9:00-19:00 。定制版客户工单回复时间为周一至周日 9:00-19:00。国家法定节假日除外。"><span class="icon-check"></span>工单响应 <span class="number">24 小时</span> 内</span></p>
+                      <p class="user-authentic"><span class="text" data-title="身份认证" data-description="独立的第三方接口，指根据用户的姓名、身份证号、银行卡号、手机号，鉴别其身份真伪。此接口按照使用次数单独累加计费，费用 1.5 元/次。"><span class="icon-check"></span>身份及银行卡认证（付费）</span></p>
+                      <p class="pricing-compare app-count"><span class="text" data-title="多 app 管理" data-description="允许同一个登陆帐号创建多个 App，在一个平台上统一管理所有 App 的交易。"><span class="icon-check"></span>同时管理 <span class="number">5 个</span> app</span></p>
+                      <p class="permissions"><span class="text" data-title="权限管理" data-description="提供面向技术人员、财务人员、运营人员、CEO 等不同角色的管理平台权限和功能，方便企业高效实现跨部门协作管理。"><span class="icon-check"></span>多用户权限管理</span></p>
+                      <p class="pricing-compare channel"><span class="text" data-title="渠道代理" data-description=""><span class="strikethrough">渠道代理申请</span></span></p>
+                      <p class="pricing-compare tech-support"><span class="text"  data-title="技术支持" data-description=""><span class="strikethrough">一对一技术支持</span></span></p>
+                      <p class="pricing-compare customer-support"><span class="text" data-title="客户服务" data-description=""><span class="strikethrough">一对一客户服务</span></span></p>
+                      <p class="upgrade-support"><span class="text" data-title="技术指导" data-description=""><span class="strikethrough">支付系统技术指导</span></span></p>
+                      <p class="account"><span class="text" data-title="账户系统" data-description=""><span class="strikethrough">用户账户系统</span></span></p>
+                      <p class="platform"><span class="text" data-title="商户系统" data-description=""><span class="strikethrough">多级商户系统</span></span></p>
+                      <p class="business"><span class="text" data-title="营销系统" data-description=""><span class="strikethrough">BI 营销系统</span></span></p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <div class="pricing-head">
+                    <div class="pricing-head__copy">
+                      <h5>标准</h5>
+                      <p>可在专人服务下<br>搭建你的支付系统</p>
+                    </div>
+                    <div class="price-wrap">
+                      <h3 class="price"><span class="number"><span class="symbol">¥</span>9,999</sapn><span class="unit">／年</span></h3>
+                      <p class="desc">相当于 ¥27.37 /天</p>
+                    </div>
+                    <a class="button hollow cta" href="https://dashboard.pingxx.com/register">开始使用</a>
+                  </div>
+                  <ul class="pricing-body">
+                    <li>
+                      <p class="pricing-compare api-count"><span class="text" data-title="接口调用次数" data-description="接口调用次数指的是套餐内每月可免费调用的 Ping++ API 请求次数。若商户某个月的调用次数超出当前套餐用量，可以继续正常交易，但商户必须在次月缴付超量账单，否则无法继续超量使用。超出套餐范围的接口调用价格为 10 元／千次。"><span class="icon-check"></span>接口调用 <span class="number">100,000 次</span>／月</span></p>
+                      <p class="pricing-compare firing-rate"><span class="text" data-title="接口并发" data-description="并发上限指的是一秒内商户可以调用 Ping++ API 的次数上限。"><span class="icon-check"></span>接口并发 <span class="number">100 次</span>／秒</span></p>
+                    </li>
+                    <li>
+                      <p class="pricing-compare ticket"><span class="text" data-title="工单响应" data-description="非企业定制版客户工单回复时间为周一至周五 9:00-19:00 。定制版客户工单回复时间为周一至周日 9:00-19:00。国家法定节假日除外。"><span class="icon-check"></span>工单响应 <span class="number">60 分钟</span> 内</span></p>
+                      <p class="user-authentic"><span class="text" data-title="身份认证" data-description="独立的第三方接口，指根据用户的姓名、身份证号、银行卡号、手机号，鉴别其身份真伪。此接口按照使用次数单独累加计费，费用 1.2 元/次。"><span class="icon-check"></span>身份及银行卡认证（付费）</span></p>
+                      <p class="pricing-compare app-count"><span class="text" data-title="多 app 管理" data-description="允许同一个登陆帐号创建多个 App，在一个平台上统一管理所有 App 的交易。"><span class="icon-check"></span>同时管理 <span class="number">10 个</span> app</span></p>
+                      <p class="permissions"><span class="text" data-title="权限管理" data-description="提供面向技术人员、财务人员、运营人员、CEO 等不同角色的管理平台权限和功能，方便企业高效实现跨部门协作管理。"><span class="icon-check"></span>多用户权限管理</span></p>
+                      <p class="pricing-compare channel"><span class="text" data-title="渠道代理" data-description="由 Ping++ 专业的客户成功团队帮助申请最合适的支付渠道。"><span class="icon-check"></span>渠道代理申请 ¥999 / 个</span></p>
+                      <p class="pricing-compare tech-support"><span class="text"  data-title="技术支持" data-description="由 Ping++ 专业的客户成功团队提供支付渠道接口培训、支付系统实施跟踪服务，帮助商户完成支付技术对接。"><span class="icon-check"></span><span class="number">5&times;10 时</span> 技术支持</span></p>
+                      <p class="pricing-compare customer-support"><span class="text" data-title="客户服务" data-description="由 Ping++ 专业的客户成功团队提供支付渠道业务培训、支付系统实施跟踪服务，帮助商户完成支付业务对接。"><span class="icon-check"></span><span class="number">5&times;10 时</span> 客户服务</span></p>
+                      <p class="upgrade-support"><span class="text" data-title="技术指导" data-description="商户自身产品升级，需对支付系统结构进行优化时，Ping++ 会提供专业的技术指导，协助顺利完成升级，1 年 2 次。"><span class="icon-check"></span>支付系统技术指导</span></p>
+                      <p class="account"><span class="text" data-title="账户系统" data-description=""><span class="strikethrough">用户账户系统</span></span></p>
+                      <p class="platform"><span class="text" data-title="商户系统" data-description=""><span class="strikethrough">多级商户系统</span></span></p>
+                      <p class="business"><span class="text" data-title="营销系统" data-description=""><span class="strikethrough">BI 营销系统</span></span></p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column">
+                  <div class="pricing-head">
+                    <div class="pricing-head__copy">
+                      <h5>企业定制</h5>
+                      <p>可为你量身定制支付方案<br class="">提供全生命周期的支付延展服务</p>
+                    </div>
+                    <div class="price-wrap">
+                      <h3 class="price"><span class="number"><span class="symbol">¥</span>29,999+</sapn><span class="unit">／年</span></h3>
+                      <p class="desc">相当于 ¥82.37+ /天</p>
+                    </div>
+                    <a class="button hollow cta" href="/contact">开始使用</a>
+                  </div>
+                  <ul class="pricing-body">
+                    <li>
+                      <p class="pricing-compare api-count"><span class="text" data-title="接口调用次数" data-description="接口调用次数指的是套餐内每月可免费调用的 Ping++ API 请求次数。若商户某个月的调用次数超出当前套餐用量，可以继续正常交易，但商户必须在次月缴付超量账单，否则无法继续超量使用。超出套餐范围的接口调用价格为 10 元／千次。"><span class="icon-check"></span>接口调用 <span class="number">500,000+ 次</span>／月</span></p>
+                      <p class="pricing-compare firing-rate"><span class="text" data-title="接口并发" data-description="并发上限指的是一秒内商户可以调用 Ping++ API 的次数上限。"><span class="icon-check"></span>接口并发 <span class="number">200+ 次</span>／秒</span></p>
+                    </li>
+                    <li>
+                      <p class="pricing-compare ticket"><span class="text" data-title="工单响应" data-description="非企业定制版客户工单回复时间为周一至周五 9:00-19:00 。定制版客户工单回复时间为周一至周日 9:00-19:00。国家法定节假日除外。"><span class="icon-check"></span>工单响应 <span class="number">15 分钟</span> 内</span></p>
+                      <p class="user-authentic"><span class="text" data-title="身份认证" data-description="独立的第三方接口，指根据用户的姓名、身份证号、银行卡号、手机号，鉴别其身份真伪。此接口按照使用次数单独累加计费，费用 1 元/次。"><span class="icon-check"></span>身份及银行卡认证（付费）</span></p>
+                      <p class="pricing-compare app-count"><span class="text" data-title="多 app 管理" data-description="允许同一个登陆帐号创建多个 App，在一个平台上统一管理所有 App 的交易。"><span class="icon-check"></span>同时管理 <span class="number">10+ 个</span> app</span></p>
+                      <p class="permissions"><span class="text" data-title="权限管理" data-description="提供面向技术人员、财务人员、运营人员、CEO 等不同角色的管理平台权限和功能，方便企业高效实现跨部门协作管理。"><span class="icon-check"></span>多用户权限管理</span></p>
+                      <p class="pricing-compare channel"><span class="text" data-title="渠道代理" data-description="由 Ping++ 专业的客户成功团队帮助申请最合适的支付渠道，代申请费用为 999 元 / 个。"><span class="icon-check"></span>含 <span class="number">2 个</span> 免费渠道申请</span></p>
+                      <p class="pricing-compare tech-support"><span class="text"  data-title="技术支持" data-description="由 Ping++ 专业的客户成功团队提供支付渠道接口培训、支付系统实施跟踪服务，帮助商户完成支付技术对接。"><span class="icon-check"></span><span class="number">7&times;10 时</span> 技术支持</span></p>
+                      <p class="pricing-compare customer-support"><span class="text" data-title="客户服务" data-description="由 Ping++ 专业的客户成功团队提供支付渠道业务培训、支付系统实施跟踪服务，帮助商户完成支付业务对接。"><span class="icon-check"></span><span class="number">7&times;10 时</span> 客户服务</span></p>
+                      <p class="upgrade-support"><span class="text" data-title="技术指导" data-description="商户自身产品升级，需对支付系统结构进行优化时，Ping++ 会提供专业的技术指导，协助顺利完成升级，1 年 2 次。"><span class="icon-check"></span>支付系统技术指导</span></p>
+                      <p class="account"><span class="text" data-title="账户系统" data-description="适用于有用户账户系统需求的商户。商户可通过使用 Ping++ 提供的一系列标准接口及管理平台，轻松实现充值消费、余额管理等功能。并通过优惠券模版工具，实现营销活动统一管理及监控。"><span class="icon-check"></span>用户账户系统 <span class="secondary label">可搭售</span></span></p>
+                      <p class="platform"><span class="text" data-title="商户系统" data-description="适用于商城和平台类商户的支付系统。商户可通过 Ping++ 多级商户系统，全局管理所有子商户的交易，并根据与子商户的分成规则，高效实现账务清分。"><span class="icon-check"></span>多级商户系统 <span class="secondary label">可搭售</span></span></p>
+                      <p class="business"><span class="text" data-title="营销系统" data-description="一款为商户开发的营销及分析管理工具。将先进的 BI 分析方法与传统的营销系统打通，帮助客户更高效、更精细化的分析、监测和管理自己的营销活动。"><span class="icon-check"></span>BI 营销系统 <span class="secondary label">可搭售</span></span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pricing-section pricing-section__all-plans">
+          <div class="row align-center">
+            <div class="medium-10 column">
+              <div class="row collapse">
+                <div class="column medium-2 small-12 title">所有方案均配备 </div>
+                <div class="column medium-10 small-12">
+                  <ul class="content">
+                    <li class=""><span class="icon-check"></span>7&times;24 小时系统运维</li>
+                    <li class=""><span class="icon-check"></span>聚合支付云 + SDK</li>
+                    <li class=""><span class="icon-check"></span>自助支持</li>
+                    <li class=""><span class="icon-check"></span>金融级安全防护</li>
+                    <li class=""><span class="icon-check"></span>商户管理平台</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="pricing-section pricing-section__customer-logos">
+          <div class="row align-center">
+            <div class="column medium-11 border">
+              <ul class="animate">
+            <li>
+              <figure class="customer-logo customer-logo-redbook">
+                <img src="/assets/img/logo-redbook@2x.png" class="logo" alt="redbook">
+              </figure>
+              <figure class="customer-logo customer-logo-iliovehome">
+                <img src="/assets/img/logo-ilovehome.png" class="logo" alt="我爱我家">
+              </figure>
+              <figure class="customer-logo customer-logo-vipkid">
+                <img src="/assets/img/logo-vipkid@2x.png" class="logo" alt="vipkid">
+              </figure>
+              <figure class="customer-logo customer-logo-niu">
+                <img src="/assets/img/logo-niu.png" class="logo" alt="小牛">
+              </figure>
+              <figure class="customer-logo customer-logo-fotile">
+                <img src="/assets/img/logo-fotile.png" class="logo" alt="方太">
+              </figure>
+              <figure class="customer-logo customer-logo-dingxiang">
+                <img src="/assets/img/testimonial-logo-dingxiang@2x.png" class="logo" alt="丁香诊所">
+              </figure>
+              <figure class="customer-logo customer-logo-bulefocus">
+                <img src="/assets/img/logo-bluefocus.png" class="logo" alt="bluefocus">
+              </figure>
+              <figure class="customer-logo customer-logo-metersbonwe">
+                <img src="/assets/img/logo-metersbonwe.png" class="logo" alt="美特斯邦威">
+              </figure>
+            </li>
+            <li>
+              <figure class="customer-logo customer-logo-redbook">
+                <img src="/assets/img/logo-redbook@2x.png" class="logo" alt="redbook">
+              </figure>
+              <figure class="customer-logo customer-logo-iliovehome">
+                <img src="/assets/img/logo-ilovehome.png" class="logo" alt="我爱我家">
+              </figure>
+              <figure class="customer-logo customer-logo-vipkid">
+                <img src="/assets/img/logo-vipkid@2x.png" class="logo" alt="vipkid">
+              </figure>
+              <figure class="customer-logo customer-logo-niu">
+                <img src="/assets/img/logo-niu.png" class="logo" alt="小牛">
+              </figure>
+              <figure class="customer-logo customer-logo-fotile">
+                <img src="/assets/img/logo-fotile.png" class="logo" alt="方太">
+              </figure>
+              <figure class="customer-logo customer-logo-dingxiang">
+                <img src="/assets/img/testimonial-logo-dingxiang@2x.png" class="logo" alt="丁香诊所">
+              </figure>
+              <figure class="customer-logo customer-logo-bulefocus">
+                <img src="/assets/img/logo-bluefocus.png" class="logo" alt="bluefocus">
+              </figure>
+              <figure class="customer-logo customer-logo-metersbonwe">
+                <img src="/assets/img/logo-metersbonwe.png" class="logo" alt="美特斯邦威">
+              </figure>
+            </li>
+          </ul>
+            </div>
+          </div>
+        </section>
+        <section class="pricing-section pricing-section__contact">
+          <div class="row align-center">
+            <div class="column medium-11">
+              <p class="content">
+                <span>如有疑问或定制化需求</span> <a class="button" href="contact#customized">与 Ping++ 商业团队联系<span class="icon-chevron-right"></span></a>
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="pricing-section pricing-section__faq">
+          <div class="row align-center">
+            <div class="medium-8 column">
+              <h3>常见问题</h3>
+              <ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+                <li class="accordion-item is-active" data-accordion-item>
+                  <a href="#" class="accordion-title">超出接口限制会发生什么？</a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>接口调用次数包含付款、查询、退款、实名认证等所有调用 Ping++ API 的请求，单笔付款可能会多次调用 API。若当月接口调用次数超出所选的套餐限制，并不会立即影响交易。Ping++ 会在次月出具上月的超量账单，商户需在 1 个月内完成付款，否则后续将无法超量调用 API。允许超量是出于保护商户交易考虑，若每月连续超量，建议升级套餐。</p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.steps">在哪里可以看到接口调用上限次数</a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>在管理平台右上角 <em>账户菜单</em> &rsaquo; <em>系统用量</em> 可查看用量，用量达到 80%、 90% 、100% 的时候，Ping++ 会通过短信、邮件等通知用户。API 调用次数实时显示，Ping++ 会实时统计近 30 天的并发峰值，当前月份和近六个月的每个月累计接口调用次数。</p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.industries">什么叫秒级并发上限？</a>
+                  <div class="accordion-content" data-tab-content>
+                    <p>并发上限指的是一秒内商户可以调用 Ping++ API 的次数上限。秒级并发上限的设定，参考了行业的平均数据水平，同时基于了已有数据的分析，可以满足绝大多数商户的使用需求。并发上限的设定除了限制，更多也是出于保护平台所有商户考虑。</p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.refund">如果秒级并发超过了上限，超过的交易请求会被拒绝吗？</a>
+                  <div class="accordion-content" data-tab-content>
+                  <p>秒级并发超过上限，请求会在这一秒被拒绝，用户再次发起请求就不会有问题了，除非是长时间持续高并发。同时，Ping++ 也针对有高并发需求的商户提供定制化套餐服务。</p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title" data-t="financing.faq.fees">身份及银行卡认证接口有什么用？</a>
+                  <div class="accordion-content" data-tab-content>
+                  <p>身份及银行卡认证接口主要用于实名认证，实名认证是指根据用户的姓名、身份证号、银行卡号、手机号，鉴别其身份真伪。实名认证服务按照接口调用次数收取费用，商户需预充值使用此接口。</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="bottom-cta bottom-cta--gray">
+          <div class="row align-center">
+            <div class="small-12 medium-8 large-7 columns">
+              <h3 data-t="bottom-cta.default.title">开始收钱只需几分钟<span class="punctuation">。</span></h3>
+              <p><a href="https://dashboard.pingxx.com/register" class="button cta" data-t="bottom-cta.default.cta">免费注册账号</a></p>
+            </div>
+          </div>
+        </section>
+        
+        <footer>
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+            </div>
+          </div>
+        </footer>
+        
+        <div class="pro-consult">
+          <a id="consult" href="javascript:void(0);" class="button cta">产品咨询</a>
+        </div>
+        <div id="consultSlide" class="pro-slide">
+          <div id="proCon" class="pro-con">
+            <h3>产品咨询</h3>
+            <form data-abide novalidate id="contact" class="pro-form">
+              <input type="hidden" id="source" name="source" value="widget">
+              <div class="">
+                <label>姓名</label>
+                <input type="text" id="name" name="name" required/>
+              </div>
+              <div class="">
+                <label>手机</label>
+                <input type="text" id="phone" name="phone" pattern="phone" required/>
+              </div>
+              <div class="">
+                <label>邮箱</label>
+                <input type="text" id="from" name="customer_email" pattern="email" required/>
+              </div>
+              <div class="">
+                <label>公司名称或网址</label>
+                <input type="text" id="companyname" name="name_or_site" required/>
+              </div>
+              <div class="">
+                <label>公司规模</label>
+                <select class="sel" id="company" name="company" required>
+                  <option value="" selected="selected" disabled="disabled">选择</option>
+                  <option value="50 人以下">50 人以下</option>
+                  <option value="50-100 人">50-100 人</option>
+                  <option value="100-200 人">100-200 人</option>
+                  <option value="200-500 人">200-500 人</option>
+                  <option value="500 人以上">500 人以上</option>
+                </select>
+              </div>
+              <div class="">
+                <label>需求</label>
+                <select class="sel" id="to" name="to_email" required>
+                  <option value="" selected="selected" disabled="disabled">选择</option>
+                  <option value="sales@pingxx.com">产品售前咨询</option>
+                  <option value="sales@pingxx.com">企业定制服务</option>
+                </select>
+              </div>
+              <div class="">
+                <label>描述</label>
+                <textarea rows="3" placeholder="告诉我们如何为你提供帮助" id="description" name="description" required></textarea>
+              </div>
+              <div class="text-right">
+                <button class="medium button alt" id="submit">发送</button>
+                <a id="submiting" class="medium button alt disabled" style="display: none">正在提交...</a>
+              </div>
+            </form>
+          </div>
+          <div id="proSuccess" class="pro-con text-center" style="display: none;">
+            <div class="pos-middle">
+              <div class="pro-ico">
+                <span class="pro-icon-success pro-draw"></span>
+              </div>
+              <p class="pro-txt">请耐心等候<br>我们很快会回复您</p>
+            </div>
+          </div>
+          <div class="pro-close-outer">
+            <p class="pro-tip">关注 <strong>微信公众号</strong><img src="assets/img/qr-ping.png" alt=""> 获取即时资讯</p>
+            <a class="pro-close"></a>
+          </div>
+        </div>
+        
+    <script src="assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>

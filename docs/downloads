@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.docs/downloads">下载 | 开发者中心 | Ping++</title>
+    <link rel="stylesheet" href="../assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="../assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="下载最新的 Ping++ SDK，一次接入 Ping++ SDK，一步让你的 app 同时支持银行卡、支付宝、微信等支付方式，以及未来的所有可能。"  content-t="descriptions.docs/downloads"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-invert">
+        
+        <div class="top-bar-wrapper">
+          <div class="row column">
+            <div class="title-bar show-for-small-only">
+                <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+                <div class="title-bar-title">
+                  <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                    <div class="top-bar__logo"></div>
+                  </a>
+                </div>
+                <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+            </div>
+            
+            <div class="top-bar hide-for-small-only">
+              <div class="top-bar-title">
+                <a href="/" data-attr-t href-t="routeEn.root"><div class="top-bar__logo"></div></a>
+              </div>
+              <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li class="big">
+                    <a href="/docs/"  data-attr-t href-t="routeEn.docsroot" data-t="top-nav.devcenter">开发者中心</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                    <a href="/docs/overview/" data-t="top-nav.docs" data-attr-t href-t="routeEn.guides">开发指南</a>
+                  </li>
+                  <li><a href="/api" data-t="top-nav.apireference" target="_blank">API 文档</a></li>
+                  <li><a href="/docs/downloads" data-t="top-nav.download" data-attr-t href-t="routeEn.downloads">SDK 下载</a></li>
+                  <li><a href="https://pub.pingxx.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                  <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+                  <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <section class="hero hero-docs hero-downloads">
+          <div class="row align-center">
+            <div class="medium-9">
+              <div class="">
+                <div class="row align-middle align-center">
+                  <div class="">
+                    <!-- <h1 data-t="downloads.hero.heading">资源下载</h1> -->
+                    <div class="row downloads-content">
+                      <div class="shrink columns">
+                        <h3>Server SDK</h3>
+                        <ul class="downloads-list">
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-php" target="_blank">
+                              <span>PHP</span>  
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-java" target="_blank">
+                              <span>Java</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-nodejs" target="_blank">
+                              <span>Node.js</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-go" target="_blank">
+                              <span>Go</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-python" target="_blank">
+                              <span>Python</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-ruby" target="_blank">
+                              <span>Ruby</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-csharp" target="_blank">
+                              <span>C#</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row downloads-content">
+                      <div class="shrink columns">
+                        <h3>Client SDK</h3>
+                        <ul class="downloads-list">
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-ios" target="_blank">
+                              <span>iOS</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-android/tree/master" target="_blank">                     
+                              <span>Android</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-js" target="_blank">
+                              <span>HTML5</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row downloads-content">
+                      <div class="shrink columns">
+                        <h3>壹收款 SDK</h3>
+                        <ul class="downloads-list">
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-ios" target="_blank">
+                              <span>iOS</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-android" target="_blank">
+                              <span>Android</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-html5/tree/one" target="_blank">
+                              <span>HTML5</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="row downloads-content">
+                      <div class="shrink columns">
+                        <h3>其他平台 SDK</h3>
+                        <ul class="downloads-list">
+                          <li>
+                            <a href="http://www.apicloud.com/mod_detail?mdId=26597" target="_blank">
+                              <span>APICloud</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="http://plugin.appcan.cn/details.html#392_index" target="_blank">
+                              <span>AppCan</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/litaoyu/cordova-plugin-pingpp" target="_blank">
+                              <span>Cordova</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <!-- <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-html5/tree/one" target="_blank">
+                              <span>Xamarin</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://github.com/PingPlusPlus/pingpp-html5/tree/one" target="_blank">
+                              <span>React Native</span>
+                              <small>查看更新日志</small>
+                            </a>
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="buttons" data-t="downloads.hero.readguides">了解如何使用，请 <a href="/docs/overview/" class="anchor invert">阅读开发指南</a></p>
+            </div>
+          </div>
+          <div class="hero-bg hero-bg--cube">
+            <div class="cube nofill bottom-right">
+              <div class="inner">
+                <div class="side side--1"></div>
+                <div class="side side--2"></div>
+                <div class="side side--3"></div>
+                <div class="side side--4"></div>
+                <div class="side side--5"></div>
+                <div class="side side--6"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li class="divider"><a href="/docs/"  data-attr-t href-t="routeEn.docsroot" data-t="top-nav.devcenter">开发者中心</a></li>
+            <li><a href="/docs/overview/" data-t="top-nav.docs" data-attr-t href-t="routeEn.guides">开发指南</a></li>
+            <li><a href="/api" data-t="top-nav.apireference" target="_blank">API 文档</a></li>
+            <li><a href="/docs/downloads" data-t="top-nav.download" data-attr-t href-t="routeEn.downloads">SDK 下载</a></li>
+            <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        <footer class="invert">
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com/" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 14045638 号 - 1</span></p>
+            </div>
+          </div>
+        </footer>
+        
+        
+    <script src="../assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>

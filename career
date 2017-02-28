@@ -1,0 +1,1181 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.career">加入我们 | Ping++</title>
+    <link rel="stylesheet" href="assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="加入 Ping++，与我们一起来创造一个更好的支付世界。支付不只是一次简单的交易、冰冷的数据和枯燥的报表。支付是一个人体验这个世界的仪轨、生活的轮廓和价值传递的方式。"  content-t="descriptions.career"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-career">
+        <div class="top-bar-wrapper">
+          <div class="row column">
+            <div class="title-bar show-for-small-only">
+                <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+                <div class="title-bar-title">
+                  <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                    <div class="top-bar__logo"></div>
+                  </a>
+                </div>
+                <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+            </div>
+            
+            <div class="top-bar hide-for-small-only">
+              <div class="top-bar-title">
+                <a href="/" data-attr-t href-t="route.root"><div class="top-bar__logo"></div></a>
+              </div>
+              <div class="top-bar-left">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li><a href="/products" data-t="top-nav.features">产品</a></li>
+                  <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+                  <li><a href="/pricing" data-t="top-nav.pricing">定价</a></li>
+                  <!-- <li class="is-dropdown-submenu-parent">
+                    <a href="#" data-t="top-nav.more">更多</a>
+                    <ul class="menu vertical">
+                      <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+                      <li><a href="/platform" data-t="top-nav.platform">多级商户</a></li>
+                      <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+                      <li><a href="/financing" data-t="top-nav.financing">分期支付</a></li>
+                      <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+                      <li><a href="/inapp" data-t="top-nav.paybycard">卡支付</a></li>
+                      <li><a href="/apple-pay">Apple Pay</a></li>
+                    </ul>
+                  </li> -->
+                </ul>
+              </div>
+              <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li><a href="https://help.pingxx.com" target="_blank"  data-t="top-nav.help">帮助中心</a></li>
+                  <li class="is-dropdown-submenu-parent">
+                    <a href="/docs/index" data-t="top-nav.devcenter">开发者中心</a>
+                    <ul class="menu vertical">
+                      <li><a href="/docs/overview/" data-t="top-nav.docs">开发指南</a></li>
+                      <li><a href="/api" data-t="top-nav.apireference">API 文档</a></li>
+                      <li><a href="/docs/downloads" data-t="top-nav.download">SDK 下载</a></li>
+                      <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+                  <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li><a href="/products" data-t="top-nav.features">产品</a></li>
+            <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+            <li class="divider"><a href="/pricing"data-t="top-nav.pricing">定价</a></li>
+           <!--  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+            <li><a href="/platform" data-t="top-nav.account">多级商户</a></li>
+            <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+            <li><a href="/financing"data-t="top-nav.financing">分期支付</a></li>
+            <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+            <li class="divider"><a href="/apple-pay">Apple Pay</a></li> -->
+        
+            <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li>
+            <li class="divider"><a href="/docs/" data-t="top-nav.documentation">开发者中心</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li class="divider"><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        <section class="hero hero-career" id="hero">
+          <div class="row align-center">
+            <div class="small-9 medium-10 large-9 columns">
+              <div class="hero-copy">
+                <h1>我们一起来创造一个更好的<br class="hide-only-for-small">支付世界<span class="punctuation">。</span></h1>
+                <p><a class="targetLink button cta nohover" href="#opening" class="button cta">查看招聘职位</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-bg" id="">
+            <div class="hreo-bg-content" id="polygonContainer"></div>
+          </div>
+        </section>
+        <section class="ld-content ld-content-career" id="">
+        
+          <div id="jobDetails">
+            <div class="row align-center ">
+              <div class="small-10 medium-10 large-9 column">
+                <h2>我们的团队</h2>
+                <h5>你可以在这里找到适合你的团队<span class="punctuation">。</span></h5>
+              </div>
+            </div>
+            <div class="row align-center">
+              <div class="medium-10 large-9 columns">
+                <div class="row align-center">
+                  <div class="small-10 medium-4 column">
+                    <ul class="tabs" data-tabs id="team-tabs">
+                      <li class="tabs-title is-active"><a href="#products">产品 / 设计</a></li>
+                      <li class="tabs-title"><a href="#engineer">工程 / 研发</a></li>
+                      <li class="tabs-title"><a href="#misc">综合职能</a></li>
+                      <li class="tabs-title"><a href="#operations">运营 / 支持</a></li>
+                      <li class="tabs-title"><a href="#marketing">市场 / 销售</a></li>
+                      <li class="tabs-title"><a href="#options">自定义</a></li>
+                    </ul>
+                  </div>
+                  <div class="small-10 medium-8 column">
+                    <div class="tabs-content" data-tabs-content="team-tabs">
+                      <div class="tabs-panel is-active" id="products">
+                        <div class="row align-center">
+                          <div class="small-12 medium-6">
+                            <h3>产品&nbsp;&sol;&nbsp;设计</h3>
+                            <p class="team-desc">从市场分析，到产品设计，再到用户体验，你需要一眼洞穿客户的内心，让所有初次看到你产品的人都有种久别重逢的温暖。</p>
+                            <p><a href="#opening" class="anchor targetLink">查看招聘职位</a></p>
+                          </div>
+                        </div>
+                        <div class="team-signs-bg products"> </div>
+                      </div>
+                      <div class="tabs-panel" id="engineer">
+                        <div class="row align-center">
+                          <div class="small-12 medium-6">
+                            <h3>工程&nbsp;&sol;&nbsp;研发</h3>
+                            <p class="team-desc">为客户提供简单、高效、易用的支付产品，和安全、稳定、可靠的支付系统，在这里，你们是公司业务拓展和增长的基石。</p>
+                            <p><a href="#opening" class="anchor targetLink">查看招聘职位</a></p>
+                          </div>
+                        </div>
+                        <div class="team-signs-bg engineer"></div>
+                      </div>
+                      <div class="tabs-panel" id="misc">
+                        <div class="row align-center">
+                          <div class="small-12 medium-6">
+                            <h3>综合职能</h3>
+                            <p class="team-desc">专业，贴心，条理，童心。源源不断的招募、培养、和激励每一位 Pinger。为公司的高速发展保驾护航。</p>
+                            <p><a href="#opening" class="anchor targetLink">查看招聘职位</a></p>
+                          </div>
+                          <div class="team-signs-bg misc"></div>
+                        </div>
+                      </div>
+                      <div class="tabs-panel" id="operations">
+                        <div class="row align-center">
+                          <div class="small-12 medium-6">
+                            <h3>运营&nbsp;&sol;&nbsp;支持</h3>
+                            <p class="team-desc">既了解产品、又了解客户、更知悉各种支付渠道规则，聪明机智，耐心灵敏，想客户所想，知客户所需，你们是公司的第一线。</p>
+                            <p><a href="#opening" class="anchor targetLink">查看招聘职位</a></p>
+                          </div>
+                        </div>
+                        <div class="team-signs-bg operations"></div>
+                      </div>
+                      <div class="tabs-panel" id="marketing">
+                        <div class="row align-center">
+                          <div class="small-12 medium-6">
+                            <h3>市场&nbsp;&sol;&nbsp;销售</h3>
+                            <p class="team-desc">理解客户痛点，倾听客户需求，挖掘有效渠道，呈现适合的支付解决方案，敢于向遇到的任何人布道 “已经降临但还没完全展开的未来”。</p>
+                            <p><a href="#opening" class="anchor targetLink">查看招聘职位</a></p>
+                          </div>
+                        </div>
+                        <div class="team-signs-bg marketing"></div>
+                      </div>
+                      <div class="tabs-panel" id="options">
+                        <div class="row align-center">
+                          <div class="small-12 medium-6">
+                            <h3>自定义</h3>
+                            <p class="team-desc">假如以上都不是你正在找寻的职位，但又特别热爱我们，同时自己能力又很强，欢迎自定义一个岗位加入我们。</p>
+                            <p><a href="/contact" class="anchor">联系我们</a></p>
+                          </div>
+                        </div>
+                        <div class="team-signs-bg options"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-center">
+            <div class="medium-10 large-9 columns">
+              <div class="row align-center">
+                <div class="small-10 medium-8 columns">
+                  <h2>Pinger 的小生活</h2>
+                  <h5>我们用这样的方式维护着日常的工作和协作方式<span class="punctuation">。</span></h5>
+                </div>
+                <div class="medium-4 columns hide-for-small-only">
+                  <div class="text-right">
+                    <svg width="90px" height="78px" viewBox="811 1415 90 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <polygon id="Page-1-Copy-13" stroke="#4B4B4B" stroke-width="1" fill="none" points="844.463576 1416 812 1448.46358 812 1492 867.753552 1492 900.217128 1459.53857 900.217128 1416"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="pingerStory">
+            <div class="row align-center">
+              <div class="medium-10 large-9 column">
+                <div class="row align-center">
+                  <div class="column small-10 medium-6"></div>
+                  <div class="column small-10 medium-6">
+                    <div class="row content">
+                      <div class="column">
+                        <p>在 Ping++，我们是一群这样的人 —— 极客，艺术家，冒险家，和诗人。我们做每一件事情，都是为了突破和创新，我们坚信与众不同的意义，我们坚信帮助他人的价值。</p>
+                        <p>我们每一个人都有一本 Ping++ 手册，这是只属于我们自己的小读物。这里记录着我们的价值观，行事准则，领导力，效率技巧，客户指南，会议指导，招聘人才，和团队文化。里面的每一句话都是大家投票选出来的，所以我们用这样的方式维护着日常的工作和协作方式，更重要的是 “我们相信什么”。</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <p id="storyMakrup" class="text-markup">
+                        在 Ping++ 任何你觉得舒适的地方都可以作为团队讨论的空间。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="image-walls left">
+              <div class="" id="pingerChat"></div>
+            </div>
+            <div class="story-bg"> </div>
+          </div>
+          <div id="pingerLife">
+            <div class="row align-center">
+              <div class="medium-10 large-9 column">
+                <div class="row align-center benefits-list">
+                  <div class="column medium-6 small-10">
+                    <h2>你将会拥有</h2>
+                    <dl class="">
+                      <dt>行业内有竞争力的薪资</dt>
+                      <dt>丰厚的期权计划</dt>
+                      <dt>每年员工的健康体检</dt>
+                      <dt>免费丰盛的早餐和午餐</dt>
+                      <dt>报销所有职业书籍</dt>
+                      <dt>定期肩颈按摩</dt>
+                      <dt>定期的运动小组活动</dt>
+                      <dt>无限量的零食、饮料和水果</dt>
+                      <dt>室内 PM 2.5 小于 50 的清新空气</dt>
+                      <dt>季度团队建设，和小伙伴快乐玩耍</dt>
+                      <dt>年度旅行，去这个星球上的某个地方待几天</dt>
+                    </dl>
+                    <p class="small benefits-extra"><a href="/contact">&#9650; 你还期待什么福利，如果以上没有列出，欢迎联系告知，我们不想错过你。</a></p>
+                  </div>
+                  <div class="column medium-6 small-10"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="image-walls right">
+              <div class="" id="dinerHall"></div>
+              <div class="bottom">
+                <div id="tabelGame"></div>
+                <div class="desc text-markup">
+                  这里是我们的餐厅，也同样可以作为读书、活动室和游戏空间。这里是 Ping++ 欢笑的聚集地。
+                </div>
+              </div>
+            </div>
+            <div class="life-bg"></div>
+          </div>
+          <div id="pingerOverview">
+            <div class="viewport">
+              <div class="views">
+                <div class="view first"></div>
+                <div class="view second"></div>
+                <div class="view third"></div>
+                <div class="view first"></div>
+              </div>
+            </div>
+            <div class="content text-markup">
+              在 Ping++ ，你可以享受视野宽阔的观景窗，清新的空气，以及和一群充满亲和力的同事们一起工作。
+            </div>
+          </div>
+        </section>
+        <section class="ld-faq ld-career-list" id="opening">
+          <div class="row align-center">
+            <div class="small-12 medium-10 large-9 columns">
+              <div class="ld-content__hero align-middle align-center ">
+                <h2 data-t="career.positions.heading">加入我们</h2>
+                <h5 data-t="career.positions.subheading">我们正在寻找更多才华横溢、怀揣梦想的伙伴，<br class="hide-for-small-only"> 和我们一起做充满挑战的事情。</h5>
+              </div>
+        
+              <ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="false">
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    资深PHP开发工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>资深PHP开发工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>5年以上 PHP 开发经验，熟悉掌握 LNMP 下的开发</li>
+                        <li>熟悉 Mysql 数据库，了解 SQL 优化</li>
+                        <li>熟悉缓存机制(Redis、Memcached等至少了解其中一种)</li>
+                        <li>熟练掌握一种以上主流的 PHP 框架，承担过产品的设计或核心模块的开发</li>
+                        <li>对工作认真负责、能主动驱动自己</li>
+                        <li>对代码质量有追求、有大型网站建设、高并发开发经验或金融支付行业背景优先 </li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>Ping++ 支付相关模块的设计，优化</li>
+                        <li>Ping++ API 接口相关设计，开发，维护</li>
+                        <li>Ping++ 基础架构相关的开发</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;101101&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    产品设计师
+                    <!-- <span class="type ">设计</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>产品设计师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>你热爱创造既美丽、又好用的东西</li>
+                        <li>你有超多深藏不露的技能，能把你想像中的东西变成现实</li>
+                        <li>你喜欢和其他设计师一起切磋新想法，分享知识</li>
+                        <li>你有超强的人际和分析能力。你不会害怕与别人讨论你的真实想法，发现新的问题，用机智的方法解决他们</li>
+                        <li>你有面对商户、终端用户、和开发者的设计经验，能够以不同角度、面对不同类型的用户进行沟通和思考</li>
+                        <li>你对用户体验研究有兴趣，并想要尝试新的设计方法</li>
+                        <li>你能够透过用户研究方法发现用户真实的需求，透过用户测试、访问、调查或其他方式获取对产品有价值的数据，并对其解读</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>你将负责 Ping++ 的 Web 产品 UI/UX 设计</li>
+                        <li>优先考虑有数据可视化、交互设计经验的设计师</li>
+                        <li>优先考虑有 Web 前端基础知识（HTML+CSS)的候选人</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100018&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    前端开发者（UX工程师）
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>前端开发者（UX工程师）</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>你注重用户体验中的每一寸细节</li>
+                        <li>你是 HTML/CSS/JS 大神</li>
+                        <li>你对 CSS/SVG/JS 动画、数据可视化十分感兴趣，是一个用代码进行创作的艺术家</li>
+                        <li>你对设计有直觉感知，既可以和更底层的开发者沟通，也能理解设计的方方面面</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>网页端产品的用户体验开发</li>
+                        <li>构建可持续扩展的 UI 体系</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100042&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    中高级后端测试工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>中高级后端测试工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>你有丰富的测试经验，拥有良好的视角，致力于解放测试行业的生产力</li>
+                        <li>数据库，RESTful API，HTTP等基础知识，你都已掌握</li>
+                        <li>认可手动测试价值的同时，坚持推进功能测试自动化，并善于总结</li>
+                        <li>曾经使用过至少一门编程语言进行测试脚本开发(语言不限，Python, Groovy为佳)</li>
+                        <li>至少调研过两种自动化测试工具，参与过性能测试项目</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>自动化测试的框架建设</li>
+                        <li>性能测试的框架建设</li>
+                        <li>协助改进流程，帮助开发更高效更放心地迭代他们的作品</li>
+                        <li>给 Ping++ 的产品找茬，让它变得更完美</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100404&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    安全渗透测试工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>安全渗透测试工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>熟悉常用的嗅探和扫描技术</li>
+                        <li>精通安全欺骗和攻防工具，如：ARP, SQL注入, 文件上传和 Cookie 的欺骗攻击，WEB常见攻击方式</li>
+                        <li>至少掌握一种脚本语言，熟悉 ShellCode 编写技术</li>
+                        <li>对Linux等主流操作系统安全配置，Mysql/Redis 等服务器的安全配置策略、应用平台的弱点有较深入的理解</li>
+                        <li>精通阿里云计算架构及渗透测试方法者优先考虑</li>
+                        <li>能够带来 Ping++ 线上系统的安全漏洞或者安全审计报告来面试的更佳</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>Web系统，App 的渗透测试工作，并协助开发人员完成修复工作</li>
+                        <li>协助公司内部网络安全的分析及处理</li>
+                        <li>协助改进流程，帮助开发更高效更放心地迭代他们的作品</li>
+                        <li>给 Ping++ 的产品找茬，让它变得更完美</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100504&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    页面重构工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>页面重构工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>1年以上前端开发/网页重构/设计研发经验</li>
+                        <li>深入了解web标准，如：JavaScript、HTML、CSS、主流JS Frameworks及相关web技术等</li>
+                        <li>熟悉使用主流研发流程工具和设计辅助工具，熟悉浏览器原理及兼容性</li>
+                        <li>一定的审美及设计判断力，对用户体验、通用设计、无障碍设计、人机交互等有一定的积累和见解</li>
+                        <li>良好的团队合作精神，关注用户体验细节</li>
+                        <li>计算机或相关本科专业优先，能提供高质量作品优先</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>Ping++ 商户平台的前端开发和维护工作</li>
+                        <li>Ping++ 前端UI框架的开发和维护</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100406&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    产品经理
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>产品经理</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>3年以上工作经验，技术背景优先</li>
+                        <li>有互联网支付、金融产品设计经验</li>
+                        <li>跨团队与部门的沟通能力强，有较强的团队协作意识和能力</li>
+                        <li>自我驱动力强，面对复杂情况能够独立工作</li>
+                        <li>对工作认真负责、能主动驱动自己</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>负责支付产品的规划、设计和优化</li>
+                        <li>深入挖掘企业支付以及周边的潜在需求，并制定出详细的产品设计方案</li>
+                        <li>与相关部门沟通合作，推进产品的快速落地</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100032&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    架构师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>架构师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>5年以上PHP 或 相关Go 开发经验</li>
+                        <li>熟悉 Mysql 等关系型数据库，掌握缓存机制(Redis、Memcached)、MQ</li>
+                        <li>参与或主导过大流量系统架构设计、开发</li>
+                        <li>能独立分析和解决问题</li>
+                        <li>对工作认真负责、能主动驱动自己</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>负责核心系统模块、公共组件设计、开发并文档化</li>
+                        <li>保证并发下的数据一致性和可用性</li>
+                        <li>负责解决、指导项目中遇到的技术难题、参与制定技术标准</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100029&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    监控运维工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>监控运维工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>专科以上学历，计算机、网络等相关专业优先</li>
+                        <li>熟悉 Linux，熟练编写 Shell 脚本</li>
+                        <li>熟悉 Zabbix 或其它运维监控工具，如 Open-Falcon,Nagois 等</li>
+                        <li>良好的沟通能力，团队精神及服务意识</li>
+                        <li>较强的学习能力和责任心，能承受较大的工作压力，适应倒班。早8--晚8，晚8--早8，每班12小时，隔天上班</li>
+                        <li>了解 MySQL、Redis 等优先</li>
+                        <li>有带团队经验优先</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li> Ping++ 7*24 运维团队日常工作管理</li>
+                        <li>Ping++ 应用、系统、网络、云服务、物理设备等日常运行情况的7*24 小时监控及巡检</li>
+                        <li>根据公司的事故处理标准进行通知、汇报、记录、跟进、分析总结</li>
+                        <li>进行网络、系统和应用等故障的初步分析、判断及解决</li>
+                        <li>配合运维及项目部门处理相关业务，如部署应用，发布等</li>
+                        <li>主动发现监控不足之处，提出改进建议</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100026&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    售前工程师/解决方案工程师
+                    <!-- <span class="type ">市场</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>售前工程师/解决方案工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>本科以上学历，2 年以上产品／售前经验，有一定的技术背景</li>
+                        <li>具备优秀的需求分析能力，能洞悉客户的潜在需求，并能提出最佳解决方案</li>
+                        <li>优秀的沟通表达和协调能力，系统的思考能力，方案规划及制作能力</li>
+                        <li>具备极佳的团队管理、协作精神、敬业精神，责任心强、工作积极主动，能自我驱动</li>
+                        <li>有支付产品经验／软件项目实施经验优先</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>配合销售与客户沟通，收集客户业务信息、支付场景信息，整理有效需求，分解功能需求列表</li>
+                        <li>将客户需求转为标准解决方案交付给客户，并协调其它部门推进实施方案</li>
+                        <li>与客户保持方案沟通，及时解答客户疑问、响应新需求，协助销售人员提高客户满意度</li>
+                        <li>导入有效的产品需求反馈，与方案组同事配合完成新产品定义与设计</li>
+                        <li>对销售及业务人员进行技术及产品培训</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;101102&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    新媒体运营主管
+                    <!-- <span class="type ">市场</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>新媒体运营主管</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>有 2 年以上新媒体运营经验，有大项目传播经验</li>
+                        <li>具备市场灵敏度，强逻辑思考能力，优秀的文案能力</li>
+                        <li>对移动支付、Fintech 有所涉猎并感兴趣</li>
+                        <li>拥有职业素养，敬业精神及团队精神，善于学习和创新，极强的自我驱动能力</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>公司所有新媒体内容策划、发布、维护及合作，提升公司品牌形象</li>
+                        <li>微博/微信活动策划与执行，文案设计及撰写</li>
+                        <li>新媒体平台运营指标的设定，效果的追踪，数据分析，反馈及优化</li>
+                        <li>新媒体产品挖掘与运营，掌握新媒体最新动向，将新媒体产品和公司业务结合</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100017&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    市场专员（线上）
+                    <!-- <span class="type ">市场</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>市场专员（线上）</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>负责建立公司线上宣传渠道，并制定产品线上推广计划</li>
+                        <li>负责公司广告线的开拓与维护，SEM 日常维护，协助参与 SEO 优化</li>
+                        <li>技术社区、开发者服务平台、工具服务商等线上合作的开拓和日常运营维护</li>
+                        <li>负责官网内容维护、对外宣传材料更新</li>
+                        <li>分析线上渠道的有效性，做出最优的决策和投入</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>具备 1 年以上互联网产品线上推广经验，对 To B 类型企业有所了解</li>
+                        <li>熟悉广告投放渠道及平台，了解网络广告运作模式</li>
+                        <li>对数据敏感，有一定的数据分析能力，能及时判断和调整投放方案</li>
+                        <li>具备敏锐的市场洞察力，善于学习和创新，能自我驱动</li>
+                        <li>拥有职业素养，敬业精神及团队精神，善于学习和创新，极强的自我驱动能力</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100301&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    文案策划
+                    <!-- <span class="type ">市场</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>文案策划</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>有 1 年以上产品文案经验，文字功底扎实</li>
+                        <li>具备分析产品属性，基于用户来撰写文案的能力</li>
+                        <li>对移动支付、Fintech 有所涉猎并感兴趣，对企业级服务市场有所了解</li>
+                        <li>出色的理解能力和沟通能力，对产品设计有深入了解，能准确传达产品理念</li>
+                        <li>拥有职业素养，敬业精神及团队精神，善于学习和创新，极强的自我驱动能力</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>公司产品、项目、案例、宣传材料等文案策划及撰写</li>
+                        <li>基于产品能力，提炼价值点，输出可用于推广和运营的内容</li>
+                        <li>公司品牌市场推广活动的相关文字策划</li>
+                        <li>协助新媒体运营团队进行信息采编、编辑等工作</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100037&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">上海</span>
+                    资深销售顾问
+                    <!-- <span class="type ">销售</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>资深销售顾问</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>大专及以上学历，专业不限</li>
+                        <li>有相关销售经验者、商务礼仪良好，熟悉计算机和互联网络者优先考虑</li>
+                        <li>善于营销方式创新、产品研究，具备团队协作精神</li>
+                        <li>具备良好的沟通能力和口头表达能力，并熟练操作相关办公软件，工作效率高，责任心强</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>熟悉企业产品，了解并挖掘客户需求</li>
+                        <li>通过公司安排的统一培训，完成培训内容考核上岗</li>
+                        <li>负责跟进客户跟进、后期维护，完成销售指标，管理维护客户关系以及客户间的长期战略合作计划</li>
+                        <li>团队协作，拓宽当地市场</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100802&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    大数据产品经理（广告方向）
+                    <!-- <span class="type ">产品</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>大数据产品经理（广告方向）</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>本科及以上学历，至少3年互联网广告产品经验</li>
+                        <li>完善的广告理论和技术背景，了解展示广告生态体系，熟悉RTB机制、策略设计、客户需求分析、数据分析、产品规划</li>
+                        <li>学习能力强，拥有优秀的逻辑思维能力</li>
+                        <li>有具备强烈的责任心、优秀的分析与解决问题能力、沟通与协调能力</li>
+                        <li>具有良好的沟通能力，和良好的团队合作精神</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>负责收集展示广告生态体系中各类客户的需求（主要集中在DSP及SSP），进行市场及竞争分析、协助进行市场推广等</li>
+                        <li>负责与合作伙伴的协调沟通，共同设计、研发适合Ping++业务特点的广告类产品</li>
+                        <li>负责Ping++广告类产品的MRD产出、进行产品设计、制定产品规划，协调及推动研发团队按时、高质量完成产品开发</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;101005&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    金融反欺诈产品经理
+                    <!-- <span class="type ">产品</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>金融反欺诈产品经理</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>具有金融、统计、数学、商业或相关专业本科以上学历</li>
+                        <li>拥有信用卡、消费信贷等信贷产品的申请反欺诈策略制定或支付机构交易反欺诈策略制定的3-5年工作经验</li>
+                        <li>良好的逻辑思维与表达能力，包括口头和书面表达能力</li>
+                        <li>责任心强，具备良好团队合作精神，能够承担压力，具备较强的学习能力和独立解决问题的能力</li>
+                        <li>具备较强的逻辑能力和数据分析能力、熟练的口头和书面表达能力</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>根据Ping++的业务及数据特点，进行反欺诈规则的建设和部署</li>
+                        <li>跟踪全球范围内欺诈事件及发展趋势，并吸取经验优化Ping++反欺诈规则</li>
+                        <li>监测风险数据的波动，及时发现数据异常情况，并进行分析和处理</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;101004&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    金融风控产品经理
+                    <!-- <span class="type ">产品</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>金融风控产品经理</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>具有金融、统计、数学、商业或相关专业本科以上学历</li>
+                        <li>金融机构风险管理岗位3-5年工作经验</li>
+                        <li>良好的逻辑思维与表达能力，包括口头和书面表达能力</li>
+                        <li>责任心强，具备良好团队合作精神，能够承担压力，具备较强的学习能力和独立解决问题的能力</li>
+                        <li>具备较强的逻辑能力和数据分析能力、熟练的口头和书面表达能力</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>根据Ping++的业务及数据特点，设计信贷类产品的模式，制定信贷类产品的授信策略及审批流程</li>
+                        <li>建立与金融信贷产业链上其他企业的合作关系，共同研发信贷类产品的策略方案</li>
+                        <li>监测及反馈与Ping++信贷类产品相关的市场风险、操作风险和政策风险，并制定应对方案</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;101003&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    前端开发工程师
+                    <!-- <span class="type ">产品</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>前端开发工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>熟练掌握 HTML,CSS,Javascript 等前端技术</li>
+                        <li>了解整个前端开发流程，对后端和http协议有一定了解，了解网站性能优化，独立负责过复杂的前端模块设计开发，或者做过大项目</li>
+                        <li>有扎实的 CSS2、CSS3 基本功，对 W3C 标准理解深刻</li>
+                        <li>对标签语义化及数据与表现分离理解深刻</li>
+                        <li>有响应式页面开发经验，有 bootstrap 开发经验优先</li>
+                        <li>有良好的审美观，有 UI、UE 设计能力优先</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>包含但不限于 Ping++ 官网、管理平台及内部平台的前端开发工作</li>
+                        <li>参与 Ping++ 客户端 SDK 的设计及开发</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;101002&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    中高级PHP工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>中高级PHP工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>3年以上 PHP 开发经验，熟悉掌握 LNMP 下的开发</li>
+                        <li>熟悉 Mysql 数据库，了解 SQL 优化</li>
+                        <li>熟悉缓存机制(Redis、Memcached等至少了解其中一种)</li>
+                        <li>熟练掌握一种以上主流的 PHP 框架，承担过产品的设计或核心模块的开发</li>
+                        <li>对工作认真负责、能主动驱动自己</li>
+                        <li>了解 Go语言，有 Go 语言开发经验优先</li>
+                        <li>对代码质量有追求、有大型网站建设、高并发开发经验或金融支付行业背景优先 </li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>Ping++ 支付相关模块的设计，优化</li>
+                        <li>Ping++ API 接口相关设计，开发，维护</li>
+                        <li>Ping++ 基础架构相关的开发</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100503&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    大数据研发工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>大数据研发工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>互联网及传统IT公司领域1年以上研发经验</li>
+                        <li>计算机及相关专业本科以上学历，具有良好的数学、统计学、计算机相关知识</li>
+                        <li>深厚的Java/C++功底</li>
+                        <li>参与过分布式高性能服务的设计开发，有大规模分布式系统的实践经验者优先</li>
+                        <li>熟练掌握linux下多线程及网络编程</li>
+                        <li>熟悉hadoop以及mapreduce编程模型</li>
+                        <li>具备编写、优化复杂SQL的能力</li>
+                        <li>熟悉MySQL数据库，熟练使用Shell、Python、Perl、Tcl等脚本语言之一</li>
+                        <li>对数据敏感，具备良好的逻辑思维能力、组织沟通能力、具有团队精神以及优秀的问题解决能力</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>在Tech Lead领导下完成Ping++大数据平台建设</li>
+                        <li>负责大数据ETL的具体实现与性能优化，构建Data Warehouses</li>
+                        <li>负责与业务端对接的API开发</li>
+                        <li>负责平台中数据质量的治理与管控</li>
+                        <li>负责与内外部数据源沟通，梳理业务所需数据，并制定数据加载策略</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100014&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    大数据算法工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>大数据算法工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>精通Linux C/C++/Java编程，熟悉python、shell、perl等脚本语言</li>
+                        <li>精通操作系统原理、数据结构、算法、网络编程、多线程编程技术</li>
+                        <li>大型互联网及IT公司，1年以上相关工作经验</li>
+                        <li>良好的团队合作，较强的沟通能力，对解决挑战型问题充满激情</li>
+                        <li>具备优秀的逻辑思维能力，对解决挑战性问题充满热情，善于解决问题和分析问题</li>
+                        <li>有强烈的上进心和求知欲，善于学习新事物，渴望用技术改变未来</li>
+                        <li>有大规模数据挖掘/推荐系统/机器学习的系统架构设计经验者优先</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>在Tech Lead领导下完成Ping++大数据核心技术／算法（个人／企业画像标签挖掘、企业BI系统、精准营销模型等）研发工作</li>
+                        <li>建立和完善适合大规模数据分析、挖掘、建模、产品呈现的线上服务系统</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100505&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    测试工程师
+                    <!-- <span class="type ">研发</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>测试工程师</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>你有丰富的测试经验，拥有良好的视角，致力于解放测试行业的生产力</li>
+                        <li>数据库，RESTful API，HTTP等基础知识，你都已掌握</li>
+                        <li>认可手动测试价值的同时，坚持推进功能测试自动化，并善于总结</li>
+                        <li>曾经使用过至少一门编程语言进行测试脚本开发</li>
+                        <li>至少调研过两种自动化测试工具，参与过性能测试项目</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>自动化测试的框架建设</li>
+                        <li>性能测试的框架建设</li>
+                        <li>协助改进流程，帮助开发更高效更放心地迭代他们的作品</li>
+                        <li>给 Ping++ 的产品找茬，让它变得更完美</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;101301&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">北京</span>
+                    资深销售顾问
+                    <!-- <span class="type ">销售</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>资深销售顾问</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>大专及以上学历，专业不限</li>
+                        <li>有相关销售经验者、商务礼仪良好，熟悉计算机和互联网络者优先考虑</li>
+                        <li>善于营销方式创新、产品研究，具备团队协作精神</li>
+                        <li>具备良好的沟通能力和口头表达能力，并熟练操作相关办公软件，工作效率高，责任心强</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>熟悉企业产品，了解并挖掘客户需求</li>
+                        <li>通过公司安排的统一培训，完成培训内容考核上岗</li>
+                        <li>负责跟进客户跟进、后期维护，完成销售指标，管理维护客户关系以及客户间的长期战略合作计划</li>
+                        <li>团队协作，拓宽当地市场</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100034&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">深圳</span>
+                    资深销售顾问
+                    <!-- <span class="type ">销售</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>资深销售顾问</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>大专及以上学历，专业不限</li>
+                        <li>有相关销售经验者、商务礼仪良好，熟悉计算机和互联网络者优先考虑</li>
+                        <li>善于营销方式创新、产品研究，具备团队协作精神</li>
+                        <li>具备良好的沟通能力和口头表达能力，并熟练操作相关办公软件，工作效率高，责任心强</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>熟悉企业产品，了解并挖掘客户需求</li>
+                        <li>通过公司安排的统一培训，完成培训内容考核上岗</li>
+                        <li>负责跟进客户跟进、后期维护，完成销售指标，管理维护客户关系以及客户间的长期战略合作计划</li>
+                        <li>团队协作，拓宽当地市场</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;100803&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">
+                    <span class="location">深圳</span>
+                    市场经理
+                    <!-- <span class="type ">市场</span> -->
+                  </a>
+                  <div class="accordion-content" data-tab-content>
+                    <h4>市场经理</h4>
+                    <h6>期待中的你</h6>
+                    <ul>
+                        <li>有 3 年以上市场工作经验，熟悉互联网行业市场宣传渠道</li>
+                        <li>熟悉华南互联网市场，能制定有效策略提升公司在华南区域市场的占有率</li>
+                        <li>具备市场灵敏度，拥有广泛的行业资源，具备组织市场活动的能力</li>
+                        <li>能建立高效的区域市场团队，带领区域市场团队发展和成长</li>
+                        <li>拥有职业素养，敬业精神及团队精神，善于学习和创新，极强的自我驱动能力</li>
+                    </ul>
+                    <h6>你将负责</h6>
+                    <ul>
+                        <li>负责华南区域市场工作，制定市场目标，分解区域市场预算</li>
+                        <li>负责区域市场合作、品牌宣传、当地市场活动的开展</li>
+                        <li>负责收集华南区域市场信息，研究适合当地市场的推广模式</li>
+                        <li>负责为当地销售同事提供客户资源支持，发现潜在商业机会</li>
+                        <li>负责华南区域市场团队的建设和管理，制定高效的工作流程并执行</li>
+                    </ul>
+                    <h6>能给你的</h6>
+                    <ul>
+                      <li>和这个星球上最聪明的一帮人一起奋斗。（说的就是我们现在这群程序员）</li>
+                      <li>自我成长并分享公司的成长果实。（越来越大的办公室，越来越多的团队建设，当然还有期权）</li>
+                      <li>百年之后，你我的肉身终将陨灭，而我们的精神和梦想依然可以在代码中相见。我们满怀期待，期待优秀的你，来一起定义 Ping++</li>
+                    </ul>
+                      <p><a href="http://www.hotjob.cn/wt/pingplusplus/web/index/webPositionN300!getOnePosition?postId&#x3D;101202&amp;recruitType&#x3D;2&amp;brandCode&#x3D;1&amp;importPost&#x3D;0" class="button large" target="_blank">我要加入</a></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="nav block-grid">
+          <div class="row">
+            <div class="medium-12 columns">
+              <ul class="nav block-grid" data-equalizer data-equalize-on="medium">
+                <li>
+                  <a class="block-grid-link" href="about" data-equalizer-watch>
+                    <h5 data-t="career.bottom.about.title">关于我们</h5>
+                    <span class="description" data-t="career.bottom.about.description">对我们而言，支付是古老的文明，无关金钱，而是价值的传递。</span>
+                    <span class="anchor" data-t="career.bottom.about.link">访问关于我们</span>
+                  </a>
+                </li>
+                <li><a class="block-grid-link" href="/media" data-equalizer-watch><h5 data-t="career.bottom.media.title">媒体报道</h5>
+                  <span class="description" data-t="career.bottom.media.description">我们获得了很多外界认可，对我们而言，<br>这亦是更多的责任。</span>
+                  <span class="anchor" data-t="career.bottom.media.link">访问媒体报道</span>
+                </a></li>
+                <li><a class="block-grid-link" href="/contact" data-equalizer-watch><h5 data-t="career.bottom.contact.title">联系我们</h5>
+                  <span class="description" data-t="career.bottom.contact.description">你的反馈对我们来说很重要，我们非常希望听到你的建议或想法。</span>
+                  <span class="anchor" data-t="career.bottom.contact.link">前往联系我们</span>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <footer class="invert">
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com/" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 14045638 号 - 1</span></p>
+            </div>
+          </div>
+        </footer>
+        
+        
+    <script src="assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,637 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.index">Ping++ 聚合支付系统 | 支付宝 微信支付 分期 Apple Pay</title>
+    <link rel="stylesheet" href="assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="Ping++ 的聚合支付云 SDK 让你在 app 和网站中轻松加入支付功能。一次申请开通多个支付渠道，一次接入所有平台和支付方式，一站管理所有交易。"  content-t="descriptions.index"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="">
+        <div class="top-bar-wrapper">
+          <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="route.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="/products" data-t="top-nav.features">产品</a></li>
+              <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+              <li><a href="/pricing" data-t="top-nav.pricing">定价</a></li>
+              <!-- <li class="is-dropdown-submenu-parent">
+                <a href="#" data-t="top-nav.more">更多</a>
+                <ul class="menu vertical">
+                  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+                  <li><a href="/platform" data-t="top-nav.platform">多级商户</a></li>
+                  <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+                  <li><a href="/financing" data-t="top-nav.financing">分期支付</a></li>
+                  <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+                  <li><a href="/inapp" data-t="top-nav.paybycard">卡支付</a></li>
+                  <li><a href="/apple-pay">Apple Pay</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="https://help.pingxx.com" target="_blank"  data-t="top-nav.help">帮助中心</a></li>
+              <li class="is-dropdown-submenu-parent">
+                <a href="/docs/index" data-t="top-nav.devcenter">开发者中心</a>
+                <ul class="menu vertical">
+                  <li><a href="/docs/overview/" data-t="top-nav.docs">开发指南</a></li>
+                  <li><a href="/api" data-t="top-nav.apireference">API 文档</a></li>
+                  <li><a href="/docs/downloads" data-t="top-nav.download">SDK 下载</a></li>
+                  <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                </ul>
+              </li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li><a href="/products" data-t="top-nav.features">产品</a></li>
+            <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+            <li class="divider"><a href="/pricing"data-t="top-nav.pricing">定价</a></li>
+           <!--  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+            <li><a href="/platform" data-t="top-nav.account">多级商户</a></li>
+            <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+            <li><a href="/financing"data-t="top-nav.financing">分期支付</a></li>
+            <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+            <li class="divider"><a href="/apple-pay">Apple Pay</a></li> -->
+        
+            <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li>
+            <li class="divider"><a href="/docs/" data-t="top-nav.documentation">开发者中心</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li class="divider"><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        
+        <section class="hero fullheight">
+          <div class="row align-center">
+            <div class="small-12 medium-10 columns fullheight-column-align">
+               <div class="row">
+                  <div class="small-12 medium-5 columns align-self-middle">
+                    <div class="hero-scene-intro">
+                      <div class="viewport hide-for-small-only">
+                        <ul class="hero-scene-text">
+                          <li>
+                            <h1 class="title" data-t="index.hero.scene.app">在任何场景，<br>向任何人收款。</h1>
+                          </li>
+                          <li>
+                            <h1 class="title" data-t="index.hero.scene.transfer">向个人或企业<br>付款<span class="punctuation">、</span>发红包。</h1>
+                          </li>
+                          <li>
+                            <h1 class="title" data-t="index.hero.scene.offline">实现余额<span class="punctuation">、</span>优惠券<br>等支付功能。</h1>
+                          </li>
+                          <li>
+                            <h1 class="title" data-t="index.hero.scene.web">管理全平台<br>的交易和账务。</h1>
+                          </li>
+                          <li>
+                            <h1 class="title" data-t="index.hero.scene.app">在任何场景，<br>向任何人收款。</h1>
+                          </li>
+                        </ul>
+                      </div>
+                      <h1 class="show-for-small-only" data-t="index.hero.heading">轻轻松松接入支付<span class="punctuation">。</span></h1>
+                      <h4 class="intro" data-t="index.hero.subheading">自由组合的支付工具，<br>让你轻松应对商业变现。</h4>
+                      <p>
+                        <a class="button cta" href="/products" data-t="index.hero.cta">了解 Ping++</a>&nbsp;<a class="button cta hollow" href="https://dashboard.pingxx.com/register" data-t="index.hero.cta">免费注册</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        
+          <div class="hero-bg home">
+          <div class="row align-right">
+            <div class="small-12 medium-7 columns align-self-middle">
+              <div class="line-box-wrap">
+                <div class="line-box-viewport">
+                  <div class="line-boxes">
+                    <div class="box web"></div>
+                    <div class="box apple-pay"></div>
+                    <div class="box hongbao"></div>
+                    <div class="box qr"></div>
+                    <div class="box web"></div>
+                    <div class="box apple-pay"></div>
+                    <div class="box hongbao"></div>
+                    <div class="box qr"></div>
+                  </div>
+                  <div class="scene-slider-wrap">
+                    <div class="iphone-hand-bg"> </div>
+                    <div class="device-iphone6" id="iphone6">
+                      <div class="topbar">
+                        <span class="camera"></span>
+                        <span class="speaker-before"></span>
+                        <span class="speaker"></span>
+                      </div>
+                      <span class="home"></span>
+                      <div class="screen">
+                        <div class="scene-viewport">
+                          <div class="scene-viewes">
+                            <div class="scene apple-pay"></div>
+                            <div class="scene hongbao"></div>
+                            <div class="scene qr"></div>
+                            <div class="scene web"></div>
+                            <div class="scene apple-pay"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          </div>
+        
+        </section>
+        
+        
+        <div class="nav block-grid new-features no-border">
+        
+          <!-- <div class="row">
+            <div class="columns"> -->
+              <ul>
+                <li class="cmb white-text">
+                  <a class="block-grid-link" href="/products#account">
+                    <h5>账户系统</h5>
+                    <span class="description">快速实现基于用户账户的<br>余额和优惠券功能。</span>
+                    <span class="anchor">了解更多</span>
+                    <span class="bg"></span>
+                  </a>
+                </li>
+                <li class="api white-text">
+                  <a class="block-grid-link" href="/products#paymentmethods">
+                    <h5>新渠道和接口</h5>
+                    <span class="description">Apple Pay、京东白条、<br>招行一网通均已开放申请。</span>
+                    <span class="anchor">联系销售</span>
+                    <span class="bg"></span>
+                  </a>
+                </li>
+                <li class="nonprofits">
+                  <a class="block-grid-link" href="/products#platform">
+                    <h5>多级商户系统</h5>
+                    <span class="description">适用于商城和平台类产品的财务解决方案，高效实现账务清分。</span>
+                    <span class="anchor">了解更多</span>
+                    <span class="bg"></span>
+                  </a>
+                </li>
+                <li class="certificate white-text">
+                  <a class="block-grid-link" href="/certificate">
+                    <h5>PCI 安全认证</h5>
+                    <span class="description">Ping++ 通过 PCI DSS 认证，让您的支付流程更安全、可靠。</span>
+                    <span class="anchor">了解更多</span>
+                    <span class="bg"></span>
+                  </a>
+                </li>
+              </ul>
+            <!-- </div>
+          </div> -->
+        
+        </div>
+        
+        
+        <div class="home-content">
+        
+        <section class="home-feature home-feature--text-centered" id="api">
+          <div class="row">
+            <div class="medium-12 columns">
+        
+              <div class="row align-center">
+                <div class="small-11 medium-7 columns">
+                  <div class="home-feature__copy">
+                    <h5 data-t="index.features.api.title">聚合支付系统</h5>
+                    <h2 data-t="index.features.api.heading">灵活<span class="punctuation">、</span>强大<span class="punctuation">。</span></h2>
+                    <p data-t="index.features.api.description">聚合支付，一切才刚刚开始。你需要自由搭建灵活、强大的支付系统，来应对任何行业和场景的商业需求。无论接入支付、管理交易、分析数据，还是在你的 app 中添加余额、优惠券等支付相关功能，调用 Ping++ API 就能轻松实现，随心定制属于自己的支付套件，同时享用安全、稳定、高性能的底层设施。看似复杂的支付系统，从此触手可及。</p>
+                    <p><a href="/products" class="anchor">了解 Ping++ 产品</a></p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="home-feature__bg api"></div>
+        
+              <div class="row align-center">
+                <div class="medium-7 columns">
+                  <div class="home-feature__stats">
+                    <div class="row align-center">
+                      <div class="column shrink">
+                        <span class="large-digit">7</span>
+                        <span class="unit" data-t="index.stats.api.code.unit">行</span>
+                        <span class="content" data-t="index.stats.api.code.content">代码</span>
+                      </div>
+                      <div class="column shrink">
+                        <span class="large-digit">1</span>
+                        <span class="unit" data-t="index.stats.api.integration.unit">次</span>
+                        <span class="content" data-t="index.stats.api.integration.content">接入</span>
+                      </div>
+                      <div class="column shrink">
+                        <span class="large-digit">22</span>
+                        <span class="unit" data-t="index.stats.api.providers.unit">个</span>
+                        <span class="content" data-t="index.stats.api.providers.unit">渠道</span>
+                      </div>
+                      <div class="column shrink">
+                        <span class="large-digit">99.99</span>
+                        <span class="unit">%</span>
+                        <span class="content" data-t="index.stats.api.reliability.content">系统可用性</span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        
+            <hr>
+        
+            <div class="row align-center">
+              <div class="medium-10 columns">
+                <div class="home-feature__iconwall" id="iconwall">
+                  <div class="row small-up-2 medium-up-4">
+                    <div class="column iconwall-item">
+                      <div class="wall-icon integration"></div>
+                      <h6 data-t="index.iconwall.integration.title">接入便利</h6>
+                      <p data-t="index.iconwall.integration.description">全平台 SDK 让你最小化接入支付的时间与人力。</p>
+                    </div>
+                    <div class="column iconwall-item">
+                      <div class="wall-icon reliable"></div>
+                      <h6 data-t="index.iconwall.reliable.title">稳定可靠</h6>
+                      <p data-t="index.iconwall.reliable.description">两地三中心容灾系统，确保服务稳定，最快完成交易。</p>
+                    </div>
+                    <div class="column iconwall-item">
+                      <div class="wall-icon transactions"></div>
+                      <h6 data-t="index.iconwall.transactions.title">不介入资金流</h6>
+                      <p data-t="index.iconwall.transactions.description">Ping++ 只负责交易处理，不参与资金清算。</p>
+                    </div>
+                    <div class="column iconwall-item">
+                      <div class="wall-icon security" ></div>
+                      <h6 data-t="index.iconwall.security.title">安全保证</h6>
+                      <p data-t="index.iconwall.security.description">所有数据的传输和存储，已达到 PCI DSS 认证标准。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        
+        <div id="trigger3" class="spacer s0"></div>
+        <section class="home-feature" id="providers">
+          <div class="row">
+            <div class="small-12 medium-7 columns">
+              <div class="home-feature__bg providers">
+                <div class="phone-1" id="phone-1">
+                  <div class="stick-label order-1">
+                    <h6 data-t="index.features.providers.phone1.title">支付和分期</h6>
+                    <p data-t="index.features.providers.phone1.content">让用户用他喜欢的方式向你付款。</p>
+                  </div>
+                </div>
+        
+                <div class="phone-2" id="phone-2">
+                  <div class="stick-label order-2">
+                    <h6 data-t="index.features.providers.phone2.title">红包和转账</h6>
+                    <p data-t="index.features.providers.phone2.content">通过红包或转账接口给用户优惠和返现。</p>
+                  </div>
+                </div>
+        
+                <div class="shadow" id="phone-shadow">
+                  <div class="inner"></div>
+                </div>
+        
+              </div>
+            </div>
+            <div class="small-12 medium-5 columns align-self-middle">
+              <div class="row align-center">
+                <div class="small-11 medium-10 columns">
+                  <div class="home-feature__copy" id="providers-copy">
+                    <h5 data-t="index.features.providers.title">支付方式</h5>
+                    <h2 data-t="index.features.providers.heading">给消费者更多选择，<br>
+            给你未来的保障<span class="punctuation">。</span></h2>
+                    <p data-t="index.features.providers.description">在支付变革的时代，Ping++ 让你在第一时间，启用最新的支付方式。为每个平台和消费群体优化支付体验，有效提高订单转化率。只需递交一次资料，即可同时申请多个支付渠道账号。专业的用户成功团队，帮你构造最合适的支付解决方案。</p>
+                    <p><a href="/products#paymentmethods" class="anchor" data-t="index.features.providers.link">查看所有支付渠道</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <script>
+        	// build tween
+        
+        
+        </script>
+        
+        <section class="home-feature" id="dashboard">
+          <div class="row align-center">
+            <div class="small-11 medium-10 columns">
+              <div class="row">
+                <div class="small-12 medium-5 columns small-order-2 medium-order-1">
+                  <div class="home-feature__copy" id="dashboard-copy">
+                    <h5 data-t="index.features.dashboard.title">管理平台</h5>
+                    <h2 data-t="index.features.dashboard.heading">集中管理交易,<br>企业级的超能力。</h2>
+                    <p data-t="index.features.dashboard.description">在简单易用的管理平台，快速概览当日的交易状况。你的财务负责人可以集中进行跨渠道的交易管理，查账对账，数据分析，输出报表等。开放多角色的职能权限设置，方便开发、运营和财务的高效协作。</p>
+                    <p><a href="/dashboard" class="anchor" data-t="index.features.dashboard.link">了解更多</a></p>
+                  </div>
+                </div>
+                <div class="small-12 medium-7 columns small-order-1 medium-order-2">
+                  <div class="home-feature__bg dashboard"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="home-testimonial">
+          <div class="orbit" data-orbit>
+            <ul class="orbit-container">
+              <li class="is-active orbit-slide">
+                <div class="slide-content">
+                  <div class="row align-center">
+                    <div class="small-11 medium-7 columns">
+                      <h4 data-t="index.quote.deyin">&ldquo;得音的微信公众号和 PC 网站都是通过 Ping++ 接入的支付<span class="punctuation">，</span>帮我们节省了不少开发时间与精力<span class="punctuation">，</span>而他们优质的支付体验<span class="punctuation">，</span>也让付费转化率明显提高了<span class="punctuation">。</span>&rdquo;</h4>
+                      <p><span class="testimonial-logo border-right white deyin"></span><a href="/customers/deyin" class="anchor" data-t="index.quote.cta">查看用户案例</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="orbit-image deyin"></div>
+              </li>
+              <li class="orbit-slide">
+                <div class="slide-content">
+                  <div class="row align-center">
+                    <div class="small-12 medium-7 columns">
+                      <h4 data-t="index.quote.tezign">&ldquo;就在我们为支付接入感到头疼的时候<span class="punctuation">，</span>Ping++ 出现了<span class="punctuation">，</span>它的开发文档非常清晰<span class="punctuation">，</span>帮助我们快速解决了支付问题<span class="punctuation">。</span>&rdquo;</h4>
+                      <p><span class="testimonial-logo border-right white tezign"></span><a href="/customers/tezign" class="anchor" data-t="index.quote.cta">查看用户案例</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="orbit-image tezign"></div>
+              </li>
+              <li class="orbit-slide">
+                <div class="slide-content">
+                  <div class="row align-center">
+                    <div class="small-12 medium-7 columns">
+                      <h4 data-t="index.quote.jianshu">&ldquo;为有价值的内容付费已经成为不少年轻人的习惯<span class="punctuation">，</span>Ping++ 提供的支付体验是连接作者和读者的紧密纽带<span class="punctuation">，</span>每一次打赏都是对用户辛勤创作的直接肯定<span class="punctuation">。</span>&rdquo;</h4>
+                      <p><span class="testimonial-logo border-right white jianshu"></span><a href="/customers/jianshu" class="anchor" data-t="index.quote.cta">查看用户案例</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="orbit-image jianshu"></div>
+              </li>
+              <li class="orbit-slide">
+                <div class="slide-content">
+                  <div class="row align-center">
+                    <div class="small-12 medium-7 columns">
+                      <h4 data-t="index.quote.huwai">&ldquo;选择 Ping++<span class="punctuation">，</span>前端和后台服务统一用一套代码<span class="punctuation">，</span>在支付对接模块的代码维护量大大减少<span class="punctuation">，</span>也让我们可以把更多的时间和精力花在自身产品的核心业务上<span class="punctuation">。</span>&rdquo;</h4>
+                      <p><span class="testimonial-logo border-right white huwai"></span><a href="customers/huwai" class="anchor" data-t="index.quote.cta">查看用户案例</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="orbit-image huwai"></div>
+              </li>
+              <li class="orbit-slide">
+                <div class="slide-content">
+                  <div class="row align-center">
+                    <div class="small-12 medium-7 columns">
+                      <h4 data-t="index.quote.dingxiang">&ldquo;线下医疗机构的筹备期本来就比较长<span class="punctuation">，</span>还好诊所的线下扫码支付功能开通顺利并且及时<span class="punctuation">，</span>选择Ping++<span class="punctuation">，</span>节省时间少走弯路<span class="punctuation">。</span>&rdquo;</h4>
+                      <p><span class="testimonial-logo border-right white dingxiang"></span><a href="/customers/dingxiang" class="anchor" data-t="index.quote.cta">查看用户案例</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="orbit-image dingxiang"></div>
+              </li>
+            </ul>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"></button>
+              <button data-slide="1"></button>
+              <button data-slide="2"></button>
+              <button data-slide="3"></button>
+              <button data-slide="4"></button>
+            </nav>
+          </div>
+        </section>
+        
+        </div>
+        
+        
+        <div class="nav block-grid no-border">
+          <div class="row">
+            <div class="medium-12 columns">
+              <ul class="nav block-grid">
+                <li>
+                  <a class="block-grid-link" href="https://help.pingxx.com/article/114868" target="_blank">
+                    <div class="nav-block-grid__icon">
+                      <img src="assets/img/home-bottom-signup.svg" alt="" />
+                    </div>
+                    <h5 data-t="index.bottom-nav.signup.title">开始接入 Ping++</h5>
+                    <span class="description" data-t="index.bottom-nav.signup.description">免费注册 Ping++ 账号，<br>即可开始接入支付。</span>
+                    <span class="anchor" data-t="index.bottom-nav.signup.link">了解接入流程</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="block-grid-link" href="pricing">
+                  <div class="nav-block-grid__icon">
+                    <img src="assets/img/home-bottom-plans.svg" alt="" />
+                  </div>
+                  <h5 data-t="index.bottom-nav.plans.title">服务方案</h5>
+                  <span class="description" data-t="index.bottom-nav.plans.description">根据你的交易量和对人工服务的需求，<br>选择适合你的服务方案。</span>
+                  <span class="anchor" data-t="index.bottom-nav.plans.link">查看定价详情</span>
+                </a></li>
+                <li>
+                  <a class="block-grid-link" href="contact#customized">
+                    <div class="nav-block-grid__icon">
+                      <img src="assets/img/home-bottom-contact.svg" alt="" />
+                    </div>
+                    <h5 data-t="index.bottom-nav.contact.title">联系我们</h5>
+                    <span class="description" data-t="index.bottom-nav.contact.description">如有疑问或定制化需求，<br>请联系 Ping++ 商业团队。</span>
+                    <span class="anchor" data-t="index.bottom-nav.contact.link">联系销售</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-divider"><hr></div>
+        <section class="bottom-cta bottom-cta--gray">
+          <div class="row align-center">
+            <div class="small-11 medium-10 large-9 columns">
+              <h5 data-t="index.logowall.title">我们每日帮助万余家公司处理交易<span class="punctuation">。</span></h5>
+              <div class="logo-wall">
+                <div class="row small-up-2 medium-up-4 large-up-4 align-middle">
+                  <div class="logo-grid__column column">
+                    <img src="/assets/img/logo-redbook@2x.png" class="logo" alt="小红书">
+                  </div>
+                  <div class="logo-grid__column column">
+                    <img src="/assets/img/logo-vipkid@2x.png" class="logo" alt="vipkid">
+                  </div>
+                  <div class="logo-grid__column column">
+                    <img src="/assets/img/logo-niu.png" class="logo" alt="小牛">
+                  </div>
+                  <div class="logo-grid__column column">
+                    <img src="/assets/img/testimonial-logo-dingxiang@2x.png" class="logo" alt="丁香诊所">
+                  </div>
+                  <div class="logo-grid__column column">
+                    <img src="/assets/img/logo-metersbonwe.png" class="logo" alt="美特斯邦威">
+                  </div>
+                  <div class="logo-grid__column column">
+                    <img src="/assets/img/logo-fotile.png" class="logo" alt="方太">
+                  </div>
+                  <div class="logo-grid__column column">
+                    <img src="/assets/img/logo-ilovehome.png" class="logo" alt="我爱我家">
+                  </div>
+                  <div class="logo-grid__column column">
+                    <img src="/assets/img/logo-bluefocus.png" class="logo" alt="bluefocus">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+        <footer>
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+            </div>
+          </div>
+        </footer>
+        
+        
+        <div class="pro-consult">
+          <a id="consult" href="javascript:void(0);" class="button cta">产品咨询</a>
+        </div>
+        <div id="consultSlide" class="pro-slide">
+          <div id="proCon" class="pro-con">
+            <h3>产品咨询</h3>
+            <form data-abide novalidate id="contact" class="pro-form">
+              <input type="hidden" id="source" name="source" value="widget">
+              <div class="">
+                <label>姓名</label>
+                <input type="text" id="name" name="name" required/>
+              </div>
+              <div class="">
+                <label>手机</label>
+                <input type="text" id="phone" name="phone" pattern="phone" required/>
+              </div>
+              <div class="">
+                <label>邮箱</label>
+                <input type="text" id="from" name="customer_email" pattern="email" required/>
+              </div>
+              <div class="">
+                <label>公司名称或网址</label>
+                <input type="text" id="companyname" name="name_or_site" required/>
+              </div>
+              <div class="">
+                <label>公司规模</label>
+                <select class="sel" id="company" name="company" required>
+                  <option value="" selected="selected" disabled="disabled">选择</option>
+                  <option value="50 人以下">50 人以下</option>
+                  <option value="50-100 人">50-100 人</option>
+                  <option value="100-200 人">100-200 人</option>
+                  <option value="200-500 人">200-500 人</option>
+                  <option value="500 人以上">500 人以上</option>
+                </select>
+              </div>
+              <div class="">
+                <label>需求</label>
+                <select class="sel" id="to" name="to_email" required>
+                  <option value="" selected="selected" disabled="disabled">选择</option>
+                  <option value="sales@pingxx.com">产品售前咨询</option>
+                  <option value="sales@pingxx.com">企业定制服务</option>
+                </select>
+              </div>
+              <div class="">
+                <label>描述</label>
+                <textarea rows="3" placeholder="告诉我们如何为你提供帮助" id="description" name="description" required></textarea>
+              </div>
+              <div class="text-right">
+                <button class="medium button alt" id="submit">发送</button>
+                <a id="submiting" class="medium button alt disabled" style="display: none">正在提交...</a>
+              </div>
+            </form>
+          </div>
+          <div id="proSuccess" class="pro-con text-center" style="display: none;">
+            <div class="pos-middle">
+              <div class="pro-ico">
+                <span class="pro-icon-success pro-draw"></span>
+              </div>
+              <p class="pro-txt">请耐心等候<br>我们很快会回复您</p>
+            </div>
+          </div>
+          <div class="pro-close-outer">
+            <p class="pro-tip">关注 <strong>微信公众号</strong><img src="assets/img/qr-ping.png" alt=""> 获取即时资讯</p>
+            <a class="pro-close"></a>
+          </div>
+        </div>
+        
+    <script src="assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>

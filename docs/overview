@@ -1,0 +1,230 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.index">简介 | Ping++ 开发者中心</title>
+    <link rel="stylesheet" href="../../assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="../../assets/css/app-44e2580710.css">
+    <meta name="description" content="Ping++ 的聚合支付 SDK 让你在 app 和网站中轻松加入支付功能。一次申请开通多个支付渠道，一次接入所有平台和支付方式，一站管理所有交易。"  content-t="descriptions.index"/>
+    <meta name="keywords" content="Ping++,支付接口,移动支付,应用内支付,微信支付,银联接口,支付宝接口"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-invert">
+    <div class="top-bar-wrapper">
+      <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="routeEn.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="big">
+                <a href="/docs/"  data-attr-t href-t="routeEn.docsroot" data-t="top-nav.devcenter">开发者中心</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="/docs/overview/" data-t="top-nav.docs" data-attr-t href-t="routeEn.guides">开发指南</a>
+              </li>
+              <li><a href="/api" data-t="top-nav.apireference" target="_blank">API 文档</a></li>
+              <li><a href="/docs/downloads" data-t="top-nav.download" data-attr-t href-t="routeEn.downloads">SDK 下载</a></li>
+              <li><a href="https://pub.pingxx.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+      <ul>
+        <li class="divider"><a href="/docs/"  data-attr-t href-t="routeEn.docsroot" data-t="top-nav.devcenter">开发者中心</a></li>
+        <li><a href="/docs/overview/" data-t="top-nav.docs" data-attr-t href-t="routeEn.guides">开发指南</a></li>
+        <li><a href="/api" data-t="top-nav.apireference" target="_blank">API 文档</a></li>
+        <li><a href="/docs/downloads" data-t="top-nav.download" data-attr-t href-t="routeEn.downloads">SDK 下载</a></li>
+        <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+        <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+        <li><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+      </ul>
+    </div>
+    <div class="ui-mask"></div>
+    
+
+    <section class="hero hero--no-content">
+    </section>
+
+    <nav class="docs-nav">
+      <div class="row">
+        <div class="medium-3 small-12 columns"><a class="active" href="/docs/overview/">概述和基础</a></div>
+        <div class="medium-3 small-12 columns"><a   href="/docs/server/">Server 端接入</a></div>
+        <div class="medium-3 small-12 columns"><a   href="/docs/client/">Client 端接入</a></div>
+        <div class="medium-3 small-12 columns"><a   href="/docs/webhooks/">Webhooks、测试和联调</a></div>
+      </div>
+    </nav>
+
+    <div id="content" class="docs-content-container">
+      <div class="row">
+        <div class="small-12 medium-3 columns side-bar">
+          <a href="#" class="docs-article-select-toggle show-for-small-only">查看文章列表</a>
+          <ul class="menu vertical docs-article-select">
+                <li><a href="/docs/overview/index"  class="active    is-index" data-category="overview">简介</a></li>
+                <li><a href="/docs/overview/config"  class="    " data-category="overview">开发配置信息</a></li>
+                <li><a href="/docs/overview/dashboard"  class="    " data-category="overview">管理平台使用指南</a></li>
+                <li><a href="/docs/overview/flow/index"  class=" subcategory   is-index" data-category="overview">交易流程</a></li>
+                <li><a href="/docs/overview/flow/charge"  class=" subcategory   " data-category="overview">支付流程</a></li>
+                <li><a href="/docs/overview/flow/qr"  class=" subcategory   " data-category="overview">扫码支付流程</a></li>
+                <li><a href="/docs/overview/flow/red-envelope"  class=" subcategory   " data-category="overview">红包流程</a></li>
+                <li><a href="/docs/overview/flow/transfer"  class=" subcategory   " data-category="overview">企业付款流程</a></li>
+                <li><a href="/docs/overview/flow/refund"  class=" subcategory   " data-category="overview">退款流程</a></li>
+                <li><a href="/docs/overview/flow/refund-alipay"  class=" subcategory   " data-category="overview">支付宝退款流程</a></li>
+                <li><a href="/docs/overview/api-changelog"  class="    " data-category="overview">API 更新</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-9 columns docs-content">
+          <div id="docs-inner-content">
+          <div class="row docs-head">
+            <div class="columns shrink"><h2>简介</h2></div>
+            <div class="columns" data-sticky-container>
+              <div class="doc-filters" data-sticky data-anchor="docs-inner-content">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li class="language-select-item is-dropdown-submenu-parent">
+                    语言
+                    <a></a>
+                    <ul class="menu" id="language-select"></ul>
+                  </li>
+                  <li class="channel-select-item is-dropdown-submenu-parent">
+                    渠道
+                    <a></a>
+                    <ul class="menu" id="channel-select"></ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <p>Ping++ 是为移动端应用以及 PC 网页量身打造的下一代支付系统，通过一个 SDK 便可以同时支持移动端以及 PC 端网页的多种主流支付渠道，你只需要一次接入即可完成多个渠道的接入。
+          Ping++ SDK 包括 Client SDK 和 Server SDK 两部分，支持主流的七种后端开发语言，适配了 Android，iOS 和 HTML5 三种移动端平台以及 PC 端网页。</p>
+          <h3>接入 Ping++ SDK 步骤</h3>
+          <ul>
+          <li>第一步：分别下载 <a href="/docs/downloads">服务端 SDK </a>和<a href="/docs/downloads">客户端 SDK </a>；</li>
+          <li>第二步：安装 <a href="/docs/server/server-setup">部署服务端 SDK </a> ，使用 <a href="/docs/server">服务端 SDK 请求交易对象</a>；</li>
+          <li>第三步：安装部署客户端 SDK ，并请求你的服务端拿到交易对象，<a href="/docs/client">调用客户端 SDK </a>完成支付（此步骤仅限支付交易）；</li>
+          <li>第四步：<a href="/docs/webhooks/webhooks">配置服务端 Webhooks </a>，接收交易结果的事件通知；</li>
+          <li>第五步：根据具体场景，在指定时间没有获取 webhooks 通知的前提下，通过查询接口获取交易结果。</li>
+          </ul>
+          <p>注意：以上步骤适用于 <a href="/docs/overview/config">Test 和 Live</a> 两种模式。</p>
+          <div class="docs-upnext">
+          <p>下一步<a href="/docs/overview/config" class="anchor">开发配置信息</a></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav block-grid">
+      <div class="row">
+        <div class="medium-12 columns">
+          <ul class="nav block-grid">
+            <li>
+              <a class="block-grid-link" href="/api" target="_blank">
+                <div class="nav-block-grid__icon">
+                  <img src="../../assets/img/docs-cloud.svg" alt="" />
+                </div>
+                <h5 data-t="docs.bottom.api.title">API 文档</h5>
+                <span class="description" data-t="docs.bottom.api.description">了解所有参数和请求，你可以查阅完整的 Ping++ API 文档。</span>
+                <span class="anchor" data-t="docs.bottom.api.link">查阅 API 文档</span>
+              </a>
+            </li>
+            <li>
+              <a class="block-grid-link" href="/docs/downloads">
+              <div class="nav-block-grid__icon">
+                <img src="../../assets/img/docs-downloads.svg" alt="" />
+              </div>
+              <h5 data-t="docs.bottom.download.title">资源下载</h5>
+              <span class="description" data-t="docs.bottom.download.description">下载 SDK、样例代码和项目。</span>
+              <span class="anchor" data-t="docs.bottom.download.link">下载 SDK</span>
+            </a></li>
+            <li>
+              <a class="block-grid-link" href="https://help.pingxx.com" target="_blank">
+                <div class="nav-block-grid__icon">
+                  <img src="../../assets/img/docs-help.svg" alt="" />
+                </div>
+                <h5 data-t="docs.bottom.help.title">帮助中心</h5>
+                <span class="description" data-t="docs.bottom.help.description">开发中遇到障碍？你可以在帮助中心搜索答案。</span>
+                <span class="anchor" data-t="docs.bottom.help.link">去帮助中心</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row collapse">
+        <div class="small-12 medium-expand columns">
+          <ul class="menu">
+            <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+            <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+            <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+            <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+            <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+            <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+            <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+            <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+            <li><a href="/terms" data-t="footer.legal">条款</a></li>
+          </ul>
+          <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="../../assets/js/app-465e894a6c.js"></script>
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>

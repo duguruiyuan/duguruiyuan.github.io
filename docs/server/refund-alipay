@@ -1,0 +1,311 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.refund-alipay">支付宝退款 | Ping++ 开发者中心</title>
+    <link rel="stylesheet" href="../../assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="../../assets/css/app-44e2580710.css">
+    <meta name="description" content="Ping++ 的聚合支付 SDK 让你在 app 和网站中轻松加入支付功能。一次申请开通多个支付渠道，一次接入所有平台和支付方式，一站管理所有交易。"  content-t="descriptions.refund-alipay"/>
+    <meta name="keywords" content="Ping++,支付接口,移动支付,应用内支付,微信支付,银联接口,支付宝接口"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-invert">
+    <div class="top-bar-wrapper">
+      <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="routeEn.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="big">
+                <a href="/docs/"  data-attr-t href-t="routeEn.docsroot" data-t="top-nav.devcenter">开发者中心</a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li>
+                <a href="/docs/overview/" data-t="top-nav.docs" data-attr-t href-t="routeEn.guides">开发指南</a>
+              </li>
+              <li><a href="/api" data-t="top-nav.apireference" target="_blank">API 文档</a></li>
+              <li><a href="/docs/downloads" data-t="top-nav.download" data-attr-t href-t="routeEn.downloads">SDK 下载</a></li>
+              <li><a href="https://pub.pingxx.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+      <ul>
+        <li class="divider"><a href="/docs/"  data-attr-t href-t="routeEn.docsroot" data-t="top-nav.devcenter">开发者中心</a></li>
+        <li><a href="/docs/overview/" data-t="top-nav.docs" data-attr-t href-t="routeEn.guides">开发指南</a></li>
+        <li><a href="/api" data-t="top-nav.apireference" target="_blank">API 文档</a></li>
+        <li><a href="/docs/downloads" data-t="top-nav.download" data-attr-t href-t="routeEn.downloads">SDK 下载</a></li>
+        <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+        <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+        <li><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+      </ul>
+    </div>
+    <div class="ui-mask"></div>
+    
+
+    <section class="hero hero--no-content">
+    </section>
+
+    <nav class="docs-nav">
+      <div class="row">
+        <div class="medium-3 small-12 columns"><a  href="/docs/overview/">概述和基础</a></div>
+        <div class="medium-3 small-12 columns"><a class="active"  href="/docs/server/">Server 端接入</a></div>
+        <div class="medium-3 small-12 columns"><a   href="/docs/client/">Client 端接入</a></div>
+        <div class="medium-3 small-12 columns"><a   href="/docs/webhooks/">Webhooks、测试和联调</a></div>
+      </div>
+    </nav>
+
+    <div id="content" class="docs-content-container">
+      <div class="row">
+        <div class="small-12 medium-3 columns side-bar">
+          <a href="#" class="docs-article-select-toggle show-for-small-only">查看文章列表</a>
+          <ul class="menu vertical docs-article-select">
+                <li><a href="/docs/server/index"  class="    is-index" data-category="server">服务端接入简介</a></li>
+                <li><a href="/docs/server/server-setup"  class="    " data-category="server">服务端环境部署</a></li>
+                <li><a href="/docs/server/charge"  class="    " data-category="server">支付</a></li>
+                <li><a href="/docs/server/qr"  class="    " data-category="server">扫码支付</a></li>
+                <li><a href="/docs/server/red-envelope"  class="    " data-category="server">红包</a></li>
+                <li><a href="/docs/server/transfer"  class="    " data-category="server">企业付款</a></li>
+                <li><a href="/docs/server/refund"  class="    " data-category="server">退款</a></li>
+                <li><a href="/docs/server/refund-alipay"  class="active    " data-category="server">支付宝退款</a></li>
+          </ul>
+        </div>
+        <div class="small-12 medium-9 columns docs-content">
+          <div id="docs-inner-content">
+          <div class="row docs-head">
+            <div class="columns shrink"><h2>支付宝退款</h2></div>
+            <div class="columns" data-sticky-container>
+              <div class="doc-filters" data-sticky data-anchor="docs-inner-content">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li class="language-select-item is-dropdown-submenu-parent">
+                    语言
+                    <a></a>
+                    <ul class="menu" id="language-select"></ul>
+                  </li>
+                  <li class="channel-select-item is-dropdown-submenu-parent">
+                    渠道
+                    <a></a>
+                    <ul class="menu" id="channel-select"></ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <p>调用 Ping++ 接口发起退款，只需要 Server SDK 向调用 Refund 接口，并且监听和获取 Webhooks 通知，支付宝的退款接入需要额外的处理退款链接，以下为支付宝退款步骤：</p>
+          <ol>
+          <li>设置 API-Key</li>
+          <li>SDK 验证签名设置</li>
+          <li>服务端发起退款请求获取 Refund 对象并且截取 <code>failure_msg</code> 里面的退款链接</li>
+          <li>接收 Webhooks 通知</li>
+          <li>验证 Webhooks 签名</li>
+          </ol>
+          <h3>第一步：设置 API-Key</h3>
+          <p>Ping++ API 交易时需要设置 API-Key，Server SDK 提供了设置的方法。如果你直接使用 API ，需要在 header 中加入 Authorization，格式是 Authorization: Bearer API-Key。</p>
+          <pre><code class="language-php"><div class="code"><pre class="hljs"><div class="line">\Pingpp\Pingpp::setApiKey(<span class="hljs-string">'sk_test_ibbTe5jLGCi5rzfH4OqPW9KC'</span>);</div></pre></div></code></pre>
+          <pre><code class="language-java"><div class="code"><pre class="hljs"><div class="line">Pingpp.apiKey = <span class="hljs-string">"sk_test_ibbTe5jLGCi5rzfH4OqPW9KC"</span>;</div></pre></div></code></pre>
+          <pre><code class="language-javascript"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">var</span> pingpp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'pingpp'</span>)(<span class="hljs-string">'sk_test_ibbTe5jLGCi5rzfH4OqPW9KC'</span>);</div></pre></div></code></pre>
+          <pre><code class="language-python"><div class="code"><pre class="hljs"><div class="line">pingpp.api_key = <span class="hljs-string">'sk_test_ibbTe5jLGCi5rzfH4OqPW9KC'</span></div></pre></div></code></pre>
+          <pre><code class="language-ruby"><div class="code"><pre class="hljs"><div class="line">Pingpp.api_key = <span class="hljs-string">"sk_test_ibbTe5jLGCi5rzfH4OqPW9KC"</span></div></pre></div></code></pre>
+          <pre><code class="language-go"><div class="code"><pre class="hljs"><div class="line">pingpp.Key = <span class="hljs-string">"sk_test_ibbTe5jLGCi5rzfH4OqPW9KC"</span></div></pre></div></code></pre>
+          <pre><code class="language-cs"><div class="code"><pre class="hljs"><div class="line">Pingpp.Pingpp.SetApiKey(<span class="hljs-string">"sk_test_ibbTe5jLGCi5rzfH4OqPW9KC"</span>);</div></pre></div></code></pre>
+          <h3>第二步：SDK 验证签名设置</h3>
+          <p>为了进一步增强交易请求的安全性，Ping++ 交易接口针对所有的 POST 和 PUT 请求已经新增 RSA 加密验签功能。如果使用该签名验证功能，你需要生成密钥，然后将私钥配置到你的代码中，公钥上传至 Ping++ 管理平台并启用验签开关。首先你需要本地生成 RSA 公钥和私钥，生成方法请参考：<a href="https://help.pingxx.com/article/123161/">如何获取 RSA 公钥和私钥？</a></p>
+          <h4>设置请求签名密钥</h4>
+          <p>你需要在代码中设置请求签名的私钥(rsa_private_key.pem)，可以读取配置私钥文件的路径或者直接定义变量。你如果通过 API 接口校验的话，需要生成 RSA 签名(SHA256)并在请求头中添加 Pingplusplus-Signature，如果使用 SDK 的话只需要配置私钥即可。</p>
+          <pre><code class="language-php"><div class="code"><pre class="hljs"><div class="line">\Pingpp\Pingpp::setPrivateKeyPath(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">'/your_rsa_private_key.pem'</span>);</div></pre></div></code></pre>
+          <pre><code class="language-java"><div class="code"><pre class="hljs"><div class="line">Pingpp.privateKeyPath = <span class="hljs-string">"/path/to/your_rsa_private_key.pem"</span>;</div></pre></div></code></pre>
+          <pre><code class="language-javascript"><div class="code"><pre class="hljs"><div class="line">pingpp.setPrivateKeyPath(__dirname + <span class="hljs-string">"/your_rsa_private_key.pem"</span>);</div></pre></div></code></pre>
+          <pre><code class="language-python"><div class="code"><pre class="hljs"><div class="line">pingpp.private_key_path = <span class="hljs-string">'your_rsa_private_key.pem'</span></div></pre></div></code></pre>
+          <pre><code class="language-ruby"><div class="code"><pre class="hljs"><div class="line">Pingpp.private_key_path = File.dirname(__FILE_<span class="hljs-number">_</span>) + <span class="hljs-string">'/your_rsa_private_key.pem'</span></div></pre></div></code></pre>
+          <pre><code class="language-go"><div class="code"><pre class="hljs"><div class="line">privateKey, err := ioutil.ReadFile(<span class="hljs-string">"your_rsa_private_key.pem"</span>)</div></pre></div></code></pre>
+          <pre><code class="language-cs"><div class="code"><pre class="hljs"><div class="line">Pingpp.Pingpp.SetPrivateKeyPath(<span class="hljs-string">@"../../your_rsa_private_key.pem"</span>);</div></pre></div></code></pre>
+          <h4>上传公钥至 Ping++ 管理平台</h4>
+          <p>设置完代码中的私钥，你需要将已经生成的公钥(rsa_public_key.pem)填写到 Ping++ 管理平台上，配置路径：
+          登录 Ping++ 管理平台-&gt;点击右上角公司名称-&gt;开发信息-&gt;商户公钥（用于商户身份验证）-&gt;将你的公钥复制粘贴进去并且保存-&gt;先启用 Test 模式进行测试-&gt;测试通过后启用 Live 模式</p>
+          <p><img src="./rsa_keys.png" alt="rsa_keys_setting"></p>
+          <p><strong>注意</strong>： 一旦上传公钥至 Ping++ 管理平台并启用 Live 模式，则验证签名功能即时生效，Ping++ 会立即验证你的真实线上交易验签请求。如果私钥为空或错误，则会交易失败，所以请确保测试模式正常后再启用 Live 开关。</p>
+          <h3>第三步：服务端发起退款请求获取 Refund 对象并且截取 failure_msg 里面的退款链接</h3>
+          <p>调用 Ping++ Server SDK 发起退款请求，发起退款请求所需参数具体可参考<a href="https://www.pingxx.com/api#refunds-%E9%80%80%E6%AC%BE"> API 文档</a>。</p>
+          <pre><code class="language-php"><div class="code"><pre class="hljs"><div class="line">  $ch = \Pingpp\Charge::retrieve(<span class="hljs-string">'ch_id'</span>);<span class="hljs-comment">//ch_id 是已付款的订单号</span></div><div class="line">  $ch-&gt;refunds-&gt;create(</div><div class="line">      <span class="hljs-keyword">array</span>(</div><div class="line">          <span class="hljs-string">'amount'</span> =&gt; <span class="hljs-number">10</span>,</div><div class="line">          <span class="hljs-string">'description'</span> =&gt; <span class="hljs-string">'Refund Description'</span></div><div class="line">      )</div><div class="line">  );</div></pre></div></code></pre>
+          <pre><code class="language-java"><div class="code"><pre class="hljs"><div class="line">    Charge ch = Charge.retrieve(<span class="hljs-string">"ch_id"</span>);<span class="hljs-comment">//ch_id 是已付款的订单号</span></div><div class="line">    Map&lt;String, Object&gt; refundMap = <span class="hljs-keyword">new</span> HashMap&lt;String, Object&gt;();</div><div class="line">    refundMap.put(<span class="hljs-string">"amount"</span>, <span class="hljs-number">10</span>);</div><div class="line">    refundMap.put(<span class="hljs-string">"description"</span>, <span class="hljs-string">"Refund Description"</span>);</div><div class="line">    Refund re = ch.getRefunds().create(refundMap);</div></pre></div></code></pre>
+          <pre><code class="language-javascript"><div class="code"><pre class="hljs"><div class="line">    pingpp.charges.createRefund(</div><div class="line">        <span class="hljs-string">"ch_id"</span>, <span class="hljs-comment">//ch_id 是已付款的订单号</span></div><div class="line">        { <span class="hljs-attr">amount</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">description</span>: <span class="hljs-string">"Refund Description"</span> },</div><div class="line">        <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, refund</span>) </span>{</div><div class="line">            <span class="hljs-comment">// YOUR CODE</span></div><div class="line">        }</div><div class="line">    );</div></pre></div></code></pre>
+          <pre><code class="language-python"><div class="code"><pre class="hljs"><div class="line">ch = pingpp.Charge.retrieve(<span class="hljs-string">"ch_id"</span>) <span class="hljs-comment">#ch_id 是已付款的订单号</span></div><div class="line">re = ch.refunds.create(description=<span class="hljs-string">'Refund Description'</span>, amount=<span class="hljs-number">10</span>)</div><div class="line"><span class="hljs-keyword">print</span> re</div></pre></div></code></pre>
+          <pre><code class="language-ruby"><div class="code"><pre class="hljs"><div class="line">    ch = Pingpp::Charge.retrieve(<span class="hljs-string">"ch_id"</span>)<span class="hljs-comment"># ch_id 是已付款的订单号</span></div><div class="line">    re = ch.refunds.create(</div><div class="line">        <span class="hljs-symbol">:amount</span> =&gt; <span class="hljs-number">10</span>,</div><div class="line">        <span class="hljs-symbol">:description</span> =&gt; <span class="hljs-string">"Refund Description"</span></div><div class="line">    )</div></pre></div></code></pre>
+          <pre><code class="language-go"><div class="code"><pre class="hljs"><div class="line">	params := &amp;pingpp.RefundParams{</div><div class="line">		Amount:      <span class="hljs-number">10</span>,</div><div class="line">		Description: <span class="hljs-string">"Refund Description"</span>,</div><div class="line">	}</div><div class="line">	re, err := refund.New(<span class="hljs-string">"ch_id"</span>, params) <span class="hljs-comment">//ch_id 是已付款的订单号</span></div></pre></div></code></pre>
+          <pre><code class="language-cs"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">var</span> reParams = <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt;</div><div class="line">{</div><div class="line">    {<span class="hljs-string">"amount"</span>, <span class="hljs-number">1</span>},</div><div class="line">    {<span class="hljs-string">"description"</span>, <span class="hljs-string">"Refund Description"</span>}</div><div class="line">};</div><div class="line"> </div><div class="line"><span class="hljs-keyword">var</span> re = Refund.Create(<span class="hljs-string">"ch_id"</span>, reParams);</div></pre></div></code></pre>
+          <p>Ping++ 收到退款请求后返回给你的服务器一个 Refund 对象，下面是支付宝 Refund 对象的一个示例：</p>
+          <pre><code class="language-json"><div class="code"><pre class="hljs"><div class="line">{</div><div class="line">    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"re_uLO0yPSa5Ou9y5mLi9XjXj9O"</span>,</div><div class="line">    <span class="hljs-attr">"object"</span>: <span class="hljs-string">"refund"</span>,</div><div class="line">    <span class="hljs-attr">"order_no"</span>: <span class="hljs-string">"uLO0yPSa5Ou9y5mLi9XjXj9O"</span>,</div><div class="line">    <span class="hljs-attr">"amount"</span>: <span class="hljs-number">1</span>,</div><div class="line">    <span class="hljs-attr">"created"</span>: <span class="hljs-number">1458714020</span>,</div><div class="line">    <span class="hljs-attr">"succeed"</span>: <span class="hljs-literal">false</span>,</div><div class="line">    <span class="hljs-attr">"status"</span>: <span class="hljs-string">"pending"</span>,</div><div class="line">    <span class="hljs-attr">"time_succeed"</span>: <span class="hljs-literal">null</span>,</div><div class="line">    <span class="hljs-attr">"description"</span>: <span class="hljs-string">"12"</span>,</div><div class="line">    <span class="hljs-attr">"failure_code"</span>: <span class="hljs-string">"refund_wait_operation"</span>,</div><div class="line">    <span class="hljs-attr">"failure_msg"</span>: <span class="hljs-string">"需要打开地址进行下一步退款操作: https://mapi.alipay.com/gateway.do?service=refund_fastpay_by_platform_pwd&amp;_input_charset=utf-8&amp;partner=2088711316963982&amp;notify_url=https%3A%2F%2Fapi.pingxx.com%2Fnotify%2Fcharges%2Fch_SavjXHinvPuTSuL8eLfnDeT4%2Frefunds%2Fre_uLO0yPSa5Ou9y5mLi9XjXj9O&amp;seller_user_id=2088711316963982&amp;refund_date=2016-03-23%2014%3A20%3A20&amp;batch_no=20160323uLO0yPSa5Ou9y5mLi9XjXj9O&amp;batch_num=1&amp;detail_data=2016032321001004340296406659%5E0.01%5E12&amp;sign=XNdEDfE2dohwTYm%2F%2FVIAa1Kk6VPIiPKpSegW3qXU2W%2FmdR%2BuX4aEuuR9KH7BXrLdnBd3dQ6ty0aOFeA9lktTLugb8sePlg6SwZab2MSsZDBx8yKTujc0QFVBoSY%2FQ1ht81jlXce7Q0nw1159ZN3H58R%2BhljEJag%2BeGmDOzrCX3s%3D&amp;sign_type=RSA"</span>,</div><div class="line">    <span class="hljs-attr">"metadata"</span>: {},</div><div class="line">    <span class="hljs-attr">"charge"</span>: <span class="hljs-string">"ch_SavjXDinvPuTSuL8eLfnDeT4"</span>,</div><div class="line">    <span class="hljs-attr">"charge_order_no"</span>: <span class="hljs-string">"123456789"</span>,</div><div class="line">    <span class="hljs-attr">"transaction_no"</span>: <span class="hljs-literal">null</span></div><div class="line">}</div></pre></div></code></pre>
+          <p><strong>注意：<code>failure_msg</code> 中有支付宝退款链接，你需要截取链接并让商家点击链接，输入支付宝密码才能完成退款请求。</strong></p>
+          <h3>第四步：接收 Webhooks 通知</h3>
+          <p>当退款完成后 Ping++ 会给你配置在 Ping++ 管理平台的 Webhooks 通知地址主动发送退款结果，我们称之为 <a href="/docs/webhooks/webhooks/">Webhooks 通知</a>。 Webhooks 通知是以 <code>POST</code> 形式发送的 JSON，放在请求的 body 里，内容是 Event 对象，退款成功的事件类型为 <code>refund.succeeded</code> ，你需要监听并接收 Webhooks 通知，接收到 Webhooks 后需要返回服务器状态码 <code>2xx</code> 表示接收成功，否则请返回状态码 <code>500</code>。</p>
+          <pre><code class="language-php"><div class="code"><pre class="hljs"><div class="line">$event = json_decode(file_get_contents(<span class="hljs-string">"php://input"</span>));</div><div class="line"><span class="hljs-comment">// 对异步通知做处理</span></div><div class="line"><span class="hljs-keyword">if</span> (!<span class="hljs-keyword">isset</span>($event-&gt;type)) {</div><div class="line">    header($_SERVER[<span class="hljs-string">'SERVER_PROTOCOL'</span>] . <span class="hljs-string">' 400 Bad Request'</span>);</div><div class="line">    <span class="hljs-keyword">exit</span>(<span class="hljs-string">"fail"</span>);</div><div class="line">}</div><div class="line"><span class="hljs-keyword">switch</span> ($event-&gt;type) {</div><div class="line">    <span class="hljs-keyword">case</span> <span class="hljs-string">"charge.succeeded"</span>:</div><div class="line">        <span class="hljs-comment">// 开发者在此处加入对支付异步通知的处理代码</span></div><div class="line">        header($_SERVER[<span class="hljs-string">'SERVER_PROTOCOL'</span>] . <span class="hljs-string">' 200 OK'</span>);</div><div class="line">        <span class="hljs-keyword">break</span>;</div><div class="line">    <span class="hljs-keyword">case</span> <span class="hljs-string">"refund.succeeded"</span>:</div><div class="line">        <span class="hljs-comment">// 开发者在此处加入对退款异步通知的处理代码</span></div><div class="line">        header($_SERVER[<span class="hljs-string">'SERVER_PROTOCOL'</span>] . <span class="hljs-string">' 200 OK'</span>);</div><div class="line">        <span class="hljs-keyword">break</span>;</div><div class="line">    <span class="hljs-keyword">default</span>:</div><div class="line">        header($_SERVER[<span class="hljs-string">'SERVER_PROTOCOL'</span>] . <span class="hljs-string">' 400 Bad Request'</span>);</div><div class="line">        <span class="hljs-keyword">break</span>;</div><div class="line">}</div></pre></div></code></pre>
+          <pre><code class="language-java"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">import</span> com.pingplusplus.model.Event;</div><div class="line"><span class="hljs-keyword">import</span> com.pingplusplus.model.Webhooks;</div><div class="line"><span class="hljs-keyword">import</span> javax.servlet.ServletException;</div><div class="line"><span class="hljs-keyword">import</span> javax.servlet.http.HttpServlet;</div><div class="line"><span class="hljs-keyword">import</span> javax.servlet.http.HttpServletRequest;</div><div class="line"><span class="hljs-keyword">import</span> javax.servlet.http.HttpServletResponse;</div><div class="line"><span class="hljs-keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="hljs-keyword">import</span> java.io.IOException;</div><div class="line"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ServletDemo</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HttpServlet</span> </span>{</div><div class="line">    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">doPost</span><span class="hljs-params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="hljs-keyword">throws</span> ServletException, IOException </span>{</div><div class="line">        request.setCharacterEncoding(<span class="hljs-string">"UTF8"</span>);</div><div class="line">        <span class="hljs-comment">//获取头部所有信息</span></div><div class="line">        Enumeration headerNames = request.getHeaderNames();</div><div class="line">        <span class="hljs-keyword">while</span> (headerNames.hasMoreElements()) {</div><div class="line">            String key = (String) headerNames.nextElement();</div><div class="line">            String value = request.getHeader(key);</div><div class="line">            System.out.println(key+<span class="hljs-string">" "</span>+value);</div><div class="line">        }</div><div class="line">        <span class="hljs-comment">// 获得 http body 内容</span></div><div class="line">        BufferedReader reader = request.getReader();</div><div class="line">        StringBuffer buffer = <span class="hljs-keyword">new</span> StringBuffer();</div><div class="line">        String string;</div><div class="line">        <span class="hljs-keyword">while</span> ((string = reader.readLine()) != <span class="hljs-keyword">null</span>) {</div><div class="line">            buffer.append(string);</div><div class="line">        }</div><div class="line">        reader.close();</div><div class="line">        <span class="hljs-comment">// 解析异步通知数据</span></div><div class="line">        Event event = Webhooks.eventParse(buffer.toString());</div><div class="line">        <span class="hljs-keyword">if</span> (<span class="hljs-string">"charge.succeeded"</span>.equals(event.getType())) {</div><div class="line">            response.setStatus(<span class="hljs-number">200</span>);</div><div class="line">        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-string">"refund.succeeded"</span>.equals(event.getType())) {</div><div class="line">            response.setStatus(<span class="hljs-number">200</span>);</div><div class="line">        } <span class="hljs-keyword">else</span> {</div><div class="line">            response.setStatus(<span class="hljs-number">500</span>);</div><div class="line">        }</div><div class="line">    }</div><div class="line">}</div></pre></div></code></pre>
+          <pre><code class="language-javascript"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">'http'</span>);</div><div class="line">http.createServer(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{</div><div class="line">  req.setEncoding(<span class="hljs-string">'utf8'</span>);</div><div class="line">  <span class="hljs-keyword">var</span> postData = <span class="hljs-string">""</span>;</div><div class="line">  req.addListener(<span class="hljs-string">"data"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">chunk</span>) </span>{</div><div class="line">    postData += chunk;</div><div class="line">  });</div><div class="line">  req.addListener(<span class="hljs-string">"end"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{</div><div class="line">    <span class="hljs-keyword">var</span> resp = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">ret, status_code</span>) </span>{</div><div class="line">      res.writeHead(status_code, {</div><div class="line">        <span class="hljs-string">"Content-Type"</span>: <span class="hljs-string">"text/plain; charset=utf-8"</span></div><div class="line">      });</div><div class="line">      res.end(ret);</div><div class="line">    }</div><div class="line">    <span class="hljs-keyword">try</span> {</div><div class="line">      <span class="hljs-keyword">var</span> event = <span class="hljs-built_in">JSON</span>.parse(postData);</div><div class="line">      <span class="hljs-keyword">if</span> (event.type === <span class="hljs-literal">undefined</span>) {</div><div class="line">        <span class="hljs-keyword">return</span> resp(<span class="hljs-string">'Event 对象中缺少 type 字段'</span>, <span class="hljs-number">400</span>);</div><div class="line">      }</div><div class="line">      <span class="hljs-keyword">switch</span> (event.type) {</div><div class="line">        <span class="hljs-keyword">case</span> <span class="hljs-string">"charge.succeeded"</span>:</div><div class="line">          <span class="hljs-comment">// 开发者在此处加入对支付异步通知的处理代码</span></div><div class="line">          <span class="hljs-keyword">return</span> resp(<span class="hljs-string">"OK"</span>, <span class="hljs-number">200</span>);</div><div class="line">          <span class="hljs-keyword">break</span>;</div><div class="line">        <span class="hljs-keyword">case</span> <span class="hljs-string">"refund.succeeded"</span>:</div><div class="line">          <span class="hljs-comment">// 开发者在此处加入对退款异步通知的处理代码</span></div><div class="line">          <span class="hljs-keyword">return</span> resp(<span class="hljs-string">"OK"</span>, <span class="hljs-number">200</span>);</div><div class="line">          <span class="hljs-keyword">break</span>;</div><div class="line">        <span class="hljs-keyword">default</span>:</div><div class="line">          <span class="hljs-keyword">return</span> resp(<span class="hljs-string">"未知 Event 类型"</span>, <span class="hljs-number">400</span>);</div><div class="line">          <span class="hljs-keyword">break</span>;</div><div class="line">      }</div><div class="line">    } <span class="hljs-keyword">catch</span> (err) {</div><div class="line">      <span class="hljs-keyword">return</span> resp(<span class="hljs-string">'JSON 解析失败'</span>, <span class="hljs-number">400</span>);</div><div class="line">    }</div><div class="line">  });</div><div class="line">}).listen(<span class="hljs-number">8080</span>, <span class="hljs-string">"0.0.0.0"</span>);</div></pre></div></code></pre>
+          <pre><code class="language-python"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">import</span> json</div><div class="line"><span class="hljs-keyword">from</span> flask <span class="hljs-keyword">import</span> Flask, request, Response</div><div class="line"><span class="hljs-comment"># 使用 flask</span></div><div class="line"><span class="hljs-meta">@app.route('/webhooks', methods=['POST'])</span></div><div class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">webhooks</span><span class="hljs-params">()</span>:</span></div><div class="line">    event = request.get_json()</div><div class="line">    <span class="hljs-keyword">if</span> event[<span class="hljs-string">'type'</span>] == <span class="hljs-string">'charge.succeeded'</span>:</div><div class="line">        <span class="hljs-keyword">return</span> Response(status=<span class="hljs-number">200</span>)</div><div class="line">    <span class="hljs-keyword">elif</span> event[<span class="hljs-string">'type'</span>] == <span class="hljs-string">'refund.succeeded'</span>:</div><div class="line">        <span class="hljs-keyword">return</span> Response(status=<span class="hljs-number">200</span>)</div><div class="line">    <span class="hljs-keyword">return</span> Response(status=<span class="hljs-number">500</span>)</div><div class="line"> </div><div class="line"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">'__main__'</span>:</div><div class="line">    app.run(debug=<span class="hljs-keyword">False</span>, host=<span class="hljs-string">'0.0.0.0'</span>, port=<span class="hljs-number">8080</span>)</div></pre></div></code></pre>
+          <pre><code class="language-ruby"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">require</span> <span class="hljs-string">'webrick'</span></div><div class="line"><span class="hljs-keyword">require</span> <span class="hljs-string">'json'</span></div><div class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Webhooks</span> &lt; WEBrick::HTTPServlet::<span class="hljs-title">AbstractServlet</span></span></div><div class="line">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">do_POST</span><span class="hljs-params">(request, response)</span></span></div><div class="line">    status = <span class="hljs-number">400</span></div><div class="line">    response_body = <span class="hljs-string">''</span> <span class="hljs-comment"># 可自定义</span></div><div class="line">    <span class="hljs-keyword">begin</span></div><div class="line">      event = JSON.parse(request.body)</div><div class="line">      <span class="hljs-keyword">if</span> event[<span class="hljs-string">'type'</span>].<span class="hljs-literal">nil</span>?</div><div class="line">        response_body = <span class="hljs-string">'Event 对象中缺少 type 字段'</span></div><div class="line">      <span class="hljs-keyword">elsif</span> event[<span class="hljs-string">'type'</span>] == <span class="hljs-string">'charge.succeeded'</span></div><div class="line">        <span class="hljs-comment"># 开发者在此处加入对支付异步通知的处理代码</span></div><div class="line">        status = <span class="hljs-number">200</span></div><div class="line">        response_body = <span class="hljs-string">'OK'</span></div><div class="line">      <span class="hljs-keyword">elsif</span> event[<span class="hljs-string">'type'</span>] == <span class="hljs-string">'refund.succeeded'</span></div><div class="line">        <span class="hljs-comment"># 开发者在此处加入对退款异步通知的处理代码</span></div><div class="line">        status = <span class="hljs-number">200</span></div><div class="line">        response_body = <span class="hljs-string">'OK'</span></div><div class="line">      <span class="hljs-keyword">else</span></div><div class="line">        response_body = <span class="hljs-string">'未知 Event 类型'</span></div><div class="line">      <span class="hljs-keyword">end</span></div><div class="line">    <span class="hljs-keyword">rescue</span> JSON::ParserError</div><div class="line">      response_body = <span class="hljs-string">'JSON 解析失败'</span></div><div class="line">    <span class="hljs-keyword">end</span></div><div class="line">    response.status = status</div><div class="line">    response[<span class="hljs-string">'Content-Type'</span>] = <span class="hljs-string">'text/plain; charset=utf-8'</span></div><div class="line">    response.body = response_body</div><div class="line">  <span class="hljs-keyword">end</span></div><div class="line"><span class="hljs-keyword">end</span></div><div class="line">server = WEBrick::HTTPServer.new(<span class="hljs-symbol">:Port</span> =&gt; <span class="hljs-number">8000</span>)</div><div class="line">server.mount <span class="hljs-string">'/webhooks'</span>, Webhooks</div><div class="line">trap <span class="hljs-string">'INT'</span> <span class="hljs-keyword">do</span> server.shutdown <span class="hljs-keyword">end</span></div><div class="line">server.start</div></pre></div></code></pre>
+          <pre><code class="language-go"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">webhook</span><span class="hljs-params">(w http.ResponseWriter, r *http.Request)</span></span> {</div><div class="line">  <span class="hljs-keyword">if</span> strings.ToUpper(r.Method) == <span class="hljs-string">"POST"</span> {</div><div class="line">    buf := <span class="hljs-built_in">new</span>(bytes.Buffer)</div><div class="line">    buf.ReadFrom(r.Body)</div><div class="line">    signature := r.Header.Get(<span class="hljs-string">"x-pingplusplus-signature"</span>)</div><div class="line">    webhook, err := pingpp.ParseWebhooks(buf.Bytes())</div><div class="line">    fmt.Println(webhook.Type)</div><div class="line">    <span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {</div><div class="line">      w.WriteHeader(http.StatusInternalServerError)</div><div class="line">      fmt.Fprintf(w, <span class="hljs-string">"fail"</span>)</div><div class="line">      <span class="hljs-keyword">return</span></div><div class="line">    }</div><div class="line">    <span class="hljs-keyword">if</span> webhook.Type == <span class="hljs-string">"charge.succeeded"</span> {</div><div class="line">      <span class="hljs-comment">// TODO your code for charge</span></div><div class="line">      w.WriteHeader(http.StatusOK)</div><div class="line">    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> webhook.Type == <span class="hljs-string">"refund.succeeded"</span> {</div><div class="line">      <span class="hljs-comment">// TODO your code for refund</span></div><div class="line">      w.WriteHeader(http.StatusOK)</div><div class="line">    } <span class="hljs-keyword">else</span> {</div><div class="line">      w.WriteHeader(http.StatusInternalServerError)</div><div class="line">    }</div><div class="line">  }</div><div class="line">}</div></pre></div></code></pre>
+          <pre><code class="language-cs"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">using</span> System;</div><div class="line"><span class="hljs-keyword">using</span> System.Collections.Generic;</div><div class="line"><span class="hljs-keyword">using</span> System.Linq;</div><div class="line"><span class="hljs-keyword">using</span> System.Text;</div><div class="line"><span class="hljs-keyword">using</span> Pingpp.Models;</div><div class="line"><span class="hljs-keyword">using</span> System.IO;</div><div class="line"> </div><div class="line"><span class="hljs-keyword">namespace</span> <span class="hljs-title">Example.Example</span></div><div class="line">{</div><div class="line">    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">WebhooksDemo</span></div><div class="line">    {</div><div class="line">        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Event <span class="hljs-title">Example</span>(<span class="hljs-params"></span>)</div><div class="line">        </span>{</div><div class="line">            <span class="hljs-keyword">var</span> data = ReadFileToString(<span class="hljs-string">@"../../data.txt"</span>);</div><div class="line">            <span class="hljs-keyword">var</span> evt = Webhooks.ParseWebhook(data);</div><div class="line">            Console.WriteLine(evt);</div><div class="line"> </div><div class="line">            <span class="hljs-keyword">return</span> evt;</div><div class="line">        }</div><div class="line"> </div><div class="line">        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">string</span> <span class="hljs-title">ReadFileToString</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> path</span>)</div><div class="line">        </span>{</div><div class="line">            <span class="hljs-keyword">using</span> (<span class="hljs-keyword">var</span> sr = <span class="hljs-keyword">new</span> StreamReader(path))</div><div class="line">            {</div><div class="line">                <span class="hljs-keyword">return</span> sr.ReadToEnd();</div><div class="line">            }</div><div class="line">        }</div><div class="line"> </div><div class="line">    }</div><div class="line">}</div></pre></div></code></pre>
+          <p>以下是 Webhooks 通知地址配置的 <code>refund.succeeded</code> 对象的示例：</p>
+          <pre><code class="language-json"><div class="code"><pre class="hljs"><div class="line">{</div><div class="line">  <span class="hljs-attr">"id"</span>: <span class="hljs-string">"evt_S5IvHACi7rn39YliGVqa6C5Q"</span>,</div><div class="line">  <span class="hljs-attr">"created"</span>: <span class="hljs-number">1458786607</span>,</div><div class="line">  <span class="hljs-attr">"livemode"</span>: <span class="hljs-literal">true</span>,</div><div class="line">  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"refund.succeeded"</span>,</div><div class="line">  <span class="hljs-attr">"data"</span>: {</div><div class="line">      <span class="hljs-attr">"object"</span>: {</div><div class="line">          <span class="hljs-attr">"id"</span>: <span class="hljs-string">"re_eHur98SG0GaP8yT4OSfvnDK8"</span>,</div><div class="line">          <span class="hljs-attr">"object"</span>: <span class="hljs-string">"refund"</span>,</div><div class="line">          <span class="hljs-attr">"order_no"</span>: <span class="hljs-string">"eHur98SG0GaP8yT4OSfvnDK8"</span>,</div><div class="line">          <span class="hljs-attr">"amount"</span>: <span class="hljs-number">1</span>,</div><div class="line">          <span class="hljs-attr">"created"</span>: <span class="hljs-number">1458786589</span>,</div><div class="line">          <span class="hljs-attr">"succeed"</span>: <span class="hljs-literal">true</span>,</div><div class="line">          <span class="hljs-attr">"status"</span>: <span class="hljs-string">"succeeded"</span>,</div><div class="line">          <span class="hljs-attr">"time_succeed"</span>: <span class="hljs-number">1458786607</span>,</div><div class="line">          <span class="hljs-attr">"description"</span>: <span class="hljs-string">"ddd"</span>,</div><div class="line">          <span class="hljs-attr">"failure_code"</span>: <span class="hljs-literal">null</span>,</div><div class="line">          <span class="hljs-attr">"failure_msg"</span>: <span class="hljs-literal">null</span>,</div><div class="line">          <span class="hljs-attr">"metadata"</span>: {},</div><div class="line">          <span class="hljs-attr">"charge"</span>: <span class="hljs-string">"ch_uzTivLH4KubHWHmvfHSajXj5"</span>,</div><div class="line">          <span class="hljs-attr">"charge_order_no"</span>: <span class="hljs-string">"123456789"</span>,</div><div class="line">          <span class="hljs-attr">"transaction_no"</span>: <span class="hljs-string">"2016032321001004920229421275"</span></div><div class="line">      }</div><div class="line">  },</div><div class="line">  <span class="hljs-attr">"object"</span>: <span class="hljs-string">"event"</span>,</div><div class="line">  <span class="hljs-attr">"pending_webhooks"</span>: <span class="hljs-number">239</span>,</div><div class="line">  <span class="hljs-attr">"request"</span>: <span class="hljs-string">"iar_0CW1GG9aHSmDrL808CnT0a5G"</span></div><div class="line">}</div></pre></div></code></pre>
+          <h3>第五步：验证 Webhooks 签名</h3>
+          <p><strong>签名简介</strong></p>
+          <p>Ping++ 的 Webhooks 通知包含了签名字段，可以使用该签名验证 Webhooks 通知的合法性。签名放置在 header 的自定义字段 <code>x-pingplusplus-signature</code> 中，签名用 RSA 私钥对 Webhooks 通知使用 <code>RSA-SHA256</code> 算法进行签名，以 <code>base64</code> 格式输出。</p>
+          <p><strong>验证签名</strong></p>
+          <p>Ping++ 在管理平台中提供了 RSA 公钥，供验证签名，该公钥具体获取路径：点击管理平台右上角公司名称-&gt;开发信息-&gt; Ping++ 公钥。验证签名需要以下几步：</p>
+          <ol>
+          <li>从 header 取出签名字段并对其进行 <code>base64</code> 解码。</li>
+          <li>获取 Webhooks 请求的原始数据。</li>
+          <li>将获取到的 Webhooks 通知、 Ping++ 管理平台提供的 <code>RSA</code> 公钥、和 <code>base64</code> 解码后的签名三者一同放入 <code>RSA</code> 的签名函数中进行非对称的签名运算，来判断签名是否验证通过。
+          Ping++ 提供了验证签名的 <a href="https://github.com/PingPlusPlus/pingpp-php/blob/master/example/webhooks.php" class="filter-by-language" data-language="php">Demo</a> <a href="https://github.com/PingPlusPlus/pingpp-java/blob/master/example/SimpleExample/src/main/java/com/pingxx/example/WebhooksVerifyExample.java" class="filter-by-language" data-language="java">Demo</a> <a href="https://github.com/PingPlusPlus/pingpp-ruby/blob/master/example/webhooks.rb" class="filter-by-language" data-language="ruby">Demo</a> <a href="https://github.com/PingPlusPlus/pingpp-python/blob/master/example/verifyDemo.py" class="filter-by-language" data-language="python">Demo</a> <a href="https://github.com/PingPlusPlus/pingpp-go/blob/master/Example/webhooksDemo.go" class="filter-by-language" data-language="go">Demo</a> <a href="https://github.com/PingPlusPlus/pingpp-csharp/blob/master/Demo/Webhooks.aspx.cs" class="filter-by-language" data-language="cs">Demo</a> <a href="https://github.com/PingPlusPlus/pingpp-nodejs/blob/master/example/webhooks_verify.js" class="filter-by-language" data-language="javascript">Demo</a>  ，放在 SDK 的 example 里供参考，我们在此不再赘述。</li>
+          </ol>
+          <h3>退款查询</h3>
+          <p>Ping++ 管理平台提供详细的订单信息和 Webhooks 功能，所以查询功能相对来说并不是那么必要。如果商户本身由于某种原因导致 Webhooks 没有收到或者延缓更新时，可以主动调用<a href="https://www.pingxx.com/api#%E6%9F%A5%E8%AF%A2-refund-%E5%AF%B9%E8%B1%A1">退款查询接口</a>来获得退款的状态。</p>
+          <h4>查询单笔退款</h4>
+          <pre><code class="language-php"><div class="code"><pre class="hljs"><div class="line">    $ch = \Pingpp\Charge::retrieve(<span class="hljs-string">'ch_id'</span>);</div><div class="line">    $re = $ch-&gt;refunds-&gt;retrieve(<span class="hljs-string">'re_id'</span>);</div></pre></div></code></pre>
+          <pre><code class="language-java"><div class="code"><pre class="hljs"><div class="line">    Charge ch = Charge.retrieve(<span class="hljs-string">"ch_id"</span>);</div><div class="line">    Refund re = ch.getRefunds().retrieve(<span class="hljs-string">"re_id"</span>);</div></pre></div></code></pre>
+          <pre><code class="language-javascript"><div class="code"><pre class="hljs"><div class="line">    pingpp.charges.retrieveRefund(</div><div class="line">        <span class="hljs-string">"ch_id"</span>,</div><div class="line">        <span class="hljs-string">"re_id"</span>,</div><div class="line">        <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, refund</span>) </span>{</div><div class="line">            <span class="hljs-comment">// YOUR CODE</span></div><div class="line">        }</div><div class="line">    );</div></pre></div></code></pre>
+          <pre><code class="language-python"><div class="code"><pre class="hljs"><div class="line">    ch = pingpp.Charge.retrieve(<span class="hljs-string">'ch_id'</span>)</div><div class="line">    re = ch.refunds.retrieve(<span class="hljs-string">'re_id'</span>)</div></pre></div></code></pre>
+          <pre><code class="language-ruby"><div class="code"><pre class="hljs"><div class="line">    ch = Pingpp::Charge.retrieve(<span class="hljs-string">"ch_id"</span>)</div><div class="line">    re = ch.refunds.retrieve(<span class="hljs-string">"re_id"</span>)</div></pre></div></code></pre>
+          <pre><code class="language-go"><div class="code"><pre class="hljs"><div class="line">re, err := refund.Get(<span class="hljs-string">"ch_id"</span>, <span class="hljs-string">"re_id"</span>)</div></pre></div></code></pre>
+          <pre><code class="language-cs"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">var</span> re=Refund.Retrieve(<span class="hljs-string">"ch_id"</span>, <span class="hljs-string">"re_id"</span>);</div></pre></div></code></pre>
+          <h4>查询退款列表</h4>
+          <pre><code class="language-php"><div class="code"><pre class="hljs"><div class="line">    \Pingpp\Charge::retrieve(<span class="hljs-string">'ch_id'</span>)</div><div class="line">    -&gt;refunds-&gt;all(<span class="hljs-keyword">array</span>(<span class="hljs-string">'limit'</span> =&gt; <span class="hljs-number">3</span>));</div></pre></div></code></pre>
+          <pre><code class="language-java"><div class="code"><pre class="hljs"><div class="line">    Charge ch = Charge.retrieve(<span class="hljs-string">"ch_id"</span>);</div><div class="line">    Map&lt;String, Object&gt; refundParams = <span class="hljs-keyword">new</span> HashMap&lt;String, Object&gt;();</div><div class="line">    refundParams.put(<span class="hljs-string">"limit"</span>, <span class="hljs-number">3</span>);</div><div class="line">    ChargeRefundCollection res = ch.getRefunds().all(refundParams);</div></pre></div></code></pre>
+          <pre><code class="language-javascript"><div class="code"><pre class="hljs"><div class="line">    pingpp.charges.listRefunds(</div><div class="line">        <span class="hljs-string">"ch_id"</span>,</div><div class="line">        {<span class="hljs-attr">limit</span>: <span class="hljs-number">3</span>},</div><div class="line">        <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, refunds</span>) </span>{</div><div class="line">            <span class="hljs-comment">// YOUR CODE</span></div><div class="line">        }</div><div class="line">    );</div></pre></div></code></pre>
+          <pre><code class="language-python"><div class="code"><pre class="hljs"><div class="line">    ch = pingpp.Charge.retrieve(<span class="hljs-string">'ch_id'</span>)</div><div class="line">    res = ch.refunds.all(limit=<span class="hljs-number">3</span>)</div><div class="line"> </div></pre></div></code></pre>
+          <pre><code class="language-ruby"><div class="code"><pre class="hljs"><div class="line">Pingpp::Charge.retrieve(<span class="hljs-string">"ch_id"</span>).refunds.all(<span class="hljs-symbol">:limit</span> =&gt; <span class="hljs-number">3</span>)</div></pre></div></code></pre>
+          <pre><code class="language-go"><div class="code"><pre class="hljs"><div class="line">    params := &amp;pingpp.RefundListParams{}</div><div class="line">    params.Filters.AddFilter(<span class="hljs-string">"limit"</span>, <span class="hljs-string">""</span>, <span class="hljs-string">"3"</span>)</div><div class="line">    <span class="hljs-comment">//设置是不是只需要之前设置的 limit 这一个查询参数</span></div><div class="line">    params.Single = <span class="hljs-literal">true</span></div><div class="line">    i := refund.List(<span class="hljs-string">"ch_id"</span>, params)</div><div class="line">    <span class="hljs-keyword">for</span> i.Next() {</div><div class="line">        c := i.Refund()</div><div class="line">    }</div></pre></div></code></pre>
+          <pre><code class="language-cs"><div class="code"><pre class="hljs"><div class="line"><span class="hljs-keyword">var</span> res=Refund.List(chId, <span class="hljs-keyword">new</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt; &#123;&#123;<span class="hljs-string">"limit"</span>, <span class="hljs-number">3</span>}});</div></pre></div></code></pre>
+          <h3>注意事项</h3>
+          <ol>
+          <li>支付宝返回的 Refund 对象中 <code>failure_msg</code> 字段有退款链接，需要截取链接并让商家点击链接进入到支付宝收银台，输入支付宝密码才能完成退款请求</li>
+          <li>接收到 Webhooks 说明退款成功，退款失败直接在请求退款时返回失败原因，失败不会发送 Webhooks 。</li>
+          <li>你需要在 Ping++ 的管理平台里填写 Webhooks 通知地址，详见 <a href="/docs/webhooks/webhooks">webhooks 配置说明</a>，你的服务器需要监听这个地址并且接收 Webhooks 通知，接收到 Webhooks 通知后需给 Ping++ 返回服务器状态  <code>2xx</code> 。此时事件类型是 <code>refund.succeeded</code>，其字段 <code>data</code> 包含了 <code>object</code> 字段， <code>object</code> 字段的值是一个 Refund 对象。</li>
+          <li>若你的服务器未正确返回 <code>2xx</code>，Ping++ 会在 25 小时内向商户服务器最多发送 8 次 Webhooks 通知，时间间隔分别为 2min、10min、10min、1h、2h、6h、15h，直到用户向 Ping++ 返回服务器状态 <code>2xx</code> 或者超过最大重发次数为止。</li>
+          <li>在可接受的时间范围内，如果你服务端没有收到 Webhooks 的通知，你也可以调用 Server-SDK 封装的查询方法，主动向 Ping++ 发起请求来获得订单状态，该查询结果可以作为交易结果。</li>
+          <li>每个渠道退款都有一定周期，通常退款到银行卡所需的时间会比较长：借记卡是 1~3 个工作日，信用卡是 3~7 个工作日。</li>
+          <li>若退款订单较多，可使用Ping++管理平台上的<a href="https://help.pingxx.com/article/126624">批量退款功能</a>，多笔支付宝退款只需输入一次商户密码，也可调用API接口实现，具体参考 <a href="https://www.pingxx.com/api#batch-refunds-%E6%89%B9%E9%87%8F%E9%80%80%E6%AC%BE">API文档</a>。</li>
+          </ol>
+          <div class="docs-upnext">
+          <p>下一步<a href="/docs/client/index" class="anchor">客户端接入简介</a></p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav block-grid">
+      <div class="row">
+        <div class="medium-12 columns">
+          <ul class="nav block-grid">
+            <li>
+              <a class="block-grid-link" href="/api" target="_blank">
+                <div class="nav-block-grid__icon">
+                  <img src="../../assets/img/docs-cloud.svg" alt="" />
+                </div>
+                <h5 data-t="docs.bottom.api.title">API 文档</h5>
+                <span class="description" data-t="docs.bottom.api.description">了解所有参数和请求，你可以查阅完整的 Ping++ API 文档。</span>
+                <span class="anchor" data-t="docs.bottom.api.link">查阅 API 文档</span>
+              </a>
+            </li>
+            <li>
+              <a class="block-grid-link" href="/docs/downloads">
+              <div class="nav-block-grid__icon">
+                <img src="../../assets/img/docs-downloads.svg" alt="" />
+              </div>
+              <h5 data-t="docs.bottom.download.title">资源下载</h5>
+              <span class="description" data-t="docs.bottom.download.description">下载 SDK、样例代码和项目。</span>
+              <span class="anchor" data-t="docs.bottom.download.link">下载 SDK</span>
+            </a></li>
+            <li>
+              <a class="block-grid-link" href="https://help.pingxx.com" target="_blank">
+                <div class="nav-block-grid__icon">
+                  <img src="../../assets/img/docs-help.svg" alt="" />
+                </div>
+                <h5 data-t="docs.bottom.help.title">帮助中心</h5>
+                <span class="description" data-t="docs.bottom.help.description">开发中遇到障碍？你可以在帮助中心搜索答案。</span>
+                <span class="anchor" data-t="docs.bottom.help.link">去帮助中心</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row collapse">
+        <div class="small-12 medium-expand columns">
+          <ul class="menu">
+            <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+            <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+            <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+            <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+            <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+            <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+            <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+            <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+            <li><a href="/terms" data-t="footer.legal">条款</a></li>
+          </ul>
+          <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="../../assets/js/app-465e894a6c.js"></script>
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>

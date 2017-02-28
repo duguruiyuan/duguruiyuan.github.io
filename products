@@ -1,0 +1,789 @@
+<!doctype html>
+<html class="no-js" lang="zh" data-attr-t lang-t="lang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Ping++">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title data-t="pages.products">产品 | Ping++</title>
+    <link rel="stylesheet" href="assets/fonts/font-b55e67f866.css">
+    <link rel="stylesheet" href="assets/css/app-44e2580710.css">
+    <link rel="apple-touch-icon" href="/assets/img/touch_icon.png">
+    <meta name="description" content="不止于支付。一套灵活组合的支付工具，让你轻松应对互联网产品的商业需求。"  content-t="descriptions.products"/>
+    <meta name="keywords" content="Ping++,pingxx,支付SDK,支付开发,支付接入,聚合支付,支付,app支付,移动应用支付,支付平台,在线支付,游戏支付,网上支付,网络支付,统一支付平台,手机支付平台,手机支付,手机网上支付,快捷支付,一键支付,电子支付,安全支付,第三方支付接口,支付宝支付,支付宝接口,移动支付,在线支付,第三方支付,支付平台,银联支付,银联在线支付,银联快捷支付,银行支付,网银支付平台,网银支付,pos支付,app支付,支付接口,支付API,支付宝接口,微信支付接口,银联支付接口,支付云服务,微信红包,红包SDK,微信支付,支付宝支付"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script type='text/javascript'>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+        _vds.push(['setAccountId', '8c9473c015e1499aa686406418f60e4a']);
+        (function() {
+          var vds = document.createElement('script');
+          vds.type='text/javascript';
+          vds.async = true;
+          vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(vds, s);
+        })();
+    })();
+    </script>
+  </head>
+  <body class="theme-products">
+        
+        <div class="top-bar-wrapper">
+          <div class="row column">
+        <div class="title-bar show-for-small-only">
+            <!-- <button id="hamburger" class="menu-icon" type="button" data-toggle></button> -->
+            <div class="title-bar-title">
+              <a href="/" data-attr-t href-t="route.root" title="PingPlusPlus 是上海简米网络科技有限公司的注册商标">
+                <div class="top-bar__logo"></div>
+              </a>
+            </div>
+            <a id="hamburger" class="title-bar__toggle" target="_blank" data-toggle>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+        </div>
+        
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-title">
+            <a href="/" data-attr-t href-t="route.root"><div class="top-bar__logo"></div></a>
+          </div>
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="/products" data-t="top-nav.features">产品</a></li>
+              <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+              <li><a href="/pricing" data-t="top-nav.pricing">定价</a></li>
+              <!-- <li class="is-dropdown-submenu-parent">
+                <a href="#" data-t="top-nav.more">更多</a>
+                <ul class="menu vertical">
+                  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+                  <li><a href="/platform" data-t="top-nav.platform">多级商户</a></li>
+                  <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+                  <li><a href="/financing" data-t="top-nav.financing">分期支付</a></li>
+                  <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+                  <li><a href="/inapp" data-t="top-nav.paybycard">卡支付</a></li>
+                  <li><a href="/apple-pay">Apple Pay</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a href="https://help.pingxx.com" target="_blank"  data-t="top-nav.help">帮助中心</a></li>
+              <li class="is-dropdown-submenu-parent">
+                <a href="/docs/index" data-t="top-nav.devcenter">开发者中心</a>
+                <ul class="menu vertical">
+                  <li><a href="/docs/overview/" data-t="top-nav.docs">开发指南</a></li>
+                  <li><a href="/api" data-t="top-nav.apireference">API 文档</a></li>
+                  <li><a href="/docs/downloads" data-t="top-nav.download">SDK 下载</a></li>
+                  <li class="divider"><a href="https://pub.pingplusplus.com" data-t="top-nav.community" target="_blank">开发者社区</a></li>
+                </ul>
+              </li>
+              <li><a href="https://dashboard.pingxx.com/login"  data-t="top-nav.login">登入</a></li>
+              <li><a href="https://dashboard.pingxx.com/register" class="button cta hollow small" data-t="top-nav.signup">注册</a></li>
+            </ul>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+        <div class="mobile-nav show-for-small-only" id="sidebar-menu">
+          <ul>
+            <li><a href="/products" data-t="top-nav.features">产品</a></li>
+            <li><a href="/customers" data-t="top-nav.testimonial">案例</a></li>
+            <li class="divider"><a href="/pricing"data-t="top-nav.pricing">定价</a></li>
+           <!--  <li><a href="/account" data-t="top-nav.account">账户系统</a></li>
+            <li><a href="/platform" data-t="top-nav.account">多级商户</a></li>
+            <li><a href="/dashboard" data-t="top-nav.dashboard">管理平台</a></li>
+            <li><a href="/financing"data-t="top-nav.financing">分期支付</a></li>
+            <li><a href="/cmbwallet" data-t="top-nav.cmbwallet">招行一网通</a></li>
+            <li class="divider"><a href="/apple-pay">Apple Pay</a></li> -->
+        
+            <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li>
+            <li class="divider"><a href="/docs/" data-t="top-nav.documentation">开发者中心</a></li>
+            <li><a href="https://dashboard.pingxx.com/login" data-t="top-nav.login">登入</a></li>
+            <li class="divider"><a href="https://dashboard.pingxx.com/register" data-t="top-nav.signup">注册</a></li>
+          </ul>
+        </div>
+        <div class="ui-mask"></div>
+        
+        <section class="hero products-hero" id="hero">
+          <div class="row align-center">
+            <div class="small-11 columns">
+                <div class="hero-copy">
+                  <h1 data-t="products.hero.heading">不止于支付<span class="punctuation">。</span></h1>
+                  <h4 data-t="products.hero.subheading">一套灵活组合的支付工具<span class="punctuation">，</span><br>让你轻松应对互联网产品的商业需求<span class="punctuation">。</span></h4>
+                </div>
+                <div class="hero-icons  data-sticky-container">
+                  <div class="row small-up-2 medium-up-6">
+                    <div class="column">
+                      <a href="#payments" class="hero-icon targetLink">
+                        <div class="hero-icons__icon"><img src="assets/img/products-icon-payments.svg" alt=""></div>
+                        <h6>收款</h6>
+                        <p>多渠道全平台，在任何场景向任何人收款</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a href="#transfers" class="hero-icon targetLink">
+                        <div class="hero-icons__icon"><img src="assets/img/products-icon-transfers.svg" alt=""></div>
+                        <h6>付款</h6>
+                        <p>向公司及个人转账、打款、发送红包</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a href="#account" class="hero-icon targetLink">
+                        <div class="hero-icons__icon"><img src="assets/img/products-icon-account.svg" alt=""></div>
+                        <h6>账户</h6>
+                        <p>快速实现基于账户的余额和优惠券功能</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                          <a href="#platform" class="hero-icon targetLink">
+                            <div class="hero-icons__icon"><img src="assets/img/products-icon-platform.svg" alt=""></div>
+                            <h6>平台</h6>
+                            <p>高效掌控子级商户的交易与分账</p>
+                          </a>
+                        </div>
+                    <div class="column">
+                      <a href="#campagin" class="hero-icon targetLink">
+                        <div class="hero-icons__icon"><img src="assets/img/products-icon-campagin.svg" alt=""></div>
+                        <h6>BI 营销系统</h6>
+                        <p>为商户开发的多角色营销及分析管理平台</p>
+                      </a>
+                    </div>
+                    <div class="column">
+                      <a href="#tools" class="hero-icon targetLink">
+                        <div class="hero-icons__icon"><img src="assets/img/products-icon-others.svg" alt=""></div>
+                        <h6>辅助接口</h6>
+                        <p>透过 API 完成支付相关的辅助功能</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        
+        <div data-sticky-container class="hide-for-small-only">
+          <div class="subnav-container" data-sticky data-options="marginTop:0;" style="width:100%" data-top-anchor="hero:bottom" data-btm-anchor="content:bottom">
+            <div class="subnav-bar">
+              <div class="row align-center">
+                <div class="small-11 medium-10 columns">
+                  <ul class="menu float-right">
+                    <li><a href="https://dashboard.pingxx.com/register" class="button cta" data-t="products.nav.cta">免费注册</a></li>
+                  </ul>
+                  <ul class="left menu" data-magellan data-active-class="active">
+                    <li><a class="targetLink" href="#payments" class="smooth-scroll">收款</a></li>
+                    <li><a class="targetLink" href="#transfers" class="smooth-scroll">付款</a></li>
+                    <li><a class="targetLink" href="#account" class="smooth-scroll">账户</a></li>
+                    <li><a class="targetLink" href="#platform" class="smooth-scroll">平台</a></li>
+                    <li><a class="targetLink" href="#campagin" class="smooth-scroll">BI 营销系统</a></li>
+                    <li><a class="targetLink" href="#tools" class="smooth-scroll">辅助接口</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ld-content-container" id="content">
+          <section class="ld-content ld-content--no-padding ld-content--productgray" id="payments" data-magellan-target="payments">
+        
+            <div class="row align-center">
+              <div class="small-11 medium-10 columns">
+        
+                <div class="products-section-head">
+                  <div class="row">
+                    <div class="small-12 medium-5 large-5 columns">
+                      <div class="home-feature__copy" id="providers-copy">
+                        <h5>收款</h5>
+                        <h2>一个 API<span class="punctuation">，</span>在任何平台和场景接入支付<span class="punctuation">。</span></h2>
+                      </div>
+                    </div>
+                    <div class="expand columns"></div>
+                    <div class="small-12 medium-6 large-6 columns">
+                      <p>碎片化的支付世界，终于合而为一。开发者无需重复集成繁琐的支付接口，使用 Ping++ API 就能应对所有場景，快速接入支付功能，同时享有高效能、安全可靠的底层设施。</p>
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+        
+            <div class="products-section-carousel payments-carousel">
+              <div class="orbit" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+                <ul class="orbit-container">
+                  <button class="orbit-next"><img src="assets/img/products-carousel-right.svg" alt=""></button>
+        
+                  <li class="orbit-slide is-active">
+                    <div class="product-slide">
+        
+                      <div class="row align-center">
+                        <div class="columns shrink">
+                          <img src="assets/img/products-slides-allplatforms.png" data-interchange="[assets/img/products-slides-allplatforms@2x.png, retina]" alt="" width="785" height="458">
+                        </div>
+                      </div>
+        
+                      <div class="slide-text">
+                        <div class="row align-center">
+                          <div class="small-11 medium-7 columns">
+                            <p><a onclick="openProductsModal('app')">查看所有适用渠道</a></p>
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                  </li>
+        
+                  <li class="orbit-slide">
+                    <div class="product-slide">
+                      <div class="row align-center">
+                        <div class="columns shrink">
+                          <img src="assets/img/products-slides-apps.png" data-interchange="[assets/img/products-slides-apps@2x.png, retina]" alt="" width="287" height="563">
+                        </div>
+                      </div>
+                      <div class="slide-text">
+                        <div class="row align-center">
+                          <div class="small-11 medium-7 columns">
+                            <p>在 iOS 和 Android 的原生 app 中向用户收款。支持所有主流第三方支付、银行卡、Apple Pay 等渠道。</p>
+                            <p><a onclick="openProductsModal('app')">查看所有适用渠道</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shadow-mask"></div>
+                    </div>
+                  </li>
+                  <li class="orbit-slide">
+                    <div class="product-slide">
+                      <div class="row align-center">
+                        <div class="columns shrink">
+                          <img src="assets/img/products-slides-mobileweb.png" data-interchange="[assets/img/products-slides-mobileweb@2x.png, retina]"  alt="" width="287" height="563">
+                        </div>
+                      </div>
+                      <div class="slide-text">
+                        <div class="row align-center">
+                          <div class="small-11 medium-7 columns">
+                            <p>在手机浏览器中向用户收款。适合活动营销、内容打赏、游戏充值等支付场景。</p>
+                            <p><a onclick="openProductsModal('mobile-web')">查看所有适用渠道</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shadow-mask"></div>
+                    </div>
+                  </li>
+                  <li class="orbit-slide">
+                    <div class="product-slide">
+                      <div class="row align-center">
+                        <div class="columns shrink">
+                          <img src="assets/img/products-slides-mac.png" data-interchange="[assets/img/products-slides-mac@2x.png, retina]" alt="" width="777" height="454">
+                        </div>
+                      </div>
+                      <div class="slide-text">
+                        <div class="row align-center">
+                          <div class="small-11 medium-7 columns">
+                            <p>在电脑上向个人或企业用户收款。支持扫码支付、和针对大额客单的企业网银支付。</p>
+                            <p><a onclick="openProductsModal('pc-web')">查看所有适用渠道</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="orbit-slide">
+                    <div class="product-slide">
+                      <div class="row align-center">
+                        <div class="columns shrink">
+                          <img src="assets/img/products-slides-wechat.png" data-interchange="[assets/img/products-slides-wechat@2x.png, retina]" alt="" width="287" height="563">
+                        </div>
+                      </div>
+                      <div class="slide-text">
+                        <div class="row align-center">
+                          <div class="small-11 medium-7 columns">
+                            <p>在微信内嵌浏览器向收款。适合微信服务号内的商城和活动。支持微信支付和其他支付方式。</p>
+                            <p><a onclick="openProductsModal('wechat')">查看所有适用渠道</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shadow-mask"></div>
+                    </div>
+                  </li>
+                  <li class="orbit-slide">
+                    <div class="product-slide">
+                      <div class="row align-center">
+                        <div class="columns shrink">
+                          <img src="assets/img/products-slides-qr.png" data-interchange="[assets/img/products-slides-qr@2x.png, retina]"alt="" width="287" height="563">
+                        </div>
+                      </div>
+                      <div class="slide-text">
+                        <div class="row align-center">
+                          <div class="small-11 medium-7 columns">
+                            <p>透过二维码向用户收款，可用于线下的支付场景。</p>
+                            <p><a  onclick="openProductsModal('qr')">查看所有适用渠道</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="shadow-mask"></div>
+                    </div>
+                  </li>
+                </ul>
+                <nav class="orbit-bullets">
+                  <button class="is-active" data-slide="0">全部</button>
+                  <button data-slide="1">手机 app</button>
+                  <button data-slide="2">手机网页</button>
+                  <button data-slide="3">PC 网页</button>
+                  <button data-slide="4">微信公众号</button>
+                  <button data-slide="5">QR 扫码</button>
+                </nav>
+              </div>
+            </div>
+            <div class="products-method-icons">
+              <ul class="animate">
+                <li>
+                  <figure class="method-icon method-icon-alipay"></figure>
+                  <figure class="method-icon method-icon-wechat"></figure>
+                  <figure class="method-icon method-icon-applepay"></figure>
+                  <figure class="method-icon method-icon-unionpay"></figure>
+                  <figure class="method-icon method-icon-cmb"></figure>
+                  <figure class="method-icon method-icon-visa"></figure>
+                  <figure class="method-icon method-icon-mastercard"></figure>
+                  <figure class="method-icon method-icon-fenqile"></figure>
+                  <figure class="method-icon method-icon-qq"></figure>
+                </li>
+                <li>
+                  <figure class="method-icon method-icon-alipay"></figure>
+                  <figure class="method-icon method-icon-wechat"></figure>
+                  <figure class="method-icon method-icon-applepay"></figure>
+                  <figure class="method-icon method-icon-unionpay"></figure>
+                  <figure class="method-icon method-icon-cmb"></figure>
+                  <figure class="method-icon method-icon-visa"></figure>
+                  <figure class="method-icon method-icon-mastercard"></figure>
+                  <figure class="method-icon method-icon-fenqile"></figure>
+                  <figure class="method-icon method-icon-qq"></figure>
+                </li>
+              </ul>
+            </div>
+        
+          </section>
+        
+        <!--   <section class="ld-content" id="paymentmethods">
+            <div class="products-method-icons">
+          		<ul class="animate">
+          			<li>
+                  <figure class="method-icon method-icon-alipay"></figure>
+          				<figure class="method-icon method-icon-wechat"></figure>
+                  <figure class="method-icon method-icon-applepay"></figure>
+                  <figure class="method-icon method-icon-unionpay"></figure>
+                  <figure class="method-icon method-icon-cmb"></figure>
+                  <figure class="method-icon method-icon-visa"></figure>
+                  <figure class="method-icon method-icon-mastercard"></figure>
+                  <figure class="method-icon method-icon-fenqile"></figure>
+                  <figure class="method-icon method-icon-qq"></figure>
+          			</li>
+                <li>
+                  <figure class="method-icon method-icon-alipay"></figure>
+                  <figure class="method-icon method-icon-wechat"></figure>
+                  <figure class="method-icon method-icon-applepay"></figure>
+                  <figure class="method-icon method-icon-unionpay"></figure>
+                  <figure class="method-icon method-icon-cmb"></figure>
+                  <figure class="method-icon method-icon-visa"></figure>
+                  <figure class="method-icon method-icon-mastercard"></figure>
+                  <figure class="method-icon method-icon-fenqile"></figure>
+                  <figure class="method-icon method-icon-qq"></figure>
+                </li>
+          		</ul>
+          	</div>
+        
+            <div class="row align-center">
+              <div class="small-11 medium-7 large-5 columns">
+        
+                <div class="products-section-hero align-middle align-center">
+                  <h5>支付方式</h5>
+                  <h2>给消费者更多选择<span class="punctuation">，</span><br>给你未来的保障<span class="punctuation">。</span></h2>
+                  <p>Ping++ 让你在第一时间，启用最新的支付方式。为每个消费群体优化支付体验，提高订单转化率。只需递交一次资料，即可同时申请多个支付渠道账号。</p>
+                  <p><a  onclick="openProductsModal()" class="anchor">查看所有支付方式</a></p>
+                </div>
+        
+              </div>
+            </div>
+        
+            <div class="nav block-grid new-features products-methodspromo no-border">
+        
+              <ul>
+                <li>
+                  <a class="block-grid-link" onclick="openProductsModal('all','applepay')">
+                    <div class="hero-icons__icon"><img src="assets/img/products-methodspromo-apple.svg" alt=""></div>
+                    <h6>Apple Pay</h6>
+                    <h5>享受最佳的支付体验</h5>
+                  </a>
+                </li>
+                <li>
+                  <a class="block-grid-link" onclick="openProductsModal('all','jdpay002')">
+                    <div class="hero-icons__icon"><img src="assets/img/products-methodspromo-jdb.svg" alt=""></div>
+                    <h6>京东白条</h6>
+                    <h5>现已开放申请</h5>
+                  </a>
+                </li>
+                <li>
+                  <a class="block-grid-link" onclick="openProductsModal('all','cmbwallet001')">
+                    <div class="hero-icons__icon"><img src="assets/img/products-methodspromo-cmb.svg" alt=""></div>
+                    <h6>一网通</h6>
+                    <h5>享受随机立减补贴</h5>
+                  </a>
+                </li>
+              </ul>
+        
+              </div>
+          </section> -->
+        
+          <section class="ld-content ld-content--no-padding ld-content--productblue ld-content--no-overflow" id="transfers" data-magellan-target="transfers">
+            <div class="row align-center">
+              <div class="small-11 medium-10 columns">
+                <div class="products-section-head products-section-head--no-bottom-padding">
+                  <div class="row">
+                    <div class="small-12 medium-5 large-5 columns">
+                      <div class="home-feature__copy">
+                        <h5>付款</h5>
+                        <h2>轻松实现红包<span class="punctuation">、</span>提现<span class="punctuation">、</span>分账等付款场景<span class="punctuation">。</span></h2>
+                        <p>在管理后台或通过接口，向用户或其他公司付款。与其他功能组合，即可实现用户提现、企业打款、商户分账、营销红包等动作。</p>
+                      </div>
+                    </div>
+                    <div class="expand columns"></div>
+                    <div class="small-12 medium-6 large-6 columns">
+                      <div class="home-feature__bg transfercards"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-feature__iconwall products-iconwall">
+                  <div class="row small-up-1 medium-up-3">
+                    <div class="column iconwall-item">
+                      <div class="wall-icon transfer"></div>
+                      <h6>企业付款</h6>
+                      <p>直接向企业或个人的银行卡划款，实现用户绑卡提现等。</p>
+                    </div>
+                    <div class="column iconwall-item">
+                      <div class="wall-icon batchtransfer"></div>
+                      <h6>批量企业付款</h6>
+                      <p>一次性付款到多个支付宝账号，资金可即时到账。</p>
+                    </div>
+                    <div class="column iconwall-item">
+                      <div class="wall-icon hongbao"></div>
+                      <h6>微信红包</h6>
+                      <p>向用户发送微信红包，或直接付款至用户的微信余额。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section class="ld-content ld-content--no-padding ld-content-productwhite" id="account" data-magellan-target="account">
+            <div class="row align-center">
+              <div class="small-11 medium-10 columns">
+                <div class="products-section-head">
+                  <div class="row">
+                    <div class="small-12 medium-5 large-5 columns">
+                      <div class="home-feature__copy">
+                        <!-- <span class="label-comingsoon">即将上线</span> -->
+                        <h5>账户系统</h5>
+                        <h2>一套围绕用户的支付和营销工具<span class="punctuation">。</span></h2>
+                      </div>
+                    </div>
+                    <div class="expand columns"></div>
+                    <div class="small-12 medium-6 large-6 columns">
+                      <p>让每个用户拥有余额和优惠券账户，能够方便地充值、消费和提现。你可以创建并定向发放优惠券，在管理后台统一查看用户的余额和优惠券使用状况。</p>
+                      <p class="more"><a href="/account" class="anchor">了解更多</a></p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="products-account-preview">
+                  <div class="content">
+                    <div class="row small-1-up medium-3-up">
+                      <div class="column align-self-center">
+                        <img src="assets/img/products-account-topup.png" data-interchange="[assets/img/products-account-topup@2x.png, retina]" alt="" width="241" height="469">
+                      </div>
+                      <div class="column align-self-center">
+                        <img src="assets/img/products-account-withdrawal.png" data-interchange="[assets/img/products-account-withdrawal@2x.png, retina]" alt="" width="241" height="469">
+                      </div>
+                      <div class="column align-self-center">
+                        <img src="assets/img/products-account-coupon.png" data-interchange="[assets/img/products-account-coupon@2x.png, retina]" alt="" width="241" height="469">
+                      </div>
+                    </div>
+                    <div class="shadow-mask"></div>
+                  </div>
+                  <div class="description">
+                    <div class="row small-1-up medium-3-up">
+                      <div class="column align-self-center">
+                        <h6>余额充值</h6>
+                        <p>用户通过支付渠道将现金充值至用户账户。</p>
+                      </div>
+                      <div class="column align-self-center">
+                        <h6>余额提现</h6>
+                        <p>用户将账户余额提现至支付宝、微信或银行卡。</p>
+                      </div>
+                      <div class="column align-self-center">
+                        <h6>优惠券消费</h6>
+                        <p>用户付款时选择使用优惠券，自动抵扣相应金额。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section class="ld-content ld-content--no-padding ld-content-productyellow" id="platform" data-magellan-target="platform">
+            <div class="row align-center">
+              <div class="small-11 medium-10 columns">
+                <div class="products-section-head">
+                  <div class="row">
+                    <div class="small-12 medium-5 large-5 columns">
+                      <div class="home-feature__copy">
+                        <!-- <span class="label-comingsoon">即将上线</span> -->
+                        <h5>多级商户</h5>
+                        <h2>针对商城和平台类产品的支付解决方案<span class="punctuation">。</span></h2>
+                      </div>
+                    </div>
+                    <div class="expand columns"></div>
+                    <div class="small-12 medium-6 large-6 columns">
+                      <p>对于商城和平台类商户，通过多级商户服务，可以满足平台所有的交易请求处理，你可以轻松管理全平台的交易与账务，全局把控所有子商户的交易数据，根据与子商户的分成规则，高效实现多级商户的账务清分。</p>
+                      <p class="more"><a href="/platform" class="anchor">了解更多</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="products-platform-bg">
+              <div class="sun"></div>
+            </div>
+          </section>
+        
+          <section class="ld-content ld-content--no-padding ld-content--productblue" id="campagin" data-magellan-target="campagin">
+            <div class="row align-center">
+              <div class="small-11 medium-10 columns">
+                 <div class="products-section-head products-section-head--no-bottom-padding">
+                  <div class="row">
+                    <div class="small-12 medium-5 large-5 columns">
+                      <div class="home-feature__copy">
+                        <h5>BI 营销系统</h5>
+                        <h2>让营销立竿见影<span class="punctuation">。</span></h2>
+                        <p>BI 营销系统是 Ping++ 利用先进的 BI 分析方法，为商户开发的多角色营销及分析管理平台。商户可以基于此产品进行智能分析、营销实施、效果监测等精准营销，同时对用户购买行为漏斗转化及趋势分析，全面提升客单价、用户转化及留存率。</p>
+                        <p class="more"><a href="bi" class="anchor">了解更多</a></p>
+                      </div>
+                    </div>
+                    <div class="expand columns"></div>
+                    <div class="small-12 medium-6 large-6 columns">
+                      <div class="home-feature__bg campaigns"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="home-feature__iconwall products-iconwall">
+                  <div class="row small-up-1 medium-up-3">
+                    <div class="column iconwall-item">
+                      <div class="wall-icon analyze"></div>
+                      <h6>智能分析</h6>
+                      <p>根据营销目标，快速圈定目标客群，创建精准的营销活动。</p>
+                    </div>
+                    <div class="column iconwall-item">
+                      <div class="wall-icon pulse"></div>
+                      <h6>动态效果检测</h6>
+                      <p>实时检测活动数据，多纬度分析活动的营销效果。</p>
+                    </div>
+                    <div class="column iconwall-item">
+                      <div class="wall-icon chair"></div>
+                      <h6>CEO 看板</h6>
+                      <p>实时展示业务动态及用户转化漏斗，转化情况一目了然。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <section class="ld-content ld-content--no-padding ld-content--white" id="tools" data-magellan-target="tools">
+            <div class="row align-center">
+              <div class="small-11 medium-10 columns">
+                <div class="products-section-head">
+                  <div class="row">
+                    <div class="small-12 medium-5 large-5 columns">
+                      <div class="home-feature__copy">
+                        <h5>辅助接口</h5>
+                        <h2>更多与支付相关的特殊功能接口<span class="punctuation">。</span></h2>
+                      </div>
+                    </div>
+                    <div class="expand columns"></div>
+                    <div class="small-12 medium-6 large-6 columns">
+                      <p>你可以调用实名认证接口，根据用户的信息鉴别其身份真伪。通过海关报关接口，可以实现订单、支付单、物流单三单合一，完成跨境商品的自助清关。 </p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="row align-center">
+                  <div class="small-11 medium-7 columns">
+                    <div class="row small-1-up medium-2-up align-center">
+                      <div class="products-tool-card column">
+                        <div class="products-tool-card-image">
+                          <img src="assets/img/products-others-customs.svg" alt="">
+                        </div>
+                        <h6>海关报关接口</h6>
+                        <p class="more"><a href="https://help.pingxx.com/article/186898" class="anchor">了解更多</a></p>
+                      </div>
+                      <div class="products-tool-card column">
+                        <div class="products-tool-card-image">
+                          <img src="assets/img/products-others-id.svg" alt="">
+                        </div>
+                        <h6>实名认证接口</h6>
+                        <p class="more"><a href="https://help.pingxx.com/article/185865" class="anchor">了解更多</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="bottom-cta bottom-cta--gray">
+          <div class="row align-center">
+            <div class="small-12 medium-8 large-7 columns">
+              <h3 data-t="bottom-cta.default.title">开始收钱只需几分钟<span class="punctuation">。</span></h3>
+              <p><a href="https://dashboard.pingxx.com/register" class="button cta" data-t="bottom-cta.default.cta">免费注册账号</a></p>
+            </div>
+          </div>
+        </section>
+        
+        <footer>
+          <div class="row collapse">
+            <div class="small-12 medium-expand columns">
+              <ul class="menu">
+                <li><a href="https://status.pingxx.com" data-t="footer.status">系统状态</a></li>
+                <li><a href="https://help.pingxx.com" data-t="footer.help" target="_blank">帮助中心</a></li>
+                <li><a href="/docs" data-t="top-nav.devcenter" data-attr-t href-t="route.docsroot">开发者</a></li>
+                <li><a href="/about" data-t="footer.about" data-attr-t href-t="routeEn.about">关于我们</a></li>
+                <li><a href="/career" data-t="footer.career" data-attr-t href-t="routeEn.career">招聘</a></li>
+                <li><a href="/media" data-t="footer.media" data-attr-t href-t="routeEn.media">媒体</a></li>
+                <li><a href="/nonprofit" data-t="footer.nonprofit" data-attr-t href-t="routeEn.nonprofit">公益</a></li>
+                <li><a href="/contact" data-t="footer.contact">联系我们</a></li>
+                <li><a href="/terms" data-t="footer.legal">条款</a></li>
+              </ul>
+              <p class="xsmall">&copy; 上海简米网络科技有限公司 <span class="beian">沪 ICP 备 <a href="http://www.miibeian.gov.cn/publish/query/indexFirst.action" target="_blank">14045638 号 - 1</a></span></p>
+            </div>
+          </div>
+        </footer>
+        
+        <div class="pro-consult">
+          <a id="consult" href="javascript:void(0);" class="button cta">产品咨询</a>
+        </div>
+        <div id="consultSlide" class="pro-slide">
+          <div id="proCon" class="pro-con">
+            <h3>产品咨询</h3>
+            <form data-abide novalidate id="contact" class="pro-form">
+              <input type="hidden" id="source" name="source" value="widget">
+              <div class="">
+                <label>姓名</label>
+                <input type="text" id="name" name="name" required/>
+              </div>
+              <div class="">
+                <label>手机</label>
+                <input type="text" id="phone" name="phone" pattern="phone" required/>
+              </div>
+              <div class="">
+                <label>邮箱</label>
+                <input type="text" id="from" name="customer_email" pattern="email" required/>
+              </div>
+              <div class="">
+                <label>公司名称或网址</label>
+                <input type="text" id="companyname" name="name_or_site" required/>
+              </div>
+              <div class="">
+                <label>公司规模</label>
+                <select class="sel" id="company" name="company" required>
+                  <option value="" selected="selected" disabled="disabled">选择</option>
+                  <option value="50 人以下">50 人以下</option>
+                  <option value="50-100 人">50-100 人</option>
+                  <option value="100-200 人">100-200 人</option>
+                  <option value="200-500 人">200-500 人</option>
+                  <option value="500 人以上">500 人以上</option>
+                </select>
+              </div>
+              <div class="">
+                <label>需求</label>
+                <select class="sel" id="to" name="to_email" required>
+                  <option value="" selected="selected" disabled="disabled">选择</option>
+                  <option value="sales@pingxx.com">产品售前咨询</option>
+                  <option value="sales@pingxx.com">企业定制服务</option>
+                </select>
+              </div>
+              <div class="">
+                <label>描述</label>
+                <textarea rows="3" placeholder="告诉我们如何为你提供帮助" id="description" name="description" required></textarea>
+              </div>
+              <div class="text-right">
+                <button class="medium button alt" id="submit">发送</button>
+                <a id="submiting" class="medium button alt disabled" style="display: none">正在提交...</a>
+              </div>
+            </form>
+          </div>
+          <div id="proSuccess" class="pro-con text-center" style="display: none;">
+            <div class="pos-middle">
+              <div class="pro-ico">
+                <span class="pro-icon-success pro-draw"></span>
+              </div>
+              <p class="pro-txt">请耐心等候<br>我们很快会回复您</p>
+            </div>
+          </div>
+          <div class="pro-close-outer">
+            <p class="pro-tip">关注 <strong>微信公众号</strong><img src="assets/img/qr-ping.png" alt=""> 获取即时资讯</p>
+            <a class="pro-close"></a>
+          </div>
+        </div>
+        <div class="gallery-modal">
+          <div class="gallery-container">
+            <div class="gallery-nav-pane">
+              <div class="row nowrap align-middle">
+                <div class="column shrink">
+                    <div class="modal-icon">
+                      <div class="modal-icon--close"></div>
+                      <div class="modal-icon--back"></div>
+                    </div>
+                </div>
+                <div class="column">
+                  <ul class="fixed-nav" id="channelFilters">
+                    <li class="fixed-nav__item"><a class="nav-link active all" data-filter="all">所有平台</a></li>
+                    <li class="fixed-nav__item"><a class="nav-link app" data-filter="app">手机 app</a></li>
+                    <li class="fixed-nav__item"><a class="nav-link mobile-web" data-filter="mobile-web">手机网页</a></li>
+                    <li class="fixed-nav__item"><a class="nav-link pc-web" data-filter="pc-web">PC 网页</a></li>
+                    <li class="fixed-nav__item"><a class="nav-link wechat" data-filter="wechat">微信公众号</a></li>
+                    <li class="fixed-nav__item"><a class="nav-link qr" data-filter="qr">QR 扫码</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-content-pannel">
+              <div class="row align-center">
+                <div class="medium-10 small-11">
+                  <p class="small text-center"><span class="hide">点击渠道了解关于费率、申请等更多详情</span></p>
+                  <div class="products-grid"> </div>
+                </div>
+              </div>
+              <div class="fixed-content-grid"> </div>
+           </div>
+          </div>
+        </div>
+        
+        
+    <script src="assets/js/app-465e894a6c.js"></script>
+    <script type="text/javascript">
+    // baidu tuiguang
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?683f87a118eee118bc5bbd1d65402ab2";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script src="https://dashboard.pingxx.com/assets/js/lib/report.js" charset="utf-8"></script>
+  </body>
+</html>
