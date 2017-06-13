@@ -1805,7 +1805,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #82ffff;
+  background: #ffb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3177,7 +3177,7 @@ input:focus[type="submit"],
   padding: 10px 15px 5px;
   max-height: 50px;
   border-bottom: 1px solid #ccc;
-  background: #000;
+  background: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
